@@ -1,0 +1,62 @@
+/* import Aboreto font-family */
+@import url("https://fonts.googleapis.com/css2?family=Aboreto&display=swap");
+
+/* COLOR PALETTE GLOBAL VARIABLES */
+:root {
+  /* Primary brand surfaces */
+  --color-cream: #f8f3ec;
+  --color-ivory: #f1e4da;
+  --color-sand: #efe1c5;
+  --color-logo-bg-cream: #f4e3c6;
+
+  /* Brand text / logo */
+  --color-espresso: #482410;
+  --color-brown: #5e4836;
+
+  /* Supporting neutrals */
+  --color-taupe: #826e57;
+  --color-muted-tan: #c4b79a;
+
+  /* Cultural accent */
+  --color-boricua-red: #b84f4d;
+  --color-boricua-red-soft: #bc8c88;
+  --color-boricua-blue: #0050f0;
+  --color-boricua-blue-dark: #174a7e;
+
+  /* Optional supporting accent */
+  --color-olive: #4f6738;
+  --color-gold: #fbe1b5;
+
+  /* Utility */
+  --color-white: #ffffff;
+  --color-black: #171717;
+}
+
+/* ---------------------------------------------------------------------- */
+
+/* ALL ELEMENTS */
+
+/* select all elements and include their padding and border 
+as part of their entire measurement for predictability */
+* {
+  box-sizing: border-box;
+}
+
+/* ---------------------------------------------------------------------- */
+
+/* HTML & BODY */
+
+/* remove preset margin and padding from all html and body elements */
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* set min-width for mobile viewport screen size */
+body {
+  min-width: 320px;
+  background-color: var(--color-cream);
+}
+
+/* ---------------------------------------------------------------------- */

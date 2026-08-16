@@ -1,0 +1,56 @@
+/* HEADER */
+
+/* ANNOUNCEMENT BAR */
+.announcement-bar__container {
+  background-color: var(--color-espresso);
+  height: 55px;
+  display: flex;
+  overflow: hidden;
+}
+
+.announcement-bar__track {
+  display: flex;
+  align-items: center;
+
+  /* take up the maximum width available from content */
+  width: max-content;
+
+  /* run the animation called marquee, take 20 seconds per cycle, move at a constant speed, 
+  and repeat forever. */
+  animation: marquee 17s linear infinite;
+}
+
+.announcement-bar__text {
+  font-family: "Aboreto", serif;
+  font-size: 1rem;
+  color: var(--color-gold);
+}
+
+.announcement-bar__track--group-a,
+.announcement-bar__track--group-b,
+.announcement-bar__track--group-c,
+.announcement-bar__track--group-d {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+  gap: 70px;
+
+  /* add padding to the end of marquee for smooth transition */
+  padding-right: 70px;
+}
+
+/* ANNOUNCEMENT BAR ANIMATION */
+
+/* define the marquee animation and set start and end states */
+@keyframes marquee {
+  /* start marquee movement offset by 50% left off of the element's width */
+  from {
+    transform: translateX(-25%);
+  }
+  /* move marquee to the right till it reaches its normal position */
+  to {
+    transform: translateX(0);
+  }
+}
+
+/* ---------------------------------------------------------------------- */
