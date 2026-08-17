@@ -54,3 +54,74 @@
 }
 
 /* ---------------------------------------------------------------------- */
+
+/* LOGO & NAVBAR */
+
+.header__navbar-section {
+  height: 110px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30px 0 15px;
+}
+
+.header__logo-container {
+  height: 110px;
+  width: 140px;
+  padding-top: 5px;
+}
+
+.header__logo-img {
+  height: 120px;
+  width: auto;
+}
+
+.navbar__list-container {
+  display: flex;
+  align-self: flex-start;
+  padding-top: 5px;
+}
+
+.navbar__list {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.navbar__links {
+  text-decoration: none;
+  color: var(--color-espresso);
+  font-size: 1.2rem;
+}
+
+.navbar__links:hover {
+  color: var(--color-olive);
+}
+
+.booking-cta {
+  background-color: var(--color-olive);
+  border: 1px solid var(--color-logo-bg-cream);
+  border-style: none;
+  border-radius: 999px;
+  padding: 10px 26px;
+  text-decoration: none;
+  transition:
+    background-color 0.25s ease,
+    border-color 0.25s ease,
+    transform 0.25s ease;
+}
+
+.booking-cta:hover {
+  background-color: var(--color-espresso);
+  border-color: var(--color-espresso);
+  transform: translateY(-2px);
+}
+
+.booking-text {
+  color: var(--color-cream);
+}
+
+.booking-text:hover {
+  color: var(--color-cream);
+}

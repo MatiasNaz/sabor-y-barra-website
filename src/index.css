@@ -57,6 +57,7 @@ body {
 body {
   min-width: 320px;
   background-color: var(--color-cream);
+  font-family: "Josefin Sans", sans-serif;
 }
 
 /* ---------------------------------------------------------------------- */
