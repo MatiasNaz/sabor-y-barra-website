@@ -3,7 +3,7 @@ import "./Header.css";
 // create and return announcement bar
 function AnnouncementBar() {
   return (
-    <div className="announcement-bar__container">
+    <section className="announcement-bar__container">
       <div className="announcement-bar__track">
         <div className="announcement-bar__track--group-a">
           <span className="announcement-bar__text">
@@ -50,7 +50,7 @@ function AnnouncementBar() {
           </span>
         </div>
       </div>
-    </div>
+    </section>
   );
 }
 

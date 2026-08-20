@@ -4,7 +4,7 @@ import logoImage from "../../assets/images/sabor-y-barra-logo-transparent-bg.png
 
 function Header() {
   return (
-    <header className="header">
+    <header className="header__section">
       {/* announcement marquee bar */}
       <AnnouncementBar />
 

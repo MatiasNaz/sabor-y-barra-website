@@ -1,0 +1,126 @@
+/* SERVICES PREVIEW HOMEPAGE SECTION */
+
+.services-preview__section {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.services-preview__bg-container {
+  width: 100%;
+  max-width: 1200px;
+}
+
+/* SERVICES PREVIEW HEADER */
+
+.services-preview__services-intro-heading {
+  background-color: var(--color-espresso);
+  width: 100%;
+  height: 40px;
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 0;
+  flex-shrink: 0;
+}
+
+.services-preview__services-intro-text {
+  font-size: 33px;
+  text-transform: uppercase;
+  letter-spacing: 6px;
+  text-align: center;
+  font-weight: 500;
+  color: var(--color-cream);
+}
+
+/* SERVICES PREVIEW CARD GROUP */
+
+.services-preview__services-intro-card {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 500px;
+  margin-top: 100px;
+}
+
+/* ------------------------------------------------------------------------------------------ */
+
+/* OUR SERVICES INTRO CARD 1 */
+
+/* IMAGE CONTAINER */
+.services-preview__services-card-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+.services-preview__card-img-container {
+  width: 40%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.services-preview__card-img {
+  object-fit: cover;
+  object-position: 50% 40%;
+  width: 100%;
+  height: 100%;
+}
+
+/* SERVICES DESCRIPTION CONTAINER */
+.services-preview__card-description-container {
+  width: 60%;
+  height: 100%;
+  background-color: var(--color-taupe);
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.services-preview__card-description {
+  color: var(--color-cream);
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 90px 55px 45px;
+}
+
+.services-preview__card-description-title {
+  text-transform: uppercase;
+  font-size: 36px;
+  font-weight: 400;
+  letter-spacing: 3px;
+  line-height: 1.1;
+  margin: 0 0 24px;
+}
+
+.services-preview-card__divider {
+  height: 2px;
+  background-color: var(--color-cream);
+  margin: 0 20px 24px;
+}
+
+.services-preview__card-description-sub-title {
+  text-align: center;
+  font-size: 22px;
+  font-weight: 300;
+  line-height: 1.45;
+  max-width: 520px;
+  margin: 20px auto 20px;
+}
+
+.services-preview__card-description-body-text {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.65;
+  max-width: 560px;
+}
+
+/* ------------------------------------------------------------------------------------------ */
+
+/* OUR SERVICES INTRO CARD 2 */
+
+/* ------------------------------------------------------------------------------------------ */
