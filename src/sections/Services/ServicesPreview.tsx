@@ -23,7 +23,7 @@ function ServicesPreview() {
                 alt="bartender serving drink"
               />
             </div>
-            <div className="services-preview__card-description-container">
+            <div className="services-preview__card-description-container card-1-container">
               <div className="services-preview__card-description">
                 <h3 className="services-preview__card-description-title">
                   private events
@@ -38,6 +38,9 @@ function ServicesPreview() {
                   cocktails, fresh ingredients, and personalized service
                   designed around your event.
                 </p>
+                <a className="services-preview__booking-cta" href="/booking">
+                  Book Now
+                </a>
               </div>
             </div>
           </div>
@@ -47,21 +50,26 @@ function ServicesPreview() {
         {/* start of services intro card 2 */}
         <div className="services-preview__services-intro-card">
           <div className="services-preview__services-card-container">
-            <div className="services-preview__card-description-container">
+            <div className="services-preview__card-description-container card-2-container">
               <div className="services-preview__card-description">
                 <h3 className="services-preview__card-description-title">
                   corporate events
                 </h3>
                 <div className="services-preview-card__divider"></div>
                 <h4 className="services-preview__card-description-sub-title">
-                  Impress your guests. Elevate your brand. <br />
-                  We'll handle the bar.
+                  Impress your guests. Elevate your brand.
+                  <span className="corporate-events-card__line-break">
+                    We'll handle the bar.
+                  </span>
                 </h4>
                 <p className="services-preview__card-description-body-text">
                   From client receptions to company celebrations, deliver an
                   experience worth remembering with polished bar service and
                   handcrafted cocktails tailored to your event.
                 </p>
+                <a className="services-preview__booking-cta" href="/booking">
+                  Book Now
+                </a>
               </div>
             </div>
             <div className="services-preview__card-img-container">
@@ -85,7 +93,7 @@ function ServicesPreview() {
                 alt="bartender serving drink"
               />
             </div>
-            <div className="services-preview__card-description-container">
+            <div className="services-preview__card-description-container card-3-container">
               <div className="services-preview__card-description">
                 <h3 className="services-preview__card-description-title">
                   cocktail omakase
@@ -100,6 +108,9 @@ function ServicesPreview() {
                   where each pour is thoughtfully crafted to surprise, delight,
                   and tell a story. <strong>Coming soon.</strong>
                 </p>
+                <a className="services-preview__booking-cta" href="/booking">
+                  Book Now
+                </a>
               </div>
             </div>
           </div>

@@ -54,8 +54,11 @@ function Header() {
                 Contact
               </a>
             </li>
-            <li className="booking-cta">
-              <a className="navbar__links booking-text" href="/booking">
+            <li>
+              <a
+                className="booking-cta navbar__links booking-text"
+                href="/booking"
+              >
                 Book Your Event
               </a>
             </li>

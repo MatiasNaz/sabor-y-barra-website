@@ -97,6 +97,11 @@
     transform 0.25s ease;
 }
 
+.hero__get-started-btn:focus-visible {
+  outline: 3px solid var(--color-espresso);
+  outline-offset: 3px;
+}
+
 .hero__get-started-btn:hover {
   text-decoration: none;
   background-color: var(--color-espresso);

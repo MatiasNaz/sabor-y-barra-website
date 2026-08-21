@@ -62,3 +62,12 @@ body {
 }
 
 /* ---------------------------------------------------------------------- */
+
+/* ACCESSIBILITY SETTINGS */
+
+/* KEYBOARD GLOBAL SELECTOR */
+:focus-visible {
+  outline: 3px solid var(--color-espresso);
+  outline-offset: 3px;
+  border-radius: 3px;
+}

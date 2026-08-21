@@ -110,13 +110,17 @@
     background-color 0.25s ease,
     border-color 0.25s ease,
     transform 0.25s ease;
-  cursor: pointer;
 }
 
 .booking-cta:hover {
   background-color: var(--color-espresso);
   border-color: var(--color-espresso);
   transform: translateY(-2px);
+}
+
+.booking-cta:focus-visible {
+  outline: 3px solid var(--color-espresso);
+  outline-offset: 3px;
 }
 
 .booking-text {
