@@ -30,7 +30,7 @@ function Header() {
               </a>
             </li>
             <li>
-              <a className="navbar__links" href="/services">
+              <a className="navbar__links" href="#services-intro">
                 Services
               </a>
             </li>
