@@ -1,7 +1,6 @@
 /* SERVICES PREVIEW HOMEPAGE SECTION */
 
 .services-preview__section {
-  height: 100vh;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -160,12 +159,15 @@
 .card-1-container {
   /* set min and max margins while taking 10% of viewport width */
   margin-right: clamp(50px, 10vw, 150px);
+  /* border-top-right-radius: 100px; */
+  border-radius: 0 64px 64px 0;
 }
 /* ------------------------------------------------------------------------------------------ */
 
 /* OUR SERVICES INTRO CARD 2 */
 .card-2-container {
   margin-left: clamp(50px, 10vw, 150px);
+  border-radius: 64px 0 0 64px;
 }
 
 .corporate-events-card__line-break {
@@ -178,6 +180,8 @@
 /* OUR SERVICES INTRO CARD 3 */
 .card-3-container {
   margin-right: clamp(50px, 10vw, 150px);
+  /* border-radius: 0 64px 64px 0; */
+  border-top-right-radius: 64px;
 }
 
 /* ------------------------------------------------------------------------------------------ */
