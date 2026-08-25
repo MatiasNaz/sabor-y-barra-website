@@ -3,13 +3,12 @@
 /* BACKGROUND CONTAINERS */
 .craft-section {
   width: 100%;
-  height: 70vh;
 }
 
 .craft-section__bg {
   width: 100%;
-  height: 70vh;
   background-color: var(--color-white);
+  padding-bottom: 70px;
 }
 
 /* CREATE COLLAGE FOR PHOTO FRAMES */

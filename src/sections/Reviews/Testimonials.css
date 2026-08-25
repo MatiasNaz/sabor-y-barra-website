@@ -1,19 +1,18 @@
 /* TESTIMONIAL CAROUSEL CONTIANER */
 
-.testimonials {
-  width: 100%;
+.testimonials__section {
   background-color: var(--color-olive);
-  height: 60vh;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.testimonials__bg {
+.testimonials__container {
   width: 70%;
-  height: 100%;
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
 }
 
 .testimonials__carousel-title {
@@ -44,4 +43,48 @@
   height: 1px;
   background-color: var(--color-white);
   flex: 1;
+}
+
+.testimonials__carousel {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: flex-start;
+  align-items: center;
+  height: 450px;
+}
+
+.testimonials__message {
+  color: var(--color-cream);
+  flex-grow: 1;
+  flex-direction: column;
+  line-height: 2;
+  width: 60%;
+}
+
+.testimonials__message p {
+  font-size: 20px;
+}
+
+.testimonials__message cite {
+  font-size: 28px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.testimonials__button-container {
+  gap: 20px;
+  display: flex;
+  margin: auto 0 25px;
+  transition: background-color 10s ease;
+}
+
+.testimonials__button {
+  width: 7px;
+  height: 7px;
+  padding: 0;
+  border: none;
+  background-color: var(--color-cream);
+  cursor: pointer;
+  gap: 20px;
 }

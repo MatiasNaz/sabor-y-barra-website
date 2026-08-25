@@ -6,18 +6,24 @@
   height: 55px;
   display: flex;
   overflow: hidden;
+  width: 100%;
 }
 
 .announcement-bar__track {
   display: flex;
   align-items: center;
 
-  /* take up the maximum width available from content */
+  /* don't allow the track (flex child) to shrink to the parent container's width 
+     to prevent visual stutter */
+  flex-shrink: 0;
+
+  /* take up the maximum width available from the content */
   width: max-content;
 
-  /* run the animation called marquee, take 20 seconds per cycle, move at a constant speed, 
+  /* run the animation called marquee, take 30 seconds per cycle, move at a constant speed, 
   and repeat forever. */
-  animation: marquee 17s linear infinite;
+  animation: marquee 30s linear infinite;
+  will-change: transform;
 }
 
 .announcement-bar__text {
@@ -26,10 +32,7 @@
   color: var(--color-gold);
 }
 
-.announcement-bar__track--group-a,
-.announcement-bar__track--group-b,
-.announcement-bar__track--group-c,
-.announcement-bar__track--group-d {
+.announcement-bar__track--group {
   display: flex;
   align-items: center;
   flex-shrink: 0;

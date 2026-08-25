@@ -5,7 +5,8 @@ function AnnouncementBar() {
   return (
     <section className="announcement-bar__container">
       <div className="announcement-bar__track">
-        <div className="announcement-bar__track--group-a">
+        {/* start of first group */}
+        <div className="announcement-bar__track--group">
           <span className="announcement-bar__text">
             Private & Corporate Events
           </span>
@@ -16,7 +17,10 @@ function AnnouncementBar() {
             Local & Destination Events
           </span>
         </div>
-        <div className="announcement-bar__track--group-b">
+        {/* end of first group */}
+
+        {/* start of second group */}
+        <div className="announcement-bar__track--group">
           <span className="announcement-bar__text">
             Private & Corporate Events
           </span>
@@ -27,7 +31,10 @@ function AnnouncementBar() {
             Local & Destination Events
           </span>
         </div>
-        <div className="announcement-bar__track--group-c">
+        {/* end of second group */}
+
+        {/* start of third group */}
+        <div className="announcement-bar__track--group">
           <span className="announcement-bar__text">
             Private & Corporate Events
           </span>
@@ -38,7 +45,10 @@ function AnnouncementBar() {
             Local & Destination Events
           </span>
         </div>
-        <div className="announcement-bar__track--group-d">
+        {/* end of third group */}
+
+        {/* start of fourth group */}
+        <div className="announcement-bar__track--group">
           <span className="announcement-bar__text">
             Private & Corporate Events
           </span>
@@ -49,6 +59,7 @@ function AnnouncementBar() {
             Local & Destination Events
           </span>
         </div>
+        {/* end of fourth group */}
       </div>
     </section>
   );

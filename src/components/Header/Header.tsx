@@ -45,7 +45,7 @@ function Header() {
               </a>
             </li>
             <li>
-              <a className="navbar__links" href="/reviews">
+              <a className="navbar__links" href="#reviews">
                 Reviews
               </a>
             </li>
