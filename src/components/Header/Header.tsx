@@ -4,7 +4,7 @@ import logoImage from "../../assets/images/sabor-y-barra-logo-transparent-bg.png
 
 function Header() {
   return (
-    <header className="header__section">
+    <header id="home" className="header__section">
       {/* announcement marquee bar */}
       <AnnouncementBar />
 
@@ -50,7 +50,7 @@ function Header() {
               </a>
             </li>
             <li>
-              <a className="navbar__links" href="/contact">
+              <a className="navbar__links" href="#contact">
                 Contact
               </a>
             </li>

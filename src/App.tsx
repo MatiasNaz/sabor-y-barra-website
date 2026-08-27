@@ -3,6 +3,8 @@ import Hero from "./sections/Hero/Hero";
 import CraftSection from "./sections/CraftSection/CraftSection";
 import ServicesPreview from "./sections/Services/ServicesPreview";
 import Testimonials from "./sections/Reviews/Testimonials";
+import Contact from "./sections/Contact/Contact";
+import Footer from "./components/Footer/Footer";
 
 // create App function for UI structure
 function App() {
@@ -13,6 +15,8 @@ function App() {
       <ServicesPreview />
       <CraftSection />
       <Testimonials />
+      <Contact />
+      <Footer />
     </>
   );
 }

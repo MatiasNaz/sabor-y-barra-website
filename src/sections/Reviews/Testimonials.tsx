@@ -33,7 +33,7 @@ function Testimonials() {
   // initialize useState index counter at 0
   const [currentIndex, setCurrentIndex] = useState(0);
 
-  // create derived value and store current index
+  // create derived value and store current index - start from 0
   const currentTestimonial = testimonials[currentIndex];
 
   // manually update index handling for automatic sequencing
@@ -58,6 +58,7 @@ function Testimonials() {
   
   */
 
+  // create function to handle dot button functionality and select type of parameter
   function dotHandler(indexSelected: number) {
     // set the current index to the one selected by user
     setCurrentIndex(indexSelected);

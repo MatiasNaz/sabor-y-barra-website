@@ -1,0 +1,116 @@
+/* CONTACT SECTION */
+
+.contact__section {
+  background-color: var(--color-cream);
+  color: var(--color-espresso);
+  padding: 110px 32px;
+}
+
+.contact__container {
+  width: 100%;
+  max-width: 1200px;
+  margin-inline: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.contact__eyebrow {
+  margin: 0 0 20px;
+  color: var(--color-espresso);
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+}
+
+.contact__title {
+  max-width: 760px;
+  margin: 0;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 48px;
+  font-weight: 300;
+  line-height: 1.15;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.contact__description {
+  max-width: 680px;
+  margin: 28px 0 0;
+  font-size: 18px;
+  line-height: 1.65;
+}
+
+.contact__booking-cta {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 36px;
+  padding: 12px 28px;
+  border-radius: 999px;
+  background-color: var(--color-olive);
+  color: var(--color-cream);
+  font-size: 1.2rem;
+  text-decoration: none;
+  transition:
+    background-color 0.25s ease,
+    transform 0.25s ease;
+}
+
+.contact__booking-cta:hover {
+  background-color: var(--color-espresso);
+  transform: translateY(-2px);
+}
+
+.contact__details {
+  width: 100%;
+  max-width: 680px;
+  margin-top: 56px;
+  padding-top: 28px;
+  border-top: 1px solid var(--color-muted-tan);
+  display: flex;
+  justify-content: center;
+  gap: 72px;
+  font-style: normal;
+}
+
+.contact__detail {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.contact__detail a {
+  text-decoration: none;
+  color: inherit;
+  font-size: 18px;
+}
+
+.contact__detail-label {
+  color: var(--color-espresso);
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+@media (max-width: 700px) {
+  .contact__section {
+    padding: 72px 20px;
+  }
+
+  .contact__title {
+    font-size: 36px;
+  }
+
+  .contact__description {
+    font-size: 17px;
+  }
+
+  .contact__details {
+    flex-direction: column;
+    gap: 24px;
+  }
+}

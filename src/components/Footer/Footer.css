@@ -1,0 +1,169 @@
+/* FOOTER SECTION */
+
+/* CONTAINERS */
+.footer {
+  background-color: var(--color-espresso);
+  color: var(--color-cream);
+  padding: 72px 32px 28px;
+}
+
+.footer__container {
+  width: 100%;
+  max-width: 1200px;
+  margin-inline: auto;
+}
+
+.footer__content {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr 1fr;
+  gap: 64px;
+}
+
+/* ------------------------------------------------------------------------------------------ */
+
+/* BRAND & LOGOS */
+.footer__brand {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.footer__logo-link {
+  display: inline-flex;
+  padding: 14px;
+  border-radius: 12px;
+  background-color: var(--color-logo-bg-cream);
+}
+
+.footer__logo {
+  display: block;
+  width: 160px;
+  height: auto;
+}
+
+/* SOCIAL MEDIA ICONS */
+.footer__socials-icon-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__socials-icon--instagram {
+  font-size: 40px;
+  padding-right: 5px;
+}
+
+.footer__socials-icon--facebook {
+  position: relative;
+  font-size: 35px;
+  top: 2px;
+}
+
+/* ------------------------------------------------------------------------------------------ */
+
+.footer__heading {
+  margin: 0 0 22px;
+  color: var(--color-gold);
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+.footer__link-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.footer a {
+  color: var(--color-cream);
+  text-decoration: none;
+}
+
+.footer a:hover {
+  color: var(--color-gold);
+}
+
+.footer a:focus-visible {
+  outline-color: var(--color-gold);
+}
+
+.footer__business {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.footer__contact {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  font-style: normal;
+  line-height: 1.5;
+}
+
+.footer__booking-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 28px;
+  padding: 10px 24px;
+  border: 1px solid var(--color-olive);
+  border-radius: 999px;
+  background-color: var(--color-olive);
+}
+
+.footer .footer__booking-link {
+  color: var(--color-cream);
+}
+
+.footer .footer__booking-link:hover {
+  border-color: var(--color-gold);
+  background-color: var(--color-gold);
+  color: var(--color-espresso);
+}
+
+.footer__bottom {
+  margin-top: 56px;
+  padding-top: 24px;
+  border-top: 1px solid var(--color-brown);
+  color: var(--color-muted-tan);
+  font-size: 14px;
+  text-align: center;
+}
+
+.footer__bottom p {
+  margin: 0;
+}
+
+/* ------------------------------------------------------------------------------------------ */
+
+/* MEDIA QUERIES */
+
+@media (max-width: 760px) {
+  .footer {
+    padding: 56px 20px 24px;
+  }
+
+  .footer__content {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .footer__brand,
+  .footer__business {
+    align-items: center;
+  }
+
+  .footer__navigation,
+  .footer__contact {
+    text-align: center;
+  }
+
+  .footer__heading {
+    text-align: center;
+  }
+}
