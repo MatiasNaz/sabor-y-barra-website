@@ -185,3 +185,111 @@
 }
 
 /* ------------------------------------------------------------------------------------------ */
+
+/* RESPONSIVE SERVICES */
+
+@media (max-width: 1050px) {
+  .services-preview__services-intro-card {
+    margin-top: 80px;
+  }
+
+  .services-preview__card-description {
+    padding: 60px 36px 36px;
+  }
+
+  .services-preview__card-description-title {
+    font-size: 32px;
+  }
+
+  .services-preview__card-description-sub-title {
+    font-size: 20px;
+  }
+
+  .services-preview__card-description-body-text {
+    font-size: 17px;
+  }
+
+  .card-1-container,
+  .card-3-container {
+    margin-right: 32px;
+  }
+
+  .card-2-container {
+    margin-left: 32px;
+  }
+}
+
+@media (max-width: 760px) {
+  .services-preview__services-intro-heading {
+    height: auto;
+    min-height: 40px;
+    padding: 6px 16px;
+  }
+
+  .services-preview__services-intro-text {
+    margin: 0;
+    font-size: 28px;
+    letter-spacing: 5px;
+  }
+
+  .services-preview__services-intro-card {
+    height: auto;
+    margin-top: 64px;
+  }
+
+  .services-preview__services-card-container {
+    height: auto;
+    flex-direction: column;
+  }
+
+  .services-preview__card-img-container {
+    width: 100%;
+    height: clamp(240px, 65vw, 360px);
+  }
+
+  .services-preview__card-description-container {
+    width: 100%;
+    height: auto;
+    min-height: 420px;
+  }
+
+  .services-preview__card-description {
+    width: 100%;
+    padding: 48px 24px 36px;
+  }
+
+  .card-1-container,
+  .card-2-container,
+  .card-3-container {
+    margin-right: 0;
+    margin-left: 0;
+    border-radius: 0;
+  }
+
+  .card-2-container {
+    order: 1;
+  }
+
+  .corporate-events-card__line-break {
+    display: inline;
+  }
+}
+
+@media (max-width: 480px) {
+  .services-preview__services-intro-text {
+    font-size: 24px;
+    letter-spacing: 4px;
+  }
+
+  .services-preview__card-description-container {
+    min-height: 0;
+  }
+
+  .services-preview__card-description {
+    padding: 40px 20px 32px;
+  }
+
+  .services-preview__card-description-title {
+    font-size: 29px;
+  }
+}

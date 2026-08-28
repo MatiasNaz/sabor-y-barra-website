@@ -44,12 +44,11 @@
 /* SOCIAL MEDIA ICONS */
 .footer__socials-icon-content {
   display: flex;
-  justify-content: space-between;
+  gap: 10px;
 }
 
 .footer__socials-icon--instagram {
   font-size: 40px;
-  padding-right: 5px;
 }
 
 .footer__socials-icon--facebook {
@@ -143,6 +142,12 @@
 
 /* MEDIA QUERIES */
 
+@media (max-width: 1050px) {
+  .footer__content {
+    gap: 32px;
+  }
+}
+
 @media (max-width: 760px) {
   .footer {
     padding: 56px 20px 24px;
@@ -165,5 +170,29 @@
 
   .footer__heading {
     text-align: center;
+  }
+
+  .footer__link-list a {
+    display: inline-flex;
+    min-height: 40px;
+    align-items: center;
+  }
+
+  .footer__socials-icon-content a {
+    width: 44px;
+    height: 44px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .footer__socials-icon--facebook {
+    position: static;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer__logo {
+    width: 140px;
   }
 }

@@ -107,3 +107,48 @@
   background-color: var(--color-espresso);
   transform: translateY(-4px);
 }
+
+/* ---------------------------------------------------------------------- */
+/* RESPONSIVE HERO */
+
+@media (max-width: 1050px) {
+  .hero__section {
+    min-height: 560px;
+    padding: 80px 24px;
+  }
+
+  .hero__welcome-container {
+    transform: translateY(-40px);
+  }
+}
+
+@media (max-width: 760px) {
+  .hero__section {
+    min-height: 460px;
+    padding: 64px 20px;
+  }
+
+  .hero__welcome-container {
+    transform: none;
+  }
+
+  .hero__title-1,
+  .hero__title-2,
+  .hero__title-desc {
+    height: auto;
+  }
+
+  .hero__title-2 {
+    font-size: clamp(36px, 11vw, 48px);
+    line-height: 1.05;
+  }
+
+  .hero__title-desc {
+    margin: 20px auto;
+    line-height: 1.5;
+  }
+
+  .hero__get-started-container {
+    min-height: 44px;
+  }
+}

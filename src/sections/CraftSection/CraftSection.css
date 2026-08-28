@@ -5,7 +5,7 @@
   width: 100%;
 }
 
-.craft-section__bg {
+.craft-section__container {
   width: 100%;
   background-color: var(--color-white);
   padding-bottom: 70px;
@@ -114,4 +114,102 @@
 .craft__description--line-break {
   display: block;
   text-align: center;
+}
+
+/* ------------------------------------------------------------------------------------------ */
+/* RESPONSIVE CRAFT SECTION */
+
+@media (max-width: 760px) {
+  .craft-section__bg {
+    padding: 0 20px 56px;
+  }
+
+  .collage {
+    width: calc(100% - 48px);
+  }
+
+  .photo-frame {
+    margin-top: 88px;
+    padding: 9px 9px 8px;
+  }
+
+  .photo-label-container {
+    height: 42px;
+  }
+
+  .photo-label {
+    font-size: 19px;
+  }
+
+  .photo-frame--left {
+    margin-right: -24px;
+    transform: rotate(-3deg) translateX(-20px) translateY(14px);
+  }
+
+  .photo-frame--right {
+    margin-left: -24px;
+    transform: rotate(3deg) translateX(20px) translateY(14px);
+  }
+
+  .craft__description {
+    margin-top: 40px;
+  }
+
+  .craft__description h2 {
+    font-size: 32px;
+  }
+
+  .craft__description p {
+    max-width: 620px;
+  }
+
+  .craft__description--line-break {
+    display: inline;
+  }
+}
+
+@media (max-width: 480px) {
+  .craft-section__bg {
+    padding-inline: 16px;
+  }
+
+  .collage {
+    width: 100%;
+  }
+
+  .photo-frame {
+    margin-top: 72px;
+    padding: 6px;
+  }
+
+  .photo-label-container {
+    height: 34px;
+  }
+
+  .photo-label {
+    font-size: 16px;
+  }
+
+  .photo-frame--left {
+    margin-right: -12px;
+    transform: rotate(-2deg) translateX(-8px) translateY(10px);
+  }
+
+  .photo-frame--right {
+    margin-left: -12px;
+    transform: rotate(2deg) translateX(8px) translateY(10px);
+  }
+
+  .craft__description h3 {
+    font-size: 18px;
+  }
+
+  .craft__description h2 {
+    font-size: 28px;
+    line-height: 1.15;
+  }
+
+  .craft__description p {
+    font-size: 17px;
+  }
 }

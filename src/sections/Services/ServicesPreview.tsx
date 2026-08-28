@@ -2,6 +2,7 @@ import "./ServicesPreview.css";
 import bartenderServingImg from "../../assets/images/bartender-serving-drink.jpg";
 import bartenderCorporateImg from "../../assets/images/bartender-social-event.jpg";
 import cocktailOmakaseIntroImg from "../../assets/images/green-drinks.jpg";
+import { Link } from "react-router";
 
 function ServicesPreview() {
   return (
@@ -38,9 +39,9 @@ function ServicesPreview() {
                   cocktails, fresh ingredients, and personalized service
                   designed around your event.
                 </p>
-                <a className="services-preview__booking-cta" href="/booking">
+                <Link to="/booking" className="services-preview__booking-cta">
                   Book Now
-                </a>
+                </Link>
               </div>
             </div>
           </div>
@@ -67,9 +68,9 @@ function ServicesPreview() {
                   experience worth remembering with polished bar service and
                   handcrafted cocktails tailored to your event.
                 </p>
-                <a className="services-preview__booking-cta" href="/booking">
+                <Link to="/booking" className="services-preview__booking-cta">
                   Book Now
-                </a>
+                </Link>
               </div>
             </div>
             <div className="services-preview__card-img-container">
@@ -108,9 +109,9 @@ function ServicesPreview() {
                   where each pour is thoughtfully crafted to surprise, delight,
                   and tell a story. <strong>Coming soon.</strong>
                 </p>
-                <a className="services-preview__booking-cta" href="/booking">
+                <Link to="/booking" className="services-preview__booking-cta">
                   Book Now
-                </a>
+                </Link>
               </div>
             </div>
           </div>

@@ -1,4 +1,5 @@
 import "./Contact.css";
+import { Link } from "react-router";
 
 function Contact() {
   return (
@@ -20,9 +21,9 @@ function Contact() {
           service made for the occasion.
         </p>
 
-        <a className="contact__booking-cta" href="/booking">
+        <Link to="/booking" className="contact__booking-cta">
           Book Your Event
-        </a>
+        </Link>
 
         <address className="contact__details">
           <div className="contact__detail">
@@ -33,7 +34,7 @@ function Contact() {
           </div>
           <div className="contact__detail">
             <span className="contact__detail-label">Phone</span>
-            <a href="tel:+19172244078">(917) 224-4078</a>
+            <a href="tel:+19172244078">+1 (917) 224-4078</a>
           </div>
         </address>
       </div>

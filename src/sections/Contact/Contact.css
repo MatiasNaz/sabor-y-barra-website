@@ -114,3 +114,25 @@
     gap: 24px;
   }
 }
+
+@media (max-width: 480px) {
+  .contact__section {
+    padding: 64px 16px;
+  }
+
+  .contact__title {
+    font-size: 30px;
+  }
+
+  .contact__eyebrow {
+    letter-spacing: 3px;
+  }
+
+  .contact__detail a {
+    overflow-wrap: anywhere;
+  }
+
+  .contact__booking-cta {
+    min-height: 44px;
+  }
+}

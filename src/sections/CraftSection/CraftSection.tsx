@@ -6,7 +6,7 @@ import mixingGlassImage from "../../assets/images/mixing-glass-pour.png";
 function CraftSection() {
   return (
     <section className="craft-section">
-      <div className="craft-section__bg">
+      <div className="craft-section__container">
         {/* start of photograph collage */}
         <div className="collage">
           {/* start of left photo frame */}

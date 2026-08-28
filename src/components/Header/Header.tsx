@@ -1,6 +1,7 @@
 import "./Header.css";
 import AnnouncementBar from "./AnnouncementBar";
 import logoImage from "../../assets/images/sabor-y-barra-logo-transparent-bg.png";
+import { Link } from "react-router";
 
 function Header() {
   return (
@@ -12,22 +13,22 @@ function Header() {
       <nav className="header__navbar-section">
         {/* brand logo container & image */}
         <div className="header__logo-container">
-          <a href="http://localhost:5173/">
+          <Link to="/">
             <img
               className="header__logo-img"
               src={logoImage}
               alt="sabor y barra logo"
             />
-          </a>
+          </Link>
         </div>
 
         {/* navigation bar & links */}
         <div className="navbar__list-container">
           <ul className="navbar__list">
             <li>
-              <a className="navbar__links" href="/">
+              <Link to="/" className="navbar__links">
                 Home
-              </a>
+              </Link>
             </li>
             <li>
               <a className="navbar__links" href="#services-intro">
@@ -55,12 +56,12 @@ function Header() {
               </a>
             </li>
             <li>
-              <a
+              <Link
+                to="/booking"
                 className="booking-cta navbar__links booking-text"
-                href="/booking"
               >
                 Book Your Event
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
