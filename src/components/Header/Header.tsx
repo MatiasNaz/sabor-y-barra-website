@@ -3,7 +3,12 @@ import AnnouncementBar from "./AnnouncementBar";
 import logoImage from "../../assets/images/sabor-y-barra-logo-transparent-bg.png";
 import { Link } from "react-router";
 
-function Header() {
+// define props for Header to accept
+type HeaderProps = {
+  showBookingButton?: boolean;
+};
+
+function Header({ showBookingButton = true }: HeaderProps) {
   return (
     <header id="home" className="header__section">
       {/* announcement marquee bar */}
@@ -31,7 +36,7 @@ function Header() {
               </Link>
             </li>
             <li>
-              <a className="navbar__links" href="#services-intro">
+              <a className="navbar__links" href="/#services-intro">
                 Services
               </a>
             </li>
@@ -46,7 +51,7 @@ function Header() {
               </a>
             </li>
             <li>
-              <a className="navbar__links" href="#reviews">
+              <a className="navbar__links" href="/#reviews">
                 Reviews
               </a>
             </li>
@@ -55,14 +60,16 @@ function Header() {
                 Contact
               </a>
             </li>
-            <li>
-              <Link
-                to="/booking"
-                className="booking-cta navbar__links booking-text"
-              >
-                Book Your Event
-              </Link>
-            </li>
+            {showBookingButton && (
+              <li>
+                <Link
+                  to="/booking"
+                  className="booking-cta navbar__links booking-text"
+                >
+                  Book Your Event
+                </Link>
+              </li>
+            )}
           </ul>
         </div>
       </nav>

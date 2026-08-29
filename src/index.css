@@ -26,6 +26,9 @@
   /* Optional supporting accent */
   --color-olive: #4f6738;
   --color-gold: #fbe1b5;
+  --color-dark-gold: #b78b2f;
+  --color-muted-gold: #8b7f45;
+  --color-text-area-gray: #757575;
 
   /* Utility */
   --color-white: #ffffff;

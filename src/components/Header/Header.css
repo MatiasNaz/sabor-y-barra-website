@@ -137,6 +137,14 @@
 /* ---------------------------------------------------------------------- */
 /* RESPONSIVE HEADER */
 
+@media (max-width: 1600px) {
+  .header__logo-img {
+    height: 100px;
+    position: relative;
+    top: 2px;
+  }
+}
+
 @media (max-width: 1050px) {
   .header__navbar-section {
     height: auto;
