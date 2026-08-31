@@ -1,40 +1,37 @@
 import { useState } from "react";
 import "./Testimonials.css";
+import { faGoogle } from "@fortawesome/free-brands-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import barkLogo from "../../assets/images/barkLogo.png";
+import { useTranslation } from "react-i18next";
 
 const testimonials = [
   {
     name: "- Tara",
-    message:
-      "I can't say enough great things about Lou! We recently hired him for a holiday party and our guests were blown away by him. His drinks were incredible (better than any private bartender we've experienced), he was charming, incredibly respectful, and so easy to work with. He made our bar feel like you were walking into a chic NYC bar with the most impressive drink garnishes (including some that were hand torched!). Our guests were raving about him all night and for days after the event. He was also very communicative leading up to our event and helped us curate a drink menu with his impressive cocktail suggestions. We would absolutely work with Lou again!",
+    messageKey: "testimonials.messages.tara",
   },
   {
     name: "- Sasha",
-    message:
-      "Hired Sabor y Barra for a corporate party in Philly. Lou was fantastic to work with, extremely professional, and outstanding customer service. Our clients and employees were impressed by the extensive menu selections and quality drinks. Lou went the extra mile and added an elevated flavor aesthetic. Looking forward to working with him again on future events.",
+    messageKey: "testimonials.messages.sasha",
   },
   {
     name: "- João",
-    message:
-      "We hired Louis for my sister's engagement party and it was simply perfect! He arrived well in advance, super organized, brought everything we agreed upon (and even some surprises that elevated the party). The service was impeccable: attentive, smiling, quick without being intrusive, and with a contagious energy that cheered everyone up. The drinks were always perfectly chilled — the signature cocktails he created especially for the couple were incredible and were the talk of the night! Several people asked for his business card afterwards.",
+    messageKey: "testimonials.messages.joao",
   },
   {
     name: "- Stephanie",
-    message:
-      "We found Lou through the Bark website, and from our very first interaction, we knew we were in great hands. He was professional, personable, and incredibly flexible when it came to drink selections. He really took the time to understand the vibe we were going for and, leading up to our event, helped us thoughtfully curate a cocktail menu that perfectly complemented our Valentine’s Day party theme. His creativity and attention to detail truly set him apart.",
+    messageKey: "testimonials.messages.stephanie",
   },
   {
     name: "- Cena",
-    message:
-      "I hired Lou to bartend my disco birthday party and let me just say, he was absolutely amazing! As a former hospitality industry professional, Lou is the best as they come! The menu planning process was very collaborative and he was accommodating to our guest needs. He even made new drinks on the fly, which my guests all enjoyed. I’m looking forward to hiring him for another event in the near future!",
+    messageKey: "testimonials.messages.cena",
   },
 ];
 
 function Testimonials() {
+  const { t } = useTranslation();
   // initialize useState index counter at 0
   const [currentIndex, setCurrentIndex] = useState(0);
-
-  // create derived value and store current index - start from 0
-  const currentTestimonial = testimonials[currentIndex];
 
   // manually update index handling for automatic sequencing
   // function handleNext() {
@@ -70,46 +67,108 @@ function Testimonials() {
         {/* start of carousel title */}
         <div className="testimonials__carousel-title">
           <div className="divider"></div>
-          <h2>what our clients are saying</h2>
+          <h2>{t("testimonials.title")}</h2>
           <div className="divider"></div>
         </div>
         {/* end of carousel title */}
 
         {/* start of carousel testimonials */}
         <div className="testimonials__carousel">
-          <blockquote className="testimonials__message">
-            <p>{currentTestimonial.message}</p>
-            <cite>{currentTestimonial.name}</cite>
-          </blockquote>
+          <div className="testimonials__message-viewport">
+            {testimonials.map((testimonial, index) => (
+              <blockquote
+                className={`testimonials__message ${
+                  index === currentIndex ? "testimonials__message--active" : ""
+                }`}
+                aria-hidden={index !== currentIndex}
+                key={`${testimonial.name}-${index}`}
+              >
+                <p>{t(testimonial.messageKey)}</p>
+                <cite>{testimonial.name}</cite>
+              </blockquote>
+            ))}
+          </div>
           {/* start of carousel buttons */}
           <div className="testimonials__button-container">
             <button
               className="testimonials__button"
               type="button"
+              aria-label={t("testimonials.dotLabel", { number: 1 })}
+              aria-pressed={currentIndex === 0}
               onClick={() => dotHandler(0)}
             ></button>
             <button
               className="testimonials__button"
               type="button"
+              aria-label={t("testimonials.dotLabel", { number: 2 })}
+              aria-pressed={currentIndex === 1}
               onClick={() => dotHandler(1)}
             ></button>
             <button
               className="testimonials__button"
               type="button"
+              aria-label={t("testimonials.dotLabel", { number: 3 })}
+              aria-pressed={currentIndex === 2}
               onClick={() => dotHandler(2)}
             ></button>
             <button
               className="testimonials__button"
               type="button"
+              aria-label={t("testimonials.dotLabel", { number: 4 })}
+              aria-pressed={currentIndex === 3}
               onClick={() => dotHandler(3)}
             ></button>
             <button
               className="testimonials__button"
               type="button"
+              aria-label={t("testimonials.dotLabel", { number: 5 })}
+              aria-pressed={currentIndex === 4}
               onClick={() => dotHandler(4)}
             ></button>
           </div>
           {/* end of carousel buttons */}
+
+          {/* start of additional reviews */}
+          <div className="testimonials__additional-reviews-container">
+            <div className="testimonials__additional-reviews-header-container">
+              <h4 className="testimonials__additional-reviews-header">
+                {t("testimonials.additionalReviews")}
+              </h4>
+            </div>
+
+            <div className="testimonials__additional-reviews">
+              <div className="testimonials__additional-reviews-btns">
+                <a
+                  href="https://www.bark.com/en/us/b/sabor-y-barra/ldBbL9/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label={t("testimonials.barkLabel")}
+                >
+                  {/* create CSS mask for bark logo styling as a workaround to png file */}
+                  <span
+                    className="testimonials__bark-logo"
+                    style={{
+                      WebkitMaskImage: `url(${barkLogo})`,
+                      maskImage: `url(${barkLogo})`,
+                    }}
+                  />
+                </a>
+
+                <a
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label={t("testimonials.googleLabel")}
+                  href="https://www.google.com/search?sca_esv=74ed7c7b1c9c0609&hl=en&authuser=0&sxsrf=APpeQnv0XJGyYh-BwYEXhoU0P10YTCIjkw:1787587472158&kgmid=/g/11xzpplwmp&q=Sabor+y+Barra&shem=dlvs1,epsd1,ltae,rimspwouoe&shndl=30&source=sh/x/loc/uni/m1/1&kgs=e51121bdfcef82d5"
+                >
+                  <FontAwesomeIcon
+                    className="testimonials__google-logo"
+                    icon={faGoogle}
+                  />
+                </a>
+              </div>
+            </div>
+          </div>
+          {/* end of additional reviews */}
         </div>
         {/* end of carousel testimonials */}
       </div>

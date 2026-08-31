@@ -173,6 +173,13 @@
   font-weight: 600;
 }
 
+.booking__success {
+  margin: 0;
+  color: var(--color-olive);
+  font-weight: 600;
+  text-align: center;
+}
+
 .booking__form label {
   display: grid;
   grid-template-columns: auto 220px 1fr;
@@ -196,10 +203,15 @@
   outline: none;
 }
 
+.booking__form select {
+  padding-right: 2px;
+}
+
 .booking__form textarea {
   min-height: 92px;
   padding-top: 14px;
   resize: vertical;
+  resize: none;
 }
 
 .booking__form input:focus,

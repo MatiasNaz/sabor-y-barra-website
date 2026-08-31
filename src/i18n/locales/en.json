@@ -1,0 +1,149 @@
+{
+  "meta": {
+    "title": "Sabor Y Barra - Bartending Services"
+  },
+  "common": {
+    "brandLogoAlt": "Sabor Y Barra logo",
+    "bookEvent": "Book Your Event",
+    "bookNow": "Book Now"
+  },
+  "language": {
+    "selectorLabel": "Choose language",
+    "menuLabel": "Language options",
+    "english": "English",
+    "spanish": "Español"
+  },
+  "announcement": {
+    "privateCorporate": "Private & Corporate Events",
+    "elevatedExperiences": "Elevated Bar Experiences",
+    "localDestination": "Local & Destination Events"
+  },
+  "nav": {
+    "label": "Primary navigation",
+    "home": "Home",
+    "services": "Services",
+    "signatureMenu": "Signature Menu",
+    "about": "About",
+    "reviews": "Reviews",
+    "contact": "Contact"
+  },
+  "hero": {
+    "welcome": "welcome to",
+    "description": "elevated bar experiences for every occasion",
+    "cta": "get started"
+  },
+  "services": {
+    "title": "our services",
+    "private": {
+      "title": "private events",
+      "subtitle": "Elevated cocktails crafted for your occasion. Unforgettable gatherings.",
+      "description": "Bring the bar experience to your celebration with handcrafted cocktails, fresh ingredients, and personalized service designed around your event.",
+      "imageAlt": "Bartender serving a drink"
+    },
+    "corporate": {
+      "title": "corporate events",
+      "subtitleLead": "Impress your guests. Elevate your brand.",
+      "subtitleEnd": "We'll handle the bar.",
+      "description": "From client receptions to company celebrations, deliver an experience worth remembering with polished bar service and handcrafted cocktails tailored to your event.",
+      "imageAlt": "Bartender speaking with event guests"
+    },
+    "omakase": {
+      "title": "cocktail omakase",
+      "subtitle": "Your taste. Our creativity. A cocktail experience unlike any other.",
+      "description": "A guided cocktail experience shaped around your preferences, where each pour is thoughtfully crafted to surprise, delight, and tell a story.",
+      "comingSoon": "Coming soon.",
+      "imageAlt": "Bartender serving a cocktail"
+    }
+  },
+  "craft": {
+    "eyebrow": "our craft",
+    "title": "crafted from the first pour",
+    "descriptionLead": "From house-made syrups and fresh ingredients to thoughtfully",
+    "descriptionEnd": "selected spirits, every cocktail is crafted with depth, balance, and intention.",
+    "leftImageAlt": "House-made citrus cordial with fresh ingredients",
+    "centerImageAlt": "Cocktail ingredients being prepared",
+    "rightImageAlt": "Cocktail being poured into a mixing glass"
+  },
+  "testimonials": {
+    "title": "what our clients are saying",
+    "additionalReviews": "additional reviews:",
+    "dotLabel": "Show testimonial {{number}}",
+    "barkLabel": "View Sabor Y Barra reviews on Bark",
+    "googleLabel": "View Sabor Y Barra reviews on Google",
+    "messages": {
+      "tara": "I can't say enough great things about Lou! We recently hired him for a holiday party and our guests were blown away by him. His drinks were incredible (better than any private bartender we've experienced), he was charming, incredibly respectful, and so easy to work with. He made our bar feel like you were walking into a chic NYC bar with the most impressive drink garnishes (including some that were hand torched!). Our guests were raving about him all night and for days after the event. He was also very communicative leading up to our event and helped us curate a drink menu with his impressive cocktail suggestions. We would absolutely work with Lou again!",
+      "sasha": "Hired Sabor Y Barra for a corporate party in Philly. Lou was fantastic to work with, extremely professional, and provided outstanding customer service. Our clients and employees were impressed by the extensive menu selections and quality drinks. Lou went the extra mile and added an elevated flavor aesthetic. Looking forward to working with him again on future events.",
+      "joao": "We hired Louis for my sister's engagement party and it was simply perfect! He arrived well in advance, super organized, brought everything we agreed upon (and even some surprises that elevated the party). The service was impeccable: attentive, smiling, quick without being intrusive, and with a contagious energy that cheered everyone up. The drinks were always perfectly chilled—the signature cocktails he created especially for the couple were incredible and were the talk of the night! Several people asked for his business card afterwards.",
+      "stephanie": "We found Lou through the Bark website, and from our very first interaction, we knew we were in great hands. He was professional, personable, and incredibly flexible when it came to drink selections. He really took the time to understand the vibe we were going for and, leading up to our event, helped us thoughtfully curate a cocktail menu that perfectly complemented our Valentine’s Day party theme. His creativity and attention to detail truly set him apart.",
+      "cena": "I hired Lou to bartend my disco birthday party and let me just say, he was absolutely amazing! As a former hospitality industry professional, Lou is the best as they come! The menu planning process was very collaborative and he was accommodating to our guest needs. He even made new drinks on the fly, which my guests all enjoyed. I’m looking forward to hiring him for another event in the near future!"
+    }
+  },
+  "contact": {
+    "eyebrow": "Contact Us",
+    "title": "Let's raise the bar for your next event.",
+    "description": "Tell us what you're celebrating, where you're gathering, and how you want the experience to feel. We'll help shape a bar service made for the occasion.",
+    "email": "Email",
+    "phone": "Phone"
+  },
+  "footer": {
+    "homeLabel": "Sabor Y Barra home",
+    "navigationLabel": "Footer navigation",
+    "explore": "Explore",
+    "follow": "follow us",
+    "instagramLabel": "View Sabor Y Barra's Instagram profile",
+    "facebookLabel": "View Sabor Y Barra's Facebook profile",
+    "copyright": "© 2026 Sabor Y Barra"
+  },
+  "booking": {
+    "eyebrow": "book your event",
+    "title": "let's create something unforgettable.",
+    "introLead": "Fill out the form below and let us craft the perfect",
+    "introEnd": "bar experience for you and your guests.",
+    "imageAlt": "Craft cocktail prepared by Sabor Y Barra",
+    "panelTitle": "Tell Us About Your Event",
+    "panelDescriptionLead": "The details make the experience.",
+    "panelDescriptionMiddle": "Tell us what you're envisioning for",
+    "panelDescriptionEnd": "your celebration.",
+    "requiredNote": "All fields are required.",
+    "time": {
+      "am": "{{time}} AM",
+      "pm": "{{time}} PM"
+    },
+    "fields": {
+      "eventDate": "1. Event date?",
+      "eventLocation": "2. Event location?",
+      "eventLocationPlaceholder": "Street address, city, state, zip code",
+      "eventTime": "3. Event time?",
+      "eventTimePlaceholder": "Select bar service start time",
+      "setupNote": "Setup begins at least 90 minutes prior.",
+      "guestCount": "4. Anticipated headcount?",
+      "guestCountPlaceholder": "Enter approx. number of guests (1–400)",
+      "dressCode": "5. Dress Code",
+      "drinkPreferences": "6. Drink Preferences",
+      "drinkPreferencesPlaceholder": "Share any preferences, spirits, or must-haves...",
+      "menuDesign": "7. Menu Design",
+      "menuDesignPlaceholder": "Share your theme, colors, or design ideas...",
+      "packageSelection": "8. Package Selection"
+    },
+    "dressCode": {
+      "placeholder": "Select dress code",
+      "casual": "Casual",
+      "cocktail": "Cocktail Attire",
+      "semiFormal": "Semi-Formal",
+      "formal": "Formal",
+      "blackTie": "Black Tie",
+      "noPreference": "No Preference"
+    },
+    "packages": {
+      "placeholder": "Select a package",
+      "bartending": "Bartending Service",
+      "bartendingCatering": "Bartending + Catering",
+      "bartendingDj": "Bartending + DJ",
+      "bartendingDjContent": "Bartending + DJ + Photography / Content Team",
+      "complete": "Complete Package — All Services Included"
+    },
+    "submit": "SUBMIT EVENT DETAILS",
+    "privacy": "Your information is private and will only be used to respond to your inquiry.",
+    "success": "Thank you! Your event details were submitted successfully. We'll be in touch soon."
+  }
+}

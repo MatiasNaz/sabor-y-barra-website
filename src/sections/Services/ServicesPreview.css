@@ -175,6 +175,31 @@
   display: block;
 }
 
+@media (min-width: 761px) {
+  html[lang="es"] .services-preview__services-intro-card--corporate,
+  html[lang="es"]
+    .services-preview__services-intro-card--corporate
+    .services-preview__services-card-container {
+    height: auto;
+    min-height: 500px;
+  }
+
+  html[lang="es"]
+    .services-preview__services-intro-card--corporate
+    .services-preview__card-img-container,
+  html[lang="es"]
+    .services-preview__services-intro-card--corporate
+    .services-preview__card-description-container {
+    height: auto;
+  }
+
+  html[lang="es"]
+    .services-preview__services-intro-card--corporate
+    .services-preview__card-description {
+    padding-block: 60px 40px;
+  }
+}
+
 /* ------------------------------------------------------------------------------------------ */
 
 /* OUR SERVICES INTRO CARD 3 */

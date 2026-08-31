@@ -12,8 +12,80 @@ import {
   Palette,
   BriefcaseBusiness,
 } from "lucide-react";
+import { useState, type SubmitEvent } from "react";
+import { useTranslation } from "react-i18next";
+
+const eventTimes = [
+  { value: "10:00", time: "10:00", period: "am" },
+  { value: "10:30", time: "10:30", period: "am" },
+  { value: "11:00", time: "11:00", period: "am" },
+  { value: "11:30", time: "11:30", period: "am" },
+  { value: "12:00", time: "12:00", period: "pm" },
+  { value: "12:30", time: "12:30", period: "pm" },
+  { value: "13:00", time: "1:00", period: "pm" },
+  { value: "13:30", time: "1:30", period: "pm" },
+  { value: "14:00", time: "2:00", period: "pm" },
+  { value: "14:30", time: "2:30", period: "pm" },
+  { value: "15:00", time: "3:00", period: "pm" },
+  { value: "15:30", time: "3:30", period: "pm" },
+  { value: "16:00", time: "4:00", period: "pm" },
+  { value: "16:30", time: "4:30", period: "pm" },
+  { value: "17:00", time: "5:00", period: "pm" },
+  { value: "17:30", time: "5:30", period: "pm" },
+  { value: "18:00", time: "6:00", period: "pm" },
+  { value: "18:30", time: "6:30", period: "pm" },
+  { value: "19:00", time: "7:00", period: "pm" },
+  { value: "19:30", time: "7:30", period: "pm" },
+  { value: "20:00", time: "8:00", period: "pm" },
+  { value: "20:30", time: "8:30", period: "pm" },
+  { value: "21:00", time: "9:00", period: "pm" },
+  { value: "21:30", time: "9:30", period: "pm" },
+  { value: "22:00", time: "10:00", period: "pm" },
+] as const;
 
 function Booking() {
+  const { t } = useTranslation();
+  // import Web3Forms access key from vite environment variables and store in a local variable
+  const accessKey = import.meta.env.VITE_WEB3FORMS_ACCESS_KEY;
+
+  // create a piece of state called submitted & set to false, and use setSubmitted to change it
+  const [submitted, setSubmitted] = useState(false);
+
+  // create an asynchronous function that prevents default behavior for form submit button
+  // specify event form submission type
+  const handleSubmit = async (event: SubmitEvent<HTMLFormElement>) => {
+    event.preventDefault();
+
+    /* create a variable formData that creates a new FormData object to grab data inputted 
+    from the form that was just submitted
+    */
+    const formData = new FormData(event.currentTarget);
+
+    // // test print the key-value entries from the formData object
+    // console.log(Object.fromEntries(formData));
+
+    // add one more field called access_key containing the Web3Forms accessKey to formData
+    formData.append("access_key", accessKey);
+
+    /* send a POST server request to Web3Forms to process my form's data, wait for a response,
+    and then store the response info */
+    const response = await fetch("https://api.web3forms.com/submit", {
+      method: "POST",
+      body: formData,
+    });
+
+    // take the response body, and parse it as JSON, store it in result
+    const result = await response.json();
+
+    // test and print fetch POST request for form submission
+    // console.log(result);
+
+    // if the API response says the submission succeeded, update React state.
+    if (result.success) {
+      setSubmitted(true);
+    }
+  };
+
   return (
     <>
       <Header showBookingButton={false} />
@@ -22,15 +94,13 @@ function Booking() {
           <div className="booking-section__container">
             {/* Booking Intro */}
             <div className="booking__heading-container">
-              <h4 className="booking__eyebrow">book your event</h4>
+              <h4 className="booking__eyebrow">{t("booking.eyebrow")}</h4>
 
-              <h1 className="booking__header">
-                let's create something unforgettable.
-              </h1>
+              <h1 className="booking__header">{t("booking.title")}</h1>
 
               <p className="booking__supportive-text">
-                Fill out the form below and let us craft the perfect <br />
-                bar experience for you and your guests.
+                {t("booking.introLead")} <br />
+                {t("booking.introEnd")}
               </p>
             </div>
 
@@ -41,7 +111,7 @@ function Booking() {
                 <img
                   className="booking__visual-image"
                   src={bookingImage}
-                  alt="Craft cocktail prepared by Sabor Y Barra"
+                  alt={t("booking.imageAlt")}
                 />
 
                 <div className="booking__visual-content">
@@ -50,163 +120,168 @@ function Booking() {
                     <span className="booking__step-line"></span>
                   </div>
 
-                  <h2>Tell Us About Your Event</h2>
+                  <h2>{t("booking.panelTitle")}</h2>
 
                   <span className="booking__visual-line"></span>
 
                   <p>
-                    The details make the experience. <br />
-                    Tell us what you&apos;re envisioning for <br />
-                    your celebration.
+                    {t("booking.panelDescriptionLead")} <br />
+                    {t("booking.panelDescriptionMiddle")} <br />
+                    {t("booking.panelDescriptionEnd")}
                   </p>
                 </div>
               </div>
               {/* end of left image */}
 
               {/* start of right form */}
-              <form className="booking__form">
+              <form className="booking__form" onSubmit={handleSubmit}>
                 <p className="form-note">
-                  All fields are required. <span className="asterisk"> *</span>
+                  {t("booking.requiredNote")}{" "}
+                  <span className="asterisk">*</span>
                 </p>
+                {submitted && (
+                  <p className="booking__success" role="status">
+                    {t("booking.success")}
+                  </p>
+                )}
                 <label>
                   <CalendarDays size={21} strokeWidth={1.7} />
-                  <span>1. Event date?</span>
-                  <input type="date" required />
+                  <span>{t("booking.fields.eventDate")}</span>
+                  <input name="eventDate" type="date" required />
                 </label>
 
                 <label>
                   <MapPin size={21} strokeWidth={1.7} />
-                  <span>2. Event location?</span>
+                  <span>{t("booking.fields.eventLocation")}</span>
                   <input
+                    name="eventLocation"
                     type="text"
                     required
-                    placeholder="Street address, city, state, zip code"
+                    placeholder={t("booking.fields.eventLocationPlaceholder")}
                   />
                 </label>
 
                 <label>
                   <Clock3 size={21} strokeWidth={1.7} />
 
-                  <span>3. Event time?</span>
+                  <span>{t("booking.fields.eventTime")}</span>
 
                   <div className="booking__field-input">
                     <select name="eventTime" defaultValue="" required>
                       <option value="" disabled>
-                        Select bar service start time
+                        {t("booking.fields.eventTimePlaceholder")}
                       </option>
 
-                      <option value="10:00">10:00 AM</option>
-                      <option value="10:30">10:30 AM</option>
-                      <option value="11:00">11:00 AM</option>
-                      <option value="11:30">11:30 AM</option>
-                      <option value="12:00">12:00 PM</option>
-                      <option value="12:30">12:30 PM</option>
-                      <option value="13:00">1:00 PM</option>
-                      <option value="13:30">1:30 PM</option>
-                      <option value="14:00">2:00 PM</option>
-                      <option value="14:30">2:30 PM</option>
-                      <option value="15:00">3:00 PM</option>
-                      <option value="15:30">3:30 PM</option>
-                      <option value="16:00">4:00 PM</option>
-                      <option value="16:30">4:30 PM</option>
-                      <option value="17:00">5:00 PM</option>
-                      <option value="17:30">5:30 PM</option>
-                      <option value="18:00">6:00 PM</option>
-                      <option value="18:30">6:30 PM</option>
-                      <option value="19:00">7:00 PM</option>
-                      <option value="19:30">7:30 PM</option>
-                      <option value="20:00">8:00 PM</option>
-                      <option value="20:30">8:30 PM</option>
-                      <option value="21:00">9:00 PM</option>
-                      <option value="21:30">9:30 PM</option>
-                      <option value="22:00">10:00 PM</option>
+                      {eventTimes.map(({ value, time, period }) => (
+                        <option value={value} key={value}>
+                          {t(`booking.time.${period}`, { time })}
+                        </option>
+                      ))}
                     </select>
-                    <small>Setup begins 90 minutes prior.</small>
+                    <small>{t("booking.fields.setupNote")}</small>
                   </div>
                 </label>
 
                 <label>
                   <UsersRound size={21} strokeWidth={1.7} />
-                  <span>4. Anticipated headcount?</span>
+                  <span>{t("booking.fields.guestCount")}</span>
                   <input
+                    name="guestCount"
                     type="number"
                     min="0"
                     max="400"
                     step="1"
                     required
-                    placeholder="Enter approx. number of guests (1-400)"
+                    placeholder={t("booking.fields.guestCountPlaceholder")}
                   />
                 </label>
 
                 <label>
                   <Shirt size={21} strokeWidth={1.7} />
-                  <span>5. Dress Code</span>
-                  <select defaultValue="" required>
+                  <span>{t("booking.fields.dressCode")}</span>
+                  <select name="dressCode" defaultValue="" required>
                     <option value="" disabled>
-                      Select dress code
+                      {t("booking.dressCode.placeholder")}
                     </option>
-                    <option value="casual">Casual</option>
-                    <option value="cocktail">Cocktail Attire</option>
-                    <option value="semi-formal">Semi-Formal</option>
-                    <option value="formal">Formal</option>
-                    <option value="black-tie">Black Tie</option>
-                    <option value="no-preference">No Preference</option>
+                    <option value="casual">
+                      {t("booking.dressCode.casual")}
+                    </option>
+                    <option value="cocktail">
+                      {t("booking.dressCode.cocktail")}
+                    </option>
+                    <option value="semi-formal">
+                      {t("booking.dressCode.semiFormal")}
+                    </option>
+                    <option value="formal">
+                      {t("booking.dressCode.formal")}
+                    </option>
+                    <option value="black-tie">
+                      {t("booking.dressCode.blackTie")}
+                    </option>
+                    <option value="no-preference">
+                      {t("booking.dressCode.noPreference")}
+                    </option>
                   </select>
                 </label>
 
                 <label>
                   <Martini size={21} strokeWidth={1.7} />
-                  <span>6. Drink Preferences</span>
+                  <span>{t("booking.fields.drinkPreferences")}</span>
                   <textarea
+                    name="drinkPreferences"
                     required
-                    placeholder="Share any preferences, spirits, or must-haves..."
+                    placeholder={t(
+                      "booking.fields.drinkPreferencesPlaceholder",
+                    )}
                   />
                 </label>
 
                 <label>
                   <Palette size={21} strokeWidth={1.7} />
-                  <span>7. Menu Design</span>
+                  <span>{t("booking.fields.menuDesign")}</span>
                   <textarea
+                    name="menuDesign"
                     required
-                    placeholder="Share your theme, colors, or design ideas..."
+                    placeholder={t("booking.fields.menuDesignPlaceholder")}
                   />
                 </label>
 
                 <label>
                   <BriefcaseBusiness size={21} strokeWidth={1.7} />
-                  <span>8. Package Selection</span>
-                  <select defaultValue="" required>
+                  <span>{t("booking.fields.packageSelection")}</span>
+                  <select name="packageSelection" defaultValue="" required>
                     <option value="" disabled>
-                      Select a package
+                      {t("booking.packages.placeholder")}
                     </option>
 
-                    <option value="bartending">Bartending Service</option>
+                    <option value="bartending">
+                      {t("booking.packages.bartending")}
+                    </option>
 
                     <option value="bartending-catering">
-                      Bartending + Catering
+                      {t("booking.packages.bartendingCatering")}
                     </option>
 
-                    <option value="bartending-dj">Bartending + DJ</option>
+                    <option value="bartending-dj">
+                      {t("booking.packages.bartendingDj")}
+                    </option>
 
                     <option value="bartending-dj-content">
-                      Bartending + DJ + Photography / Content Team
+                      {t("booking.packages.bartendingDjContent")}
                     </option>
 
                     <option value="complete">
-                      Complete Package — All Services Included
+                      {t("booking.packages.complete")}
                     </option>
                   </select>
                 </label>
 
                 <button type="submit" className="booking__submit">
-                  SUBMIT EVENT DETAILS
+                  {t("booking.submit")}
                   <span>→</span>
                 </button>
 
-                <p className="booking__privacy">
-                  Your information is private and will only be used to respond
-                  to your inquiry.
-                </p>
+                <p className="booking__privacy">{t("booking.privacy")}</p>
               </form>
               {/* end of right form */}
             </div>

@@ -3,14 +3,17 @@ import bartenderServingImg from "../../assets/images/bartender-serving-drink.jpg
 import bartenderCorporateImg from "../../assets/images/bartender-social-event.jpg";
 import cocktailOmakaseIntroImg from "../../assets/images/green-drinks.jpg";
 import { Link } from "react-router";
+import { useTranslation } from "react-i18next";
 
 function ServicesPreview() {
+  const { t } = useTranslation();
+
   return (
     <section id="services-intro" className="services-preview__section">
       <div className="services-preview__bg-container">
         <div className="services-preview__services-intro-heading">
           <h2 className="services-preview__services-intro-text">
-            our services
+            {t("services.title")}
           </h2>
         </div>
 
@@ -21,26 +24,23 @@ function ServicesPreview() {
               <img
                 className="services-preview__card-img"
                 src={bartenderServingImg}
-                alt="bartender serving drink"
+                alt={t("services.private.imageAlt")}
               />
             </div>
             <div className="services-preview__card-description-container card-1-container">
               <div className="services-preview__card-description">
                 <h3 className="services-preview__card-description-title">
-                  private events
+                  {t("services.private.title")}
                 </h3>
                 <div className="services-preview-card__divider"></div>
                 <h4 className="services-preview__card-description-sub-title">
-                  Elevated cocktails crafted for your occasion. Unforgettable
-                  gatherings.
+                  {t("services.private.subtitle")}
                 </h4>
                 <p className="services-preview__card-description-body-text">
-                  Bring the bar experience to your celebration with handcrafted
-                  cocktails, fresh ingredients, and personalized service
-                  designed around your event.
+                  {t("services.private.description")}
                 </p>
                 <Link to="/booking" className="services-preview__booking-cta">
-                  Book Now
+                  {t("common.bookNow")}
                 </Link>
               </div>
             </div>
@@ -49,27 +49,25 @@ function ServicesPreview() {
         {/* end of services intro card 1 */}
 
         {/* start of services intro card 2 */}
-        <div className="services-preview__services-intro-card">
+        <div className="services-preview__services-intro-card services-preview__services-intro-card--corporate">
           <div className="services-preview__services-card-container">
             <div className="services-preview__card-description-container card-2-container">
               <div className="services-preview__card-description">
                 <h3 className="services-preview__card-description-title">
-                  corporate events
+                  {t("services.corporate.title")}
                 </h3>
                 <div className="services-preview-card__divider"></div>
                 <h4 className="services-preview__card-description-sub-title">
-                  Impress your guests. Elevate your brand.
+                  {t("services.corporate.subtitleLead")}
                   <span className="corporate-events-card__line-break">
-                    We'll handle the bar.
+                    {t("services.corporate.subtitleEnd")}
                   </span>
                 </h4>
                 <p className="services-preview__card-description-body-text">
-                  From client receptions to company celebrations, deliver an
-                  experience worth remembering with polished bar service and
-                  handcrafted cocktails tailored to your event.
+                  {t("services.corporate.description")}
                 </p>
                 <Link to="/booking" className="services-preview__booking-cta">
-                  Book Now
+                  {t("common.bookNow")}
                 </Link>
               </div>
             </div>
@@ -77,7 +75,7 @@ function ServicesPreview() {
               <img
                 className="services-preview__card-img"
                 src={bartenderCorporateImg}
-                alt="bartender talking with event guests"
+                alt={t("services.corporate.imageAlt")}
               />
             </div>
           </div>
@@ -91,26 +89,24 @@ function ServicesPreview() {
               <img
                 className="services-preview__card-img"
                 src={cocktailOmakaseIntroImg}
-                alt="bartender serving drink"
+                alt={t("services.omakase.imageAlt")}
               />
             </div>
             <div className="services-preview__card-description-container card-3-container">
               <div className="services-preview__card-description">
                 <h3 className="services-preview__card-description-title">
-                  cocktail omakase
+                  {t("services.omakase.title")}
                 </h3>
                 <div className="services-preview-card__divider"></div>
                 <h4 className="services-preview__card-description-sub-title">
-                  Your taste. Our creativity. A cocktail experience unlike any
-                  other.
+                  {t("services.omakase.subtitle")}
                 </h4>
                 <p className="services-preview__card-description-body-text">
-                  A guided cocktail experience shaped around your preferences,
-                  where each pour is thoughtfully crafted to surprise, delight,
-                  and tell a story. <strong>Coming soon.</strong>
+                  {t("services.omakase.description")} {" "}
+                  <strong>{t("services.omakase.comingSoon")}</strong>
                 </p>
                 <Link to="/booking" className="services-preview__booking-cta">
-                  Book Now
+                  {t("common.bookNow")}
                 </Link>
               </div>
             </div>

@@ -1,0 +1,149 @@
+{
+  "meta": {
+    "title": "Sabor Y Barra - Servicios de Bartending"
+  },
+  "common": {
+    "brandLogoAlt": "Logo de Sabor Y Barra",
+    "bookEvent": "Reserva tu evento",
+    "bookNow": "Reserva ahora"
+  },
+  "language": {
+    "selectorLabel": "Elegir idioma",
+    "menuLabel": "Opciones de idioma",
+    "english": "English",
+    "spanish": "Español"
+  },
+  "announcement": {
+    "privateCorporate": "Eventos privados y corporativos",
+    "elevatedExperiences": "Experiencias de barra excepcionales",
+    "localDestination": "Eventos locales y de destino"
+  },
+  "nav": {
+    "label": "Navegación principal",
+    "home": "Inicio",
+    "services": "Servicios",
+    "signatureMenu": "Menú de autor",
+    "about": "Nosotros",
+    "reviews": "Reseñas",
+    "contact": "Contacto"
+  },
+  "hero": {
+    "welcome": "bienvenidos a",
+    "description": "experiencias de barra excepcionales para cada ocasión",
+    "cta": "comenzar"
+  },
+  "services": {
+    "title": "nuestros servicios",
+    "private": {
+      "title": "eventos privados",
+      "subtitle": "Cócteles elevados creados para tu ocasión. Encuentros inolvidables.",
+      "description": "Lleva la experiencia de una barra excepcional a tu celebración con cócteles artesanales, ingredientes frescos y un servicio personalizado para tu evento.",
+      "imageAlt": "Bartender sirviendo una bebida"
+    },
+    "corporate": {
+      "title": "eventos corporativos",
+      "subtitleLead": "Impresiona a tus invitados. Eleva tu marca.",
+      "subtitleEnd": "Nosotros nos encargamos de la barra.",
+      "description": "Desde recepciones para clientes hasta celebraciones de empresa, crea una experiencia memorable con un servicio de barra impecable y cócteles artesanales diseñados para tu evento.",
+      "imageAlt": "Bartender conversando con invitados de un evento"
+    },
+    "omakase": {
+      "title": "omakase de cócteles",
+      "subtitle": "Tu gusto. Nuestra creatividad. Una experiencia de cócteles como ninguna otra.",
+      "description": "Una experiencia guiada de cócteles inspirada en tus preferencias, donde cada bebida se crea cuidadosamente para sorprender, deleitar y contar una historia.",
+      "comingSoon": "Próximamente.",
+      "imageAlt": "Bartender sirviendo un cóctel"
+    }
+  },
+  "craft": {
+    "eyebrow": "nuestro arte",
+    "title": "artesanía desde la primera mezcla",
+    "descriptionLead": "Desde siropes hechos en casa e ingredientes frescos hasta destilados",
+    "descriptionEnd": "cuidadosamente seleccionados, cada cóctel se crea con profundidad, equilibrio e intención.",
+    "leftImageAlt": "Cordial cítrico hecho en casa con ingredientes frescos",
+    "centerImageAlt": "Preparación de ingredientes para un cóctel",
+    "rightImageAlt": "Cóctel vertiéndose en un vaso mezclador"
+  },
+  "testimonials": {
+    "title": "lo que dicen nuestros clientes",
+    "additionalReviews": "reseñas adicionales:",
+    "dotLabel": "Mostrar testimonio {{number}}",
+    "barkLabel": "Ver las reseñas de Sabor Y Barra en Bark",
+    "googleLabel": "Ver las reseñas de Sabor Y Barra en Google",
+    "messages": {
+      "tara": "¡No tengo suficientes palabras buenas para describir a Lou! Lo contratamos recientemente para una fiesta navideña y nuestros invitados quedaron impresionados. Sus bebidas fueron increíbles (mejores que las de cualquier bartender privado que hayamos contratado), fue encantador, sumamente respetuoso y muy fácil de tratar. Hizo que nuestra barra se sintiera como entrar a un elegante bar de Nueva York, con decoraciones impresionantes para las bebidas (¡incluso algunas flameadas a mano!). Nuestros invitados hablaron maravillas de él toda la noche y durante días después del evento. También mantuvo una excelente comunicación antes de la celebración y nos ayudó a crear un menú con sus magníficas sugerencias de cócteles. ¡Definitivamente volveríamos a trabajar con Lou!",
+      "sasha": "Contratamos a Sabor Y Barra para una fiesta corporativa en Filadelfia. Fue fantástico trabajar con Lou: sumamente profesional y con un servicio al cliente excepcional. Nuestros clientes y empleados quedaron impresionados con la variedad del menú y la calidad de las bebidas. Lou hizo un esfuerzo adicional y aportó una experiencia de sabores elevada. Esperamos volver a trabajar con él en futuros eventos.",
+      "joao": "Contratamos a Louis para la fiesta de compromiso de mi hermana y todo fue sencillamente perfecto. Llegó con mucha anticipación, muy organizado, trajo todo lo acordado e incluso algunas sorpresas que elevaron la celebración. El servicio fue impecable: atento, sonriente, rápido sin ser intrusivo y con una energía contagiosa que animó a todos. Las bebidas siempre estuvieron perfectamente frías, y los cócteles de autor que creó especialmente para la pareja fueron increíbles y se convirtieron en el tema de conversación de la noche. Después, varias personas le pidieron su tarjeta.",
+      "stephanie": "Encontramos a Lou a través de Bark y, desde nuestra primera conversación, supimos que estábamos en excelentes manos. Fue profesional, amable y sumamente flexible con la selección de bebidas. Se tomó el tiempo de comprender el ambiente que queríamos crear y, antes del evento, nos ayudó a diseñar cuidadosamente un menú de cócteles que complementó a la perfección el tema de nuestra fiesta de San Valentín. Su creatividad y atención al detalle realmente lo distinguen.",
+      "cena": "Contraté a Lou como bartender para mi fiesta de cumpleaños con temática disco y fue absolutamente increíble. Como exprofesional de la industria de la hospitalidad, puedo decir que Lou es de los mejores. La planificación del menú fue muy colaborativa y se adaptó a las necesidades de nuestros invitados. Incluso creó bebidas nuevas en el momento, y todos las disfrutaron. Espero volver a contratarlo para otro evento muy pronto."
+    }
+  },
+  "contact": {
+    "eyebrow": "Contáctanos",
+    "title": "Elevemos la barra para tu próximo evento.",
+    "description": "Cuéntanos qué celebras, dónde será el encuentro y cómo quieres que se sienta la experiencia. Te ayudaremos a diseñar un servicio de barra perfecto para la ocasión.",
+    "email": "Correo electrónico",
+    "phone": "Teléfono"
+  },
+  "footer": {
+    "homeLabel": "Página de inicio de Sabor Y Barra",
+    "navigationLabel": "Navegación del pie de página",
+    "explore": "Explora",
+    "follow": "síguenos",
+    "instagramLabel": "Ver el perfil de Instagram de Sabor Y Barra",
+    "facebookLabel": "Ver el perfil de Facebook de Sabor Y Barra",
+    "copyright": "© 2026 Sabor Y Barra"
+  },
+  "booking": {
+    "eyebrow": "reserva tu evento",
+    "title": "creemos algo inolvidable.",
+    "introLead": "Completa el formulario y permítenos crear la experiencia",
+    "introEnd": "de barra perfecta para ti y tus invitados.",
+    "imageAlt": "Cóctel artesanal preparado por Sabor Y Barra",
+    "panelTitle": "Cuéntanos sobre tu evento",
+    "panelDescriptionLead": "Los detalles crean la experiencia.",
+    "panelDescriptionMiddle": "Cuéntanos cómo imaginas",
+    "panelDescriptionEnd": "tu celebración.",
+    "requiredNote": "Todos los campos son obligatorios.",
+    "time": {
+      "am": "{{time}} a. m.",
+      "pm": "{{time}} p. m."
+    },
+    "fields": {
+      "eventDate": "1. ¿Fecha del evento?",
+      "eventLocation": "2. ¿Lugar del evento?",
+      "eventLocationPlaceholder": "Dirección, ciudad, estado y código postal",
+      "eventTime": "3. ¿Hora del evento?",
+      "eventTimePlaceholder": "Selecciona la hora de inicio del servicio",
+      "setupNote": "El montaje comienza al menos 90 minutos antes.",
+      "guestCount": "4. ¿Cantidad estimada de invitados?",
+      "guestCountPlaceholder": "Ingresa la cantidad aproximada (1–400)",
+      "dressCode": "5. Código de vestimenta",
+      "drinkPreferences": "6. Preferencias de bebidas",
+      "drinkPreferencesPlaceholder": "Comparte tus preferencias, destilados favoritos o imprescindibles...",
+      "menuDesign": "7. Diseño del menú",
+      "menuDesignPlaceholder": "Comparte el tema, los colores o tus ideas de diseño...",
+      "packageSelection": "8. Selección de paquete"
+    },
+    "dressCode": {
+      "placeholder": "Selecciona el código de vestimenta",
+      "casual": "Casual",
+      "cocktail": "Vestimenta de cóctel",
+      "semiFormal": "Semiformal",
+      "formal": "Formal",
+      "blackTie": "Etiqueta / Black Tie",
+      "noPreference": "Sin preferencia"
+    },
+    "packages": {
+      "placeholder": "Selecciona un paquete",
+      "bartending": "Servicio de bartending",
+      "bartendingCatering": "Bartending + catering",
+      "bartendingDj": "Bartending + DJ",
+      "bartendingDjContent": "Bartending + DJ + fotografía / equipo de contenido",
+      "complete": "Paquete completo — Todos los servicios incluidos"
+    },
+    "submit": "ENVIAR DETALLES DEL EVENTO",
+    "privacy": "Tu información es privada y solo se utilizará para responder a tu solicitud.",
+    "success": "¡Gracias! Los detalles de tu evento se enviaron correctamente. Nos comunicaremos contigo pronto."
+  }
+}

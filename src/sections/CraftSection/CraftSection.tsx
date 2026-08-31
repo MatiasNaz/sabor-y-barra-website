@@ -2,8 +2,11 @@ import "./CraftSection.css";
 import citrusCordialImage from "../../assets/images/citrus-cordial-pic.png";
 import drinkPrepImage from "../../assets/images/yellow-drink-prep.jpg";
 import mixingGlassImage from "../../assets/images/mixing-glass-pour.png";
+import { useTranslation } from "react-i18next";
 
 function CraftSection() {
+  const { t } = useTranslation();
+
   return (
     <section className="craft-section">
       <div className="craft-section__container">
@@ -14,7 +17,7 @@ function CraftSection() {
             <img
               className="photo-left"
               src={citrusCordialImage}
-              alt="image of citru cordial bottle with ingredients"
+              alt={t("craft.leftImageAlt")}
             />
             <div className="photo-label-container">
               <div className="photo-label">sabor</div>
@@ -27,7 +30,7 @@ function CraftSection() {
             <img
               className="photo-center"
               src={drinkPrepImage}
-              alt="image of citru cordial bottle with ingredients"
+              alt={t("craft.centerImageAlt")}
             />
             <div className="photo-label-container">
               <div className="photo-label">
@@ -43,7 +46,7 @@ function CraftSection() {
             <img
               className="photo-right"
               src={mixingGlassImage}
-              alt="image of citru cordial bottle with ingredients"
+              alt={t("craft.rightImageAlt")}
             />
             <div className="photo-label-container">
               <div className="photo-label">barra</div>
@@ -54,13 +57,12 @@ function CraftSection() {
         {/* end of photograph collage */}
 
         <div className="craft__description">
-          <h3>our craft</h3>
-          <h2>crafted from the first pour</h2>
+          <h3>{t("craft.eyebrow")}</h3>
+          <h2>{t("craft.title")}</h2>
           <p>
-            From house-made syrups and fresh ingredients to thoughtfully
+            {t("craft.descriptionLead")} {" "}
             <span className="craft__description--line-break">
-              selected spirits, every cocktail is crafted with depth, balance,
-              and intention.
+              {t("craft.descriptionEnd")}
             </span>
           </p>
         </div>
