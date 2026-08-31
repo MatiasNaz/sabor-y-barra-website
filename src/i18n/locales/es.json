@@ -143,7 +143,15 @@
       "complete": "Paquete completo — Todos los servicios incluidos"
     },
     "submit": "ENVIAR DETALLES DEL EVENTO",
+    "submitting": "ENVIANDO...",
+    "submissionError": "No pudimos enviar los detalles de tu evento. Inténtalo de nuevo.",
     "privacy": "Tu información es privada y solo se utilizará para responder a tu solicitud.",
-    "success": "¡Gracias! Los detalles de tu evento se enviaron correctamente. Nos comunicaremos contigo pronto."
+    "success": "¡Gracias! Los detalles de tu evento se enviaron correctamente. Nos comunicaremos contigo pronto.",
+    "successEyebrow": "Detalles del evento recibidos",
+    "successTitle": "¡Gracias!",
+    "successDescription": "Los detalles de tu evento se enviaron correctamente. Ya casi terminamos: elige un horario conveniente para programar tu consulta.",
+    "consultationEyebrow": "Próximo paso",
+    "consultationTitle": "Reserva tu consulta",
+    "consultationDescription": "Selecciona el horario que mejor te convenga y comenzaremos a crear una experiencia de barra inolvidable para tu evento."
   }
 }

@@ -143,7 +143,15 @@
       "complete": "Complete Package — All Services Included"
     },
     "submit": "SUBMIT EVENT DETAILS",
+    "submitting": "SUBMITTING...",
+    "submissionError": "We couldn't submit your event details. Please try again.",
     "privacy": "Your information is private and will only be used to respond to your inquiry.",
-    "success": "Thank you! Your event details were submitted successfully. We'll be in touch soon."
+    "success": "Thank you! Your event details were submitted successfully. We'll be in touch soon.",
+    "successEyebrow": "Event Details Received",
+    "successTitle": "Thank you!",
+    "successDescription": "Your event details were submitted successfully. You're almost there—choose a convenient time below to schedule your consultation.",
+    "consultationEyebrow": "Next Step",
+    "consultationTitle": "Book Your Consultation",
+    "consultationDescription": "Select a time that works for you, and we'll begin shaping an unforgettable bar experience for your event."
   }
 }

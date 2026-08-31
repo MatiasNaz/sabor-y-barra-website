@@ -173,13 +173,6 @@
   font-weight: 600;
 }
 
-.booking__success {
-  margin: 0;
-  color: var(--color-olive);
-  font-weight: 600;
-  text-align: center;
-}
-
 .booking__form label {
   display: grid;
   grid-template-columns: auto 220px 1fr;
@@ -276,6 +269,12 @@ input[type="number"]::-webkit-outer-spin-button {
   transform: translateY(-2px);
 }
 
+.booking__submit:disabled {
+  cursor: wait;
+  opacity: 0.7;
+  transform: none;
+}
+
 .booking__submit span {
   font-size: 22px;
 }
@@ -289,6 +288,105 @@ input[type="number"]::-webkit-outer-spin-button {
   text-align: center;
   font-size: 13px;
   color: #766b64;
+}
+
+.booking__error {
+  margin: 0;
+  color: var(--color-boricua-red);
+  font-size: 14px;
+  line-height: 1.5;
+  text-align: center;
+}
+
+/* ---------------------------------------------------------------------------------------- */
+
+/* SUCCESS + CONSULTATION */
+
+.booking__step-two {
+  max-width: 1100px;
+  margin: 0 auto;
+  scroll-margin-top: 32px;
+  animation: booking-step-two-enter 400ms ease-out;
+}
+
+.booking__confirmation {
+  max-width: 720px;
+  margin: 0 auto 64px;
+  text-align: center;
+}
+
+.booking__confirmation-icon {
+  color: var(--color-olive);
+}
+
+.booking__confirmation-eyebrow,
+.booking__consultation-eyebrow {
+  margin: 14px 0 10px;
+  color: var(--color-muted-gold);
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.booking__confirmation-title,
+.booking__consultation-title {
+  margin: 0;
+  color: var(--color-espresso);
+  font-family: "Times New Roman", Times, serif;
+  font-size: clamp(32px, 4vw, 44px);
+  font-weight: 500;
+  line-height: 1.1;
+  text-transform: uppercase;
+}
+
+.booking__confirmation-text,
+.booking__consultation-description {
+  max-width: 650px;
+  margin: 18px auto 0;
+  color: var(--color-espresso);
+  font-size: 17px;
+  line-height: 1.7;
+}
+
+.booking__consultation-header {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.booking__consultation-header .booking__step {
+  justify-content: center;
+  margin-bottom: 8px;
+}
+
+.booking__consultation-eyebrow {
+  margin-top: 0;
+}
+
+.booking__calendly-card {
+  min-width: 0;
+  overflow: hidden;
+  padding: 16px;
+  border: 1px solid rgba(74, 31, 15, 0.14);
+  border-radius: 18px;
+  background-color: var(--color-cream);
+}
+
+.booking__calendly-card .calendly-inline-widget {
+  min-width: 0 !important;
+  height: 700px !important;
+}
+
+@keyframes booking-step-two-enter {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 /* ---------------------------------------------------------------------------------------- */
@@ -353,6 +451,14 @@ input[type="number"]::-webkit-outer-spin-button {
     grid-column: 1;
     margin-top: -2px;
   }
+
+  .booking__confirmation {
+    margin-bottom: 48px;
+  }
+
+  .booking__calendly-card {
+    padding: 10px;
+  }
 }
 
 @media (max-width: 480px) {
@@ -385,5 +491,21 @@ input[type="number"]::-webkit-outer-spin-button {
   .booking__submit {
     min-height: 54px;
     font-size: 13px;
+  }
+
+  .booking__confirmation-text,
+  .booking__consultation-description {
+    font-size: 16px;
+  }
+
+  .booking__calendly-card {
+    padding: 6px;
+    border-radius: 12px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .booking__step-two {
+    animation: none;
   }
 }
