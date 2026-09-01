@@ -1,3 +1,6 @@
+/* SIGNATURE MENU SECTION */
+
+/* CONTAINERS */
 .menu__container {
   display: flex;
   justify-content: center;
@@ -6,6 +9,47 @@
 }
 
 .menu__content {
-  background-color: aqua;
-  width: 70%;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+}
+
+/* MENU INTRO EYEBROW & HEADER */
+.menu__header-container {
+  height: auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  max-width: 1210px;
+  gap: 0px;
+  margin-top: 150px;
+  text-align: center;
+  color: var(--color-espresso);
+}
+
+.menu__eyebrow {
+  font-weight: 600;
+  font-size: 22px;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+}
+
+.menu__header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 800px;
+}
+
+.menu__header h4 {
+  font-family: "Times New Roman", serif;
+  font-weight: 300;
+  font-size: 32px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.menu__header p {
+  font-size: 18px;
 }
