@@ -33,10 +33,6 @@ function Contact() {
               saborybarraprny@gmail.com
             </a>
           </div>
-          <div className="contact__detail">
-            <span className="contact__detail-label">{t("contact.phone")}</span>
-            <a href="tel:+19172244078">+1 (917) 224-4078</a>
-          </div>
         </address>
       </div>
     </section>

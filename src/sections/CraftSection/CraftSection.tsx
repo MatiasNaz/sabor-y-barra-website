@@ -60,7 +60,7 @@ function CraftSection() {
           <h3>{t("craft.eyebrow")}</h3>
           <h2>{t("craft.title")}</h2>
           <p>
-            {t("craft.descriptionLead")} {" "}
+            {t("craft.descriptionLead")}{" "}
             <span className="craft__description--line-break">
               {t("craft.descriptionEnd")}
             </span>
