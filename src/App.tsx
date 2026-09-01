@@ -1,6 +1,7 @@
 import { Route, Routes } from "react-router";
 import Home from "./pages/Home/Home";
 import Booking from "./pages/Booking/Booking";
+import SignatureMenu from "./sections/SignatureMenu/SignatureMenu";
 
 // create App function for UI structure
 function App() {
@@ -8,6 +9,7 @@ function App() {
     <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/booking" element={<Booking />} />
+      <Route path="/signature-menu" element={<SignatureMenu />} />
     </Routes>
   );
 }

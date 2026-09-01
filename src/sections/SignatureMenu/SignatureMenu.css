@@ -1,0 +1,11 @@
+.menu__container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+}
+
+.menu__content {
+  background-color: aqua;
+  width: 70%;
+}

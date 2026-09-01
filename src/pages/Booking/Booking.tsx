@@ -59,6 +59,7 @@ function Booking() {
   const [submissionError, setSubmissionError] = useState(false);
   const stepTwoRef = useRef<HTMLDivElement>(null);
 
+  // if user submitted form, scroll into view of second step
   useEffect(() => {
     if (submitted) {
       stepTwoRef.current?.scrollIntoView({
@@ -332,6 +333,7 @@ function Booking() {
                 {/* end of right form */}
               </div>
             ) : (
+              // otherwise, run step 2:
               <div ref={stepTwoRef} className="booking__step-two">
                 <div
                   className="booking__confirmation"
