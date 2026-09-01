@@ -1,0 +1,2 @@
+# Rewrite all routes to index.html so React Router can handle client-side routing
+/* /index.html 200
