@@ -19,7 +19,7 @@ import sombraArdienteImage from "../../assets/images/drinks/sombra-ardiente.jpg"
 import elGauchoRiquenoImage from "../../assets/images/drinks/El Gaucho Riqueño.jpg";
 
 import { useTranslation } from "react-i18next";
-import { useEffect, useRef, useState } from "react";
+// import { useEffect, useRef, useState } from "react";
 
 function SignatureMenu() {
   // store i18n language translation
@@ -33,7 +33,7 @@ function SignatureMenu() {
   // 6. observer.observe(each row)
 
   // collect and store all card rows in a single reference point
-  const refAllRows = {};
+  //   const refAllRows = {};
 
   return (
     <>
