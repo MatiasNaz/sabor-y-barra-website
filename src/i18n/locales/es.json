@@ -4,8 +4,8 @@
   },
   "common": {
     "brandLogoAlt": "Logo de Sabor Y Barra",
-    "bookEvent": "Reserva tu evento",
-    "bookNow": "Reserva ahora"
+    "bookEvent": "Reserva Tu Evento",
+    "bookNow": "Reserva Ahora"
   },
   "language": {
     "selectorLabel": "Elegir idioma",
@@ -29,7 +29,7 @@
   },
   "hero": {
     "welcome": "bienvenidos a",
-    "description": "experiencias de barra excepcionales para cada ocasión",
+    "description": "coctelería de alto nivel para cada ocasión",
     "cta": "comenzar"
   },
   "services": {
@@ -82,6 +82,7 @@
     "eyebrow": "Contáctanos",
     "title": "Elevemos la barra para tu próximo evento.",
     "description": "Cuéntanos qué celebras, dónde será el encuentro y cómo quieres que se sienta la experiencia. Te ayudaremos a diseñar un servicio de barra perfecto para la ocasión.",
+    "cta": "Planifica Tu Evento",
     "email": "Correo electrónico",
     "phone": "Teléfono"
   },
@@ -93,6 +94,77 @@
     "instagramLabel": "Ver el perfil de Instagram de Sabor Y Barra",
     "facebookLabel": "Ver el perfil de Facebook de Sabor Y Barra",
     "copyright": "© 2026 Sabor Y Barra"
+  },
+  "signatureMenu": {
+    "eyebrow": "Nuestro menú de autor",
+    "intro": "Cócteles elaborados con siropes hechos en casa e ingredientes frescos.",
+    "imageAlt": "Cóctel {{drink}}",
+    "drinks": {
+      "luzVerde": {
+        "name": "Luz Verde",
+        "description": "Un gimlet de pepino y albahaca elaborado con jugo de lima, jugo de limón y una ginebra japonesa floral."
+      },
+      "canelaVerde": {
+        "name": "Canela Verde",
+        "description": "Una combinación especiada y herbal de jugo de limón, sirope de canela, albahaca y una ginebra japonesa floral."
+      },
+      "susurro": {
+        "name": "Susurro",
+        "description": "Un cóctel refrescante de pepino y flor de saúco que combina jugo de limón, agua con gas y ginebra."
+      },
+      "mentaDOro": {
+        "name": "Menta D'Oro",
+        "description": "Un spritz refrescante que combina menta, flor de saúco y prosecco."
+      },
+      "monjeDePlata": {
+        "name": "Monie De Plata",
+        "description": "Una obra maestra herbal que combina menta, pepino, jugo de lima, Chartreuse y tequila blanco."
+      },
+      "rougeSoleil": {
+        "name": "Rouge Soleil",
+        "description": "Un martini frutal que combina jugo de piña, licor de frambuesa y vodka."
+      },
+      "laPerleBlanche": {
+        "name": "La Perle Blanche",
+        "description": "Un negroni blanco que combina vermut, Suze, ginebra y un twist de limón."
+      },
+      "arawakAmaro": {
+        "name": "Arawak Amaro",
+        "description": "Un negroni de ron que combina vermut, Campari, ron jamaiquino y un twist de naranja."
+      },
+      "mulaDorada": {
+        "name": "Mula Dorada",
+        "description": "Un clásico refrescante que combina jugo de lima, ginger beer, vodka y una ramita de menta como decoración."
+      },
+      "mulaDeLosAndes": {
+        "name": "Mula De Los Andes",
+        "description": "Un clásico peruano refrescante que combina jugo de lima, ginger beer y pisco."
+      },
+      "solDeUva": {
+        "name": "Sol De Uva",
+        "description": "Un clásico sudamericano que combina jugo de lima, jugo de limón, clara de huevo y pisco."
+      },
+      "solDeCenteno": {
+        "name": "Sol De Centeno",
+        "description": "Ideal para comenzar la noche o disfrutar como cierre, este clásico combina jugo de limón, clara de huevo y whisky de centeno."
+      },
+      "medianoche": {
+        "name": "Medianoche",
+        "description": "Inspirado en una noche lluviosa en Jalisco, se sirve en un vaso ahumado con canela y combina espresso, Licor 43 y una rama de canela como decoración."
+      },
+      "solArdiente": {
+        "name": "Sol Ardiente",
+        "description": "Un old fashioned inspirado en Oaxaca que combina agave, mezcal, tequila reposado y un twist de naranja flameado."
+      },
+      "sombraArdiente": {
+        "name": "Sombra Ardiente",
+        "description": "Un old fashioned inspirado en el café que combina licor de café, un intenso sirope de vainilla y bourbon."
+      },
+      "elGauchoRiqueno": {
+        "name": "El Gaucho Riqueño",
+        "description": "El sabor taíno se encuentra con el guaraní en una mezcla de limón, agave, vodka infusionado con yerba mate y un twist de mango."
+      }
+    }
   },
   "booking": {
     "eyebrow": "reserva tu evento",

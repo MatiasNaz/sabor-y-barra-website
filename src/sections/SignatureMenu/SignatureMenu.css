@@ -1,30 +1,58 @@
 /* SIGNATURE MENU SECTION */
 
-/* CONTAINERS */
+/* ----------------------------------------------------------------------------------------- */
+
+/* GLOBAL CONTAINERS */
+
+/* ----------------------------------------------------------------------------------------- */
+
 .menu__container {
   display: flex;
   justify-content: center;
   width: 100%;
-  height: 100vh;
 }
 
 .menu__content {
-  width: 50%;
+  width: 100%;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
 }
 
+/* ----------------------------------------------------------------------------------------- */
+
+/* KEYFRAMES */
+
+/* ----------------------------------------------------------------------------------------- */
+
+@keyframes headerReveal {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+/* ----------------------------------------------------------------------------------------- */
+
 /* MENU INTRO EYEBROW & HEADER */
+
+/* ----------------------------------------------------------------------------------------- */
+
 .menu__header-container {
   height: auto;
   display: flex;
   align-items: center;
   flex-direction: column;
   max-width: 1210px;
-  gap: 0px;
   margin-top: 150px;
   text-align: center;
   color: var(--color-espresso);
+  animation: headerReveal 1.2s ease-out forwards;
 }
 
 .menu__eyebrow {
@@ -39,7 +67,7 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  width: 800px;
+  width: min(800px, 100%);
 }
 
 .menu__header h4 {
@@ -52,4 +80,298 @@
 
 .menu__header p {
   font-size: 18px;
+}
+
+/* ----------------------------------------------------------------------------------------- */
+
+/* CARDS & CONTAINERS */
+
+/* ----------------------------------------------------------------------------------------- */
+
+.menu__card-container {
+  width: 100%;
+  max-width: 1400px;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  column-gap: 50px;
+  row-gap: 30px;
+  margin: 56px auto 0;
+  padding: 0 32px 120px;
+}
+
+/* ----------------------------------------------------------------------------------------- */
+
+/* LEFT CARD */
+.menu__card-content-left-card {
+  background-color: var(--color-ivory);
+  width: 100%;
+  height: 500px;
+  display: flex;
+  justify-content: flex-start;
+  margin: 0;
+  border-radius: 10px;
+  color: var(--color-espresso);
+  border: 1px solid var(--color-muted-tan);
+  text-align: center;
+  box-shadow: 0px 3px 10px 2px rgb(0, 0, 0, 0.15);
+}
+
+.menu__card-desc-left,
+.menu__card-desc-right {
+  width: 50%;
+  min-width: 0;
+  flex: 0 0 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  padding: 48px 40px;
+  text-align: center;
+}
+
+.menu__card-desc-left {
+  border-radius: 10px 0px 0px 10px;
+}
+
+.menu__card-img-left {
+  width: 50%;
+  min-width: 0;
+  flex: 0 0 50%;
+  height: 100%;
+  overflow: hidden;
+  border-radius: 0px 10px 10px 0px;
+}
+
+/* ----------------------------------------------------------------------------------------- */
+
+/* RIGHT CARD */
+
+.menu__card-content-right-card {
+  background-color: var(--color-ivory);
+  width: 100%;
+  height: 500px;
+  display: flex;
+  justify-content: flex-start;
+  margin: 0;
+  border-radius: 10px;
+  color: var(--color-espresso);
+  border: 1px solid var(--color-muted-tan);
+  text-align: center;
+  box-shadow: 0px 3px 10px 2px rgb(0, 0, 0, 0.15);
+}
+
+.menu__card-desc-right {
+  border-radius: 0 10px 10px 0;
+}
+
+.menu__card-desc-left h4,
+.menu__card-desc-right h4 {
+  margin: 0;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 1.15;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.menu__card-desc-left p,
+.menu__card-desc-right p {
+  max-width: 300px;
+  margin: 0;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.menu__card-img-right {
+  width: 50%;
+  min-width: 0;
+  flex: 0 0 50%;
+  height: 100%;
+  overflow: hidden;
+  border-radius: 10px 0 0 10px;
+}
+
+.menu__card-img-left img,
+.menu__card-img-right img {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: 100%;
+  max-height: 100%;
+  object-fit: cover;
+}
+
+/* Keep each drink's focal point visible within the shared 4:5 image panel. */
+.menu__drink-image--luz-verde {
+  object-position: 50% 45%;
+}
+
+.menu__drink-image--canela-verde {
+  object-position: 50% 48%;
+}
+
+.menu__drink-image--susurro {
+  object-position: 50% 7%;
+}
+
+.menu__drink-image--menta-d-oro {
+  object-position: 50% 10%;
+}
+
+.menu__drink-image--monje-de-plata {
+  object-position: 50% 0%;
+}
+
+.menu__drink-image--rouge-soleil {
+  object-position: 50% 45%;
+}
+
+.menu__drink-image--la-perle-blanche {
+  object-position: 50% 0%;
+}
+
+.menu__drink-image--arawak-amaro {
+  object-position: 50% 25%;
+}
+
+.menu__drink-image--mula-dorada {
+  object-position: 50% 10%;
+}
+
+.menu__drink-image--mula-de-los-andes {
+  object-position: 50% 0%;
+}
+
+.menu__drink-image--sol-de-uva {
+  object-position: 50% 30%;
+}
+
+.menu__drink-image--sol-de-centeno {
+  object-position: 50% 0%;
+}
+
+.menu__drink-image--medianoche {
+  object-position: 55% 20%;
+  object-fit: contain;
+}
+
+.menu__drink-image--sol-ardiente {
+  object-position: 50% 50%;
+}
+
+.menu__drink-image--sombra-ardiente {
+  object-position: 50% 50%;
+}
+
+.menu__drink-image--el-gaucho-riqueno {
+  object-position: 50% 5%;
+}
+
+.gaucho-last-card {
+  margin-bottom: 0;
+}
+
+/* ----------------------------------------------------------------------------------------- */
+
+/* RESPONSIVE MENU GRID */
+
+@media (max-width: 1100px) {
+  .menu__card-container {
+    padding-inline: 24px;
+  }
+
+  .menu__card-content-left-card,
+  .menu__card-content-right-card {
+    height: 680px;
+    flex-direction: column;
+  }
+
+  .menu__card-desc-left,
+  .menu__card-desc-right {
+    width: 100%;
+    height: 280px;
+    flex: 0 0 280px;
+    gap: 18px;
+    padding: 32px 24px;
+  }
+
+  .menu__card-img-left,
+  .menu__card-img-right {
+    width: 100%;
+    height: 400px;
+    flex: 0 0 400px;
+  }
+
+  .menu__card-desc-left {
+    border-radius: 10px 10px 0 0;
+  }
+
+  .menu__card-img-left {
+    border-radius: 0 0 10px 10px;
+  }
+
+  .menu__card-img-right {
+    border-radius: 10px 10px 0 0;
+  }
+
+  .menu__card-desc-right {
+    border-radius: 0 0 10px 10px;
+  }
+
+  .menu__card-desc-left h4,
+  .menu__card-desc-right h4 {
+    font-size: 27px;
+  }
+
+  .menu__card-desc-left p,
+  .menu__card-desc-right p {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 700px) {
+  .menu__header-container {
+    margin-top: 96px;
+    padding-inline: 20px;
+  }
+
+  .menu__eyebrow {
+    font-size: 18px;
+  }
+
+  .menu__header h4 {
+    font-size: 26px;
+  }
+
+  .menu__card-container {
+    grid-template-columns: minmax(0, 1fr);
+    padding: 0 20px 80px;
+  }
+}
+
+@media (max-width: 480px) {
+  .menu__card-container {
+    padding-inline: 16px;
+  }
+
+  .menu__card-content-left-card,
+  .menu__card-content-right-card {
+    height: 620px;
+  }
+
+  .menu__card-desc-left,
+  .menu__card-desc-right {
+    height: 280px;
+    flex-basis: 280px;
+    padding: 28px 20px;
+  }
+
+  .menu__card-img-left,
+  .menu__card-img-right {
+    height: 340px;
+    flex-basis: 340px;
+  }
 }

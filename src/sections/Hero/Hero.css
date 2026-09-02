@@ -2,11 +2,11 @@
 
 /* HERO BACKGROUND OUTER CONTAINER */
 .hero__section {
-  margin-top: 10px;
   width: 100%;
   /* subtract the height of announcement bar + header to equal
   one viewport height */
-  min-height: calc(100vh - 165px);
+  min-height: calc(100svh - 165px);
+  padding-bottom: clamp(32px, 5vh, 56px);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -30,7 +30,19 @@
   flex-direction: column;
   justify-content: flex-start;
   color: var(--color-espresso);
-  transform: translateY(-110px);
+  /* transform: translateY(-110px); */
+  animation: headerReveal 1.2s ease-in forwards;
+}
+
+@keyframes headerReveal {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
 }
 
 /* HERO HEADING GROUP */
@@ -42,6 +54,7 @@
   justify-content: center;
   font-weight: 600;
   font-size: 16px;
+  letter-spacing: 3px;
   text-align: center;
 }
 
@@ -58,13 +71,16 @@
 
 .hero__title-desc {
   width: 100%;
-  height: 48px;
+  max-width: 620px;
+  height: auto;
   display: flex;
   justify-content: center;
   text-align: center;
-  font-size: 14px;
-  font-weight: 600;
-  margin-top: 15px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 1px;
+  margin: 15px auto 24px;
 }
 
 .hero__get-started-container {

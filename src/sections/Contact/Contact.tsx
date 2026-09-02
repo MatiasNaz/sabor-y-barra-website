@@ -23,7 +23,7 @@ function Contact() {
         </p>
 
         <Link to="/booking" className="contact__booking-cta">
-          {t("common.bookEvent")}
+          {t("contact.cta")}
         </Link>
 
         <address className="contact__details">

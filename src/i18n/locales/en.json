@@ -82,6 +82,7 @@
     "eyebrow": "Contact Us",
     "title": "Let's raise the bar for your next event.",
     "description": "Tell us what you're celebrating, where you're gathering, and how you want the experience to feel. We'll help shape a bar service made for the occasion.",
+    "cta": "Plan Your Event",
     "email": "Email",
     "phone": "Phone"
   },
@@ -93,6 +94,77 @@
     "instagramLabel": "View Sabor Y Barra's Instagram profile",
     "facebookLabel": "View Sabor Y Barra's Facebook profile",
     "copyright": "© 2026 Sabor Y Barra"
+  },
+  "signatureMenu": {
+    "eyebrow": "Our Signature Menu",
+    "intro": "Cocktails made with house-made syrups and fresh ingredients.",
+    "imageAlt": "{{drink}} cocktail",
+    "drinks": {
+      "luzVerde": {
+        "name": "Luz Verde",
+        "description": "A cucumber basil gimlet made with lime juice, lemon juice, and a floral Japanese gin."
+      },
+      "canelaVerde": {
+        "name": "Canela Verde",
+        "description": "A spiced and herbal favorite, blending lemon juice, cinnamon syrup, basil, and a floral Japanese gin."
+      },
+      "susurro": {
+        "name": "Susurro",
+        "description": "A refreshing cucumber and elderflower cocktail, blending lemon juice, soda water, and gin."
+      },
+      "mentaDOro": {
+        "name": "Menta D'Oro",
+        "description": "A refreshing spritz blending mint, elderflower, and prosecco."
+      },
+      "monjeDePlata": {
+        "name": "Monie De Plata",
+        "description": "An herbal masterpiece, blending mint, cucumber, lime juice, chartreuse, and tequila blanco."
+      },
+      "rougeSoleil": {
+        "name": "Rouge Soleil",
+        "description": "A fruity martini, blending pineapple juice, raspberry liqueur, and vodka."
+      },
+      "laPerleBlanche": {
+        "name": "La Perle Blanche",
+        "description": "A white negroni, blending vermouth, Suze, gin, and a lemon twist."
+      },
+      "arawakAmaro": {
+        "name": "Arawak Amaro",
+        "description": "A rum negroni, blending vermouth, Campari, Jamaican rum, and an orange twist."
+      },
+      "mulaDorada": {
+        "name": "Mula Dorada",
+        "description": "A refreshing classic, blending lime juice, ginger beer, vodka, and a mint sprig garnish."
+      },
+      "mulaDeLosAndes": {
+        "name": "Mula De Los Andes",
+        "description": "A refreshing Peruvian classic, blending lime juice, ginger beer, and pisco."
+      },
+      "solDeUva": {
+        "name": "Sol De Uva",
+        "description": "A South American classic, blending lime juice, lemon juice, egg white, and pisco."
+      },
+      "solDeCenteno": {
+        "name": "Sol De Centeno",
+        "description": "Great to kick off the evening or enjoy as a nightcap, this classic blends lemon juice, egg white, and rye whiskey."
+      },
+      "medianoche": {
+        "name": "Medianoche",
+        "description": "Inspired by a rainy night in Jalisco, served in a cinnamon-smoked glass and combining espresso, Licor 43, and a cinnamon-stick garnish."
+      },
+      "solArdiente": {
+        "name": "Sol Ardiente",
+        "description": "An Oaxaca-inspired old fashioned, blending agave, mezcal, tequila reposado, and a flamed orange twist."
+      },
+      "sombraArdiente": {
+        "name": "Sombra Ardiente",
+        "description": "A coffee-inspired old fashioned, blending coffee liqueur, rich vanilla syrup, and bourbon."
+      },
+      "elGauchoRiqueno": {
+        "name": "El Gaucho Riqueño",
+        "description": "Taíno meets Guaraní, blending lemon, agave, yerba mate-infused vodka, and a mango twist."
+      }
+    }
   },
   "booking": {
     "eyebrow": "book your event",
