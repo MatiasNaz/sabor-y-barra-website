@@ -75,9 +75,9 @@ function Header({ showBookingButton = true }: HeaderProps) {
               </a>
             </li>
             <li>
-              <a className="navbar__links" href="/about">
+              <Link className="navbar__links" to="/about">
                 {t("nav.about")}
-              </a>
+              </Link>
             </li>
             <li>
               <a className="navbar__links" href="/#reviews">

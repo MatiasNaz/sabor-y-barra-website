@@ -86,6 +86,43 @@
     "email": "Email",
     "phone": "Phone"
   },
+  "about": {
+    "hero": {
+      "eyebrow": "About Sabor Y Barra",
+      "title": "Hospitality with soul, poured with intention.",
+      "intro": "Sabor Y Barra is a hospitality-led mobile bar experience shaped around thoughtful details, genuine connection, and the moments guests carry with them."
+    },
+    "story": {
+      "eyebrow": "Our Story",
+      "title": "The story behind Sabor Y Barra.",
+      "intro": "This space is reserved for the confirmed people, inspiration, and purpose behind Sabor Y Barra.",
+      "placeholderCopy": "Founder story placeholder: Add the confirmed story of how Sabor Y Barra began, the people who shaped it, and the personal inspiration behind the brand.",
+      "imageAlt": "Sabor Y Barra founder preparing a cocktail",
+      "imagePlaceholder": "Authentic founder or team photograph to be added"
+    },
+    "philosophy": {
+      "eyebrow": "Our Philosophy",
+      "title": "The best hospitality feels personal.",
+      "welcome": {
+        "title": "A Genuine Welcome",
+        "description": "Hospitality begins with making people feel seen, comfortable, and cared for from the first hello."
+      },
+      "details": {
+        "title": "Thoughtful Details",
+        "description": "Small, intentional choices shape the atmosphere and turn a gathering into something distinctly its own."
+      },
+      "connection": {
+        "title": "Lasting Connection",
+        "description": "The most memorable moments are created when people can be present, connect naturally, and enjoy the experience together."
+      }
+    },
+    "closing": {
+      "eyebrow": "Gather With Us",
+      "title": "Let’s create something worth remembering.",
+      "description": "Bring us into your next gathering and experience hospitality designed to feel warm, thoughtful, and entirely your own.",
+      "cta": "Plan Your Event"
+    }
+  },
   "footer": {
     "homeLabel": "Sabor Y Barra home",
     "navigationLabel": "Footer navigation",
@@ -117,7 +154,7 @@
         "description": "A refreshing spritz blending mint, elderflower, and prosecco."
       },
       "monjeDePlata": {
-        "name": "Monie De Plata",
+        "name": "Monje de Plata",
         "description": "An herbal masterpiece, blending mint, cucumber, lime juice, chartreuse, and tequila blanco."
       },
       "rougeSoleil": {

@@ -1,6 +1,6 @@
 {
   "meta": {
-    "title": "Sabor Y Barra - Servicios de Bartending"
+    "title": "Sabor Y Barra - Servicios de Coctelería"
   },
   "common": {
     "brandLogoAlt": "Logo de Sabor Y Barra",
@@ -36,7 +36,7 @@
     "title": "nuestros servicios",
     "private": {
       "title": "eventos privados",
-      "subtitle": "Cócteles elevados creados para tu ocasión. Encuentros inolvidables.",
+      "subtitle": "Cócteles de alto nivel creados para tu ocasión. Encuentros inolvidables.",
       "description": "Lleva la experiencia de una barra excepcional a tu celebración con cócteles artesanales, ingredientes frescos y un servicio personalizado para tu evento.",
       "imageAlt": "Bartender sirviendo una bebida"
     },
@@ -72,7 +72,7 @@
     "googleLabel": "Ver las reseñas de Sabor Y Barra en Google",
     "messages": {
       "tara": "¡No tengo suficientes palabras buenas para describir a Lou! Lo contratamos recientemente para una fiesta navideña y nuestros invitados quedaron impresionados. Sus bebidas fueron increíbles (mejores que las de cualquier bartender privado que hayamos contratado), fue encantador, sumamente respetuoso y muy fácil de tratar. Hizo que nuestra barra se sintiera como entrar a un elegante bar de Nueva York, con decoraciones impresionantes para las bebidas (¡incluso algunas flameadas a mano!). Nuestros invitados hablaron maravillas de él toda la noche y durante días después del evento. También mantuvo una excelente comunicación antes de la celebración y nos ayudó a crear un menú con sus magníficas sugerencias de cócteles. ¡Definitivamente volveríamos a trabajar con Lou!",
-      "sasha": "Contratamos a Sabor Y Barra para una fiesta corporativa en Filadelfia. Fue fantástico trabajar con Lou: sumamente profesional y con un servicio al cliente excepcional. Nuestros clientes y empleados quedaron impresionados con la variedad del menú y la calidad de las bebidas. Lou hizo un esfuerzo adicional y aportó una experiencia de sabores elevada. Esperamos volver a trabajar con él en futuros eventos.",
+      "sasha": "Contratamos a Sabor Y Barra para una fiesta corporativa en Filadelfia. Fue fantástico trabajar con Lou: sumamente profesional y con un servicio al cliente excepcional. Nuestros clientes y empleados quedaron impresionados con la variedad del menú y la calidad de las bebidas. Lou fue más allá y aportó una experiencia de sabor sofisticada. Esperamos volver a trabajar con él en futuros eventos.",
       "joao": "Contratamos a Louis para la fiesta de compromiso de mi hermana y todo fue sencillamente perfecto. Llegó con mucha anticipación, muy organizado, trajo todo lo acordado e incluso algunas sorpresas que elevaron la celebración. El servicio fue impecable: atento, sonriente, rápido sin ser intrusivo y con una energía contagiosa que animó a todos. Las bebidas siempre estuvieron perfectamente frías, y los cócteles de autor que creó especialmente para la pareja fueron increíbles y se convirtieron en el tema de conversación de la noche. Después, varias personas le pidieron su tarjeta.",
       "stephanie": "Encontramos a Lou a través de Bark y, desde nuestra primera conversación, supimos que estábamos en excelentes manos. Fue profesional, amable y sumamente flexible con la selección de bebidas. Se tomó el tiempo de comprender el ambiente que queríamos crear y, antes del evento, nos ayudó a diseñar cuidadosamente un menú de cócteles que complementó a la perfección el tema de nuestra fiesta de San Valentín. Su creatividad y atención al detalle realmente lo distinguen.",
       "cena": "Contraté a Lou como bartender para mi fiesta de cumpleaños con temática disco y fue absolutamente increíble. Como exprofesional de la industria de la hospitalidad, puedo decir que Lou es de los mejores. La planificación del menú fue muy colaborativa y se adaptó a las necesidades de nuestros invitados. Incluso creó bebidas nuevas en el momento, y todos las disfrutaron. Espero volver a contratarlo para otro evento muy pronto."
@@ -85,6 +85,43 @@
     "cta": "Planifica Tu Evento",
     "email": "Correo electrónico",
     "phone": "Teléfono"
+  },
+  "about": {
+    "hero": {
+      "eyebrow": "Sobre Sabor Y Barra",
+      "title": "Hospitalidad con alma, servida con intención.",
+      "intro": "Sabor Y Barra es una experiencia de barra móvil guiada por la hospitalidad, los detalles bien pensados, la conexión genuina y esos momentos que los invitados llevan consigo."
+    },
+    "story": {
+      "eyebrow": "Nuestra Historia",
+      "title": "La historia detrás de Sabor Y Barra.",
+      "intro": "Este espacio está reservado para contar la historia confirmada de Sabor Y Barra: las personas, la inspiración y el propósito detrás de la marca.",
+      "placeholderCopy": "Marcador para la historia del fundador: Añade la historia confirmada de cómo comenzó Sabor Y Barra, las personas que le dieron forma y la inspiración personal detrás de la marca.",
+      "imageAlt": "Fundador de Sabor Y Barra preparando un cóctel",
+      "imagePlaceholder": "Añadir fotografía auténtica del fundador o equipo"
+    },
+    "philosophy": {
+      "eyebrow": "Nuestra Filosofía",
+      "title": "La mejor hospitalidad se siente personal.",
+      "welcome": {
+        "title": "Una Bienvenida Genuina",
+        "description": "La hospitalidad comienza haciendo que cada persona se sienta vista, cómoda y atendida desde el primer saludo."
+      },
+      "details": {
+        "title": "Detalles Bien Pensados",
+        "description": "Las pequeñas decisiones intencionales crean el ambiente y convierten cada encuentro en una experiencia única."
+      },
+      "connection": {
+        "title": "Conexión Duradera",
+        "description": "Los momentos más memorables surgen cuando las personas pueden estar presentes, conectar naturalmente y disfrutar juntas."
+      }
+    },
+    "closing": {
+      "eyebrow": "Celebra Con Nosotros",
+      "title": "Creemos algo digno de recordar.",
+      "description": "Invítanos a tu próximo encuentro y vive una hospitalidad cálida, cuidada y diseñada especialmente para ti.",
+      "cta": "Planifica Tu Evento"
+    }
   },
   "footer": {
     "homeLabel": "Página de inicio de Sabor Y Barra",
@@ -117,7 +154,7 @@
         "description": "Un spritz refrescante que combina menta, flor de saúco y prosecco."
       },
       "monjeDePlata": {
-        "name": "Monie De Plata",
+        "name": "Monje de Plata",
         "description": "Una obra maestra herbal que combina menta, pepino, jugo de lima, Chartreuse y tequila blanco."
       },
       "rougeSoleil": {
@@ -158,7 +195,7 @@
       },
       "sombraArdiente": {
         "name": "Sombra Ardiente",
-        "description": "Un old fashioned inspirado en el café que combina licor de café, un intenso sirope de vainilla y bourbon."
+        "description": "Un old fashioned inspirado en el café que combina licor de café, sirope concentrado de vainilla y bourbon."
       },
       "elGauchoRiqueno": {
         "name": "El Gaucho Riqueño",
@@ -203,15 +240,15 @@
       "cocktail": "Vestimenta de cóctel",
       "semiFormal": "Semiformal",
       "formal": "Formal",
-      "blackTie": "Etiqueta / Black Tie",
+      "blackTie": "Etiqueta rigurosa",
       "noPreference": "Sin preferencia"
     },
     "packages": {
       "placeholder": "Selecciona un paquete",
-      "bartending": "Servicio de bartending",
-      "bartendingCatering": "Bartending + catering",
-      "bartendingDj": "Bartending + DJ",
-      "bartendingDjContent": "Bartending + DJ + fotografía / equipo de contenido",
+      "bartending": "Servicio de barra",
+      "bartendingCatering": "Barra + catering",
+      "bartendingDj": "Barra + DJ",
+      "bartendingDjContent": "Barra + DJ + fotografía / equipo de contenido",
       "complete": "Paquete completo — Todos los servicios incluidos"
     },
     "submit": "ENVIAR DETALLES DEL EVENTO",
