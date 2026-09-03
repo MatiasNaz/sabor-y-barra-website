@@ -111,17 +111,19 @@ function ServicesPreview() {
                   {t("services.omakase.subtitle")}
                 </h4>
                 <p className="services-preview__card-description-body-text">
-                  {t("services.omakase.description")} {" "}
+                  {t("services.omakase.description")}{" "}
                   <strong>{t("services.omakase.comingSoon")}</strong>
                 </p>
-                <a
+
+                {/* temporarily remove link to button for omakase */}
+                {/* <a
                   href="https://www.canva.com/design/DAG2FH0FYRo/B-YpeGK0dSOlFRMO3k2K9A/edit"
                   className="services-preview__booking-cta"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
                   {t("common.bookNow")}
-                </a>
+                </a> */}
               </div>
             </div>
           </div>

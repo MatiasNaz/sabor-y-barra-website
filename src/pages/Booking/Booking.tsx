@@ -335,16 +335,16 @@ function Booking() {
                         {t("booking.packages.signatureSabor")}
                       </option>
 
+                      <option value="bartending-dj">
+                        {t("booking.packages.bartendingDj")}
+                      </option>
+
                       <option value="bartending-content">
                         {t("booking.packages.bartendingContent")}
                       </option>
 
                       {/* <option value="bartending-catering">
                         {t("booking.packages.bartendingCatering")}
-                      </option>
-
-                      <option value="bartending-dj">
-                        {t("booking.packages.bartendingDj")}
                       </option>
 
                       <option value="bartending-dj-content">

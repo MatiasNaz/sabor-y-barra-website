@@ -40,7 +40,8 @@ function About() {
           </div>
         </section>
 
-        <section
+        {/* temporarily removed - will become media player for video */}
+        {/* <section
           className="about__philosophy"
           aria-labelledby="about-philosophy-title"
         >
@@ -69,7 +70,7 @@ function About() {
               </article>
             </div>
           </div>
-        </section>
+        </section> */}
       </main>
 
       <Footer />

@@ -85,8 +85,7 @@
   font-size: clamp(2.4rem, 4.5vw, 4rem);
 }
 
-.about__story-copy > p:not(.about__eyebrow),
-.about__value p {
+.about__story-copy > p:not(.about__eyebrow) {
   margin: 26px 0 0;
   font-size: 1.1rem;
   line-height: 1.75;
@@ -153,6 +152,9 @@
   object-position: center;
 }
 
+/* OUR PHILOSOPHY CARD — TEMPORARILY DISABLED
+   Restore this block when the philosophy section is added back to About.tsx.
+
 .about__philosophy {
   padding-block: clamp(48px, 7vw, 96px) clamp(80px, 8vw, 120px);
   background-color: transparent;
@@ -204,6 +206,8 @@
   line-height: 1.7;
 }
 
+END OUR PHILOSOPHY CARD */
+
 @media (max-width: 900px) {
   .about__story-layout {
     grid-template-columns: 1fr;
@@ -218,10 +222,12 @@
     aspect-ratio: 4 / 3;
   }
 
+  /* OUR PHILOSOPHY RESPONSIVE STYLES — TEMPORARILY DISABLED
   .about__values {
     grid-template-columns: 1fr;
     gap: 36px;
   }
+  END OUR PHILOSOPHY RESPONSIVE STYLES */
 }
 
 @media (max-width: 700px) {
@@ -229,9 +235,11 @@
     width: min(100% - 40px, 1200px);
   }
 
+  /* OUR PHILOSOPHY RESPONSIVE STYLES — TEMPORARILY DISABLED
   .about__values {
     margin-top: 48px;
   }
+  END OUR PHILOSOPHY RESPONSIVE STYLES */
 }
 
 @media (max-width: 480px) {
@@ -243,10 +251,15 @@
     letter-spacing: 3px;
   }
 
-  .about__story-copy > p:not(.about__eyebrow),
+  .about__story-copy > p:not(.about__eyebrow) {
+    font-size: 1rem;
+  }
+
+  /* OUR PHILOSOPHY RESPONSIVE STYLES — TEMPORARILY DISABLED
   .about__value p {
     font-size: 1rem;
   }
+  END OUR PHILOSOPHY RESPONSIVE STYLES */
 
   .about__story-image {
     aspect-ratio: 1 / 1;
