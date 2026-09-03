@@ -20,6 +20,7 @@
   },
   "nav": {
     "label": "Navegación principal",
+    "menu": "Mostrar u ocultar el menú de navegación",
     "home": "Inicio",
     "services": "Servicios",
     "signatureMenu": "Menú de autor",
@@ -95,8 +96,10 @@
     "story": {
       "eyebrow": "Nuestra Historia",
       "title": "La historia detrás de Sabor Y Barra.",
-      "intro": "Este espacio está reservado para contar la historia confirmada de Sabor Y Barra: las personas, la inspiración y el propósito detrás de la marca.",
-      "placeholderCopy": "Marcador para la historia del fundador: Añade la historia confirmada de cómo comenzó Sabor Y Barra, las personas que le dieron forma y la inspiración personal detrás de la marca.",
+      "intro": "La inspiración detrás de Sabor Y Barra está profundamente arraigada en los valores de familia y hogar que mis padres inculcaron en mí.",
+      "placeholderCopy": "Mi padre, con su espíritu carismático y su don para crear experiencias inolvidables, me enseñó el arte de la hospitalidad. Mi madre, con su risa contagiosa y su alegría genuina, me mostró la belleza de compartir la felicidad con los demás. A través de Sabor Y Barra, tengo el privilegio de llevar su amor y su ejemplo al mundo, acompañando a otros en sus celebraciones más preciadas y ayudando a crear recuerdos que duren toda la vida.",
+      "founderName": "Lou Mergler",
+      "founderRole": "Fundador y CEO",
       "imageAlt": "Fundador de Sabor Y Barra preparando un cóctel",
       "imagePlaceholder": "Añadir fotografía auténtica del fundador o equipo"
     },
@@ -219,20 +222,26 @@
       "pm": "{{time}} p. m."
     },
     "fields": {
-      "eventDate": "1. ¿Fecha del evento?",
-      "eventLocation": "2. ¿Lugar del evento?",
+      "fullName": "1. Nombre completo",
+      "fullNamePlaceholder": "Ingresa tu nombre completo",
+      "phoneNumber": "2. Número de teléfono",
+      "phoneNumberPlaceholder": "Ingresa tu número de teléfono",
+      "email": "3. Correo electrónico",
+      "emailPlaceholder": "Ingresa tu correo electrónico",
+      "eventDate": "4. ¿Fecha del evento?",
+      "eventLocation": "5. ¿Lugar del evento?",
       "eventLocationPlaceholder": "Dirección, ciudad, estado y código postal",
-      "eventTime": "3. ¿Hora del evento?",
+      "eventTime": "6. ¿Hora del evento?",
       "eventTimePlaceholder": "Selecciona la hora de inicio del servicio",
       "setupNote": "El montaje comienza al menos 90 minutos antes.",
-      "guestCount": "4. ¿Cantidad estimada de invitados?",
+      "guestCount": "7. ¿Cantidad estimada de invitados?",
       "guestCountPlaceholder": "Ingresa la cantidad aproximada (1–400)",
-      "dressCode": "5. Código de vestimenta",
-      "drinkPreferences": "6. Preferencias de bebidas",
+      "dressCode": "8. Código de vestimenta",
+      "drinkPreferences": "9. Preferencias de bebidas",
       "drinkPreferencesPlaceholder": "Comparte tus preferencias, destilados favoritos o imprescindibles...",
-      "menuDesign": "7. Diseño del menú",
+      "menuDesign": "10. Diseño del menú",
       "menuDesignPlaceholder": "Comparte el tema, los colores o tus ideas de diseño...",
-      "packageSelection": "8. Selección de paquete"
+      "packageSelection": "11. Selección de paquete"
     },
     "dressCode": {
       "placeholder": "Selecciona el código de vestimenta",
@@ -245,7 +254,10 @@
     },
     "packages": {
       "placeholder": "Selecciona un paquete",
-      "bartending": "Servicio de barra",
+      "elBasico": "El Básico",
+      "elClasico": "El Clásico",
+      "signatureSabor": "Signature Sabor",
+      "bartendingContent": "Barra + fotografía / equipo de contenido",
       "bartendingCatering": "Barra + catering",
       "bartendingDj": "Barra + DJ",
       "bartendingDjContent": "Barra + DJ + fotografía / equipo de contenido",

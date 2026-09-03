@@ -1,7 +1,7 @@
 import "./Booking.css";
 import Header from "../../components/Header/Header";
 import Footer from "../../components/Footer/Footer";
-import bookingImage from "../../assets/images/bookingImage.png";
+import bookingImage from "../../assets/images/drink-prep.jpg";
 import {
   CalendarDays,
   MapPin,
@@ -12,6 +12,9 @@ import {
   Palette,
   BriefcaseBusiness,
   CircleCheck,
+  UserRound,
+  Phone,
+  Mail,
 } from "lucide-react";
 import { useEffect, useRef, useState, type SubmitEvent } from "react";
 import { useTranslation } from "react-i18next";
@@ -173,6 +176,44 @@ function Booking() {
                   </p>
 
                   <label>
+                    <UserRound size={21} strokeWidth={1.7} />
+                    <span>{t("booking.fields.fullName")}</span>
+                    <input
+                      name="fullName"
+                      type="text"
+                      autoComplete="name"
+                      required
+                      placeholder={t("booking.fields.fullNamePlaceholder")}
+                    />
+                  </label>
+
+                  <label>
+                    <Phone size={21} strokeWidth={1.7} />
+                    <span>{t("booking.fields.phoneNumber")}</span>
+                    <input
+                      name="phoneNumber"
+                      type="tel"
+                      autoComplete="tel"
+                      inputMode="numeric"
+                      pattern="[0-9]+"
+                      required
+                      placeholder={t("booking.fields.phoneNumberPlaceholder")}
+                    />
+                  </label>
+
+                  <label>
+                    <Mail size={21} strokeWidth={1.7} />
+                    <span>{t("booking.fields.email")}</span>
+                    <input
+                      name="email"
+                      type="email"
+                      autoComplete="email"
+                      required
+                      placeholder={t("booking.fields.emailPlaceholder")}
+                    />
+                  </label>
+
+                  <label>
                     <CalendarDays size={21} strokeWidth={1.7} />
                     <span>{t("booking.fields.eventDate")}</span>
                     <input name="eventDate" type="date" required />
@@ -282,11 +323,23 @@ function Booking() {
                         {t("booking.packages.placeholder")}
                       </option>
 
-                      <option value="bartending">
-                        {t("booking.packages.bartending")}
+                      <option value="el-basico">
+                        {t("booking.packages.elBasico")}
                       </option>
 
-                      <option value="bartending-catering">
+                      <option value="el-clasico">
+                        {t("booking.packages.elClasico")}
+                      </option>
+
+                      <option value="signature-sabor">
+                        {t("booking.packages.signatureSabor")}
+                      </option>
+
+                      <option value="bartending-content">
+                        {t("booking.packages.bartendingContent")}
+                      </option>
+
+                      {/* <option value="bartending-catering">
                         {t("booking.packages.bartendingCatering")}
                       </option>
 
@@ -296,7 +349,7 @@ function Booking() {
 
                       <option value="bartending-dj-content">
                         {t("booking.packages.bartendingDjContent")}
-                      </option>
+                      </option> */}
 
                       <option value="complete">
                         {t("booking.packages.complete")}

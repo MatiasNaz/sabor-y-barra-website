@@ -1,6 +1,11 @@
 /* HEADER */
 
+/* ---------------------------------------------------------------------- */
+
 /* ANNOUNCEMENT BAR */
+
+/* ---------------------------------------------------------------------- */
+
 .announcement-bar__container {
   background-color: var(--color-espresso);
   height: 55px;
@@ -59,6 +64,8 @@
 /* ---------------------------------------------------------------------- */
 
 /* LOGO & NAVBAR */
+
+/* ---------------------------------------------------------------------- */
 
 .header__navbar-section {
   height: 110px;
@@ -198,8 +205,25 @@
   color: var(--color-cream);
 }
 
+.navbar__hamburger {
+  display: none;
+  gap: 5px;
+  cursor: pointer;
+  background: none;
+  border: none;
+}
+
+.navbar__bar {
+  height: 3px;
+  width: 25px;
+  background-color: var(--color-espresso);
+}
+
 /* ---------------------------------------------------------------------- */
-/* RESPONSIVE HEADER */
+
+/* RESPONSIVE HEADER MEDIA QUERIES */
+
+/* ---------------------------------------------------------------------- */
 
 @media (max-width: 1600px) {
   .header__logo-img {
@@ -222,6 +246,8 @@
     padding-inline: 20px;
   }
 }
+
+/* ---------------------------------------------------------------------- */
 
 @media (max-width: 1050px) {
   .header__navbar-section {
@@ -260,7 +286,9 @@
   }
 }
 
-@media (max-width: 760px) {
+/* ---------------------------------------------------------------------- */
+
+@media (max-width: 768px) {
   .announcement-bar__container {
     height: 48px;
   }
@@ -275,22 +303,50 @@
   }
 
   .header__navbar-section {
-    padding: 6px 16px 18px;
+    position: relative;
+    z-index: 20;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
   }
 
   .header__logo-container {
+    display: flex;
+    justify-content: flex-start;
     width: 110px;
     height: 82px;
   }
 
   .header__logo-img {
-    height: 92px;
+    height: 75px;
+  }
+
+  .navbar__list-container {
+    display: flex;
+    flex: 0 0 auto;
+    justify-content: flex-end;
+    align-items: flex-start;
+    width: auto;
   }
 
   .navbar__list {
+    display: none;
+  }
+
+  .navbar__list--open {
+    position: absolute;
+    z-index: 20;
+    top: 100%;
+    left: 0;
+    width: 100%;
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 6px 12px;
+    margin: 0;
+    padding: 18px 16px 22px;
+    border-top: 1px solid var(--color-muted-tan);
+    background-color: var(--color-cream);
+    box-shadow: 0 10px 20px rgb(72 36 16 / 14%);
   }
 
   .navbar__list li {
@@ -315,5 +371,25 @@
 
   .booking-cta {
     padding: 10px 22px;
+  }
+
+  .navbar__hamburger {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    gap: 5px;
+    cursor: pointer;
+    background: none;
+    border: none;
+    margin-top: 7px;
+  }
+
+  .navbar__bar {
+    height: 3px;
+    width: 25px;
+    background-color: var(--color-espresso);
   }
 }

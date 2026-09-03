@@ -3,6 +3,7 @@
 /* BACKGROUND CONTAINERS */
 .craft-section {
   width: 100%;
+  overflow: hidden;
 }
 
 .craft-section__container {
@@ -120,12 +121,12 @@
 /* RESPONSIVE CRAFT SECTION */
 
 @media (max-width: 760px) {
-  .craft-section__bg {
+  .craft-section__container {
     padding: 0 20px 56px;
   }
 
   .collage {
-    width: calc(100% - 48px);
+    width: min(86%, 500px);
   }
 
   .photo-frame {
@@ -160,7 +161,7 @@
   }
 
   .craft__description p {
-    max-width: 620px;
+    width: min(100%, 620px);
   }
 
   .craft__description--line-break {
@@ -169,16 +170,16 @@
 }
 
 @media (max-width: 480px) {
-  .craft-section__bg {
+  .craft-section__container {
     padding-inline: 16px;
   }
 
   .collage {
-    width: 100%;
+    width: 86%;
   }
 
   .photo-frame {
-    margin-top: 72px;
+    margin-top: 56px;
     padding: 6px;
   }
 
@@ -211,5 +212,6 @@
 
   .craft__description p {
     font-size: 17px;
+    max-width: 330px;
   }
 }

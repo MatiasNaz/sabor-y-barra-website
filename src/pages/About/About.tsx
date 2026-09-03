@@ -23,13 +23,19 @@ function About() {
               <p className="about__placeholder-copy">
                 {t("about.story.placeholderCopy")}
               </p>
+
+              <div className="about__founder">
+                <span className="about__founder-name">
+                  {t("about.story.founderName")}
+                </span>
+                <span className="about__founder-role">
+                  {t("about.story.founderRole")}
+                </span>
+              </div>
             </div>
 
             <div className="about__story-image">
-              <img
-                src={founderImage}
-                alt={t("about.story.imageAlt")}
-              />
+              <img src={founderImage} alt={t("about.story.imageAlt")} />
             </div>
           </div>
         </section>
@@ -64,7 +70,6 @@ function About() {
             </div>
           </div>
         </section>
-
       </main>
 
       <Footer />

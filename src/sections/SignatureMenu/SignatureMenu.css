@@ -359,19 +359,21 @@
 
   .menu__card-content-left-card,
   .menu__card-content-right-card {
-    height: 620px;
+    height: auto;
   }
 
   .menu__card-desc-left,
   .menu__card-desc-right {
-    height: 280px;
-    flex-basis: 280px;
+    min-height: 280px;
+    height: auto;
+    flex-basis: auto;
     padding: 28px 20px;
   }
 
   .menu__card-img-left,
   .menu__card-img-right {
-    height: 340px;
-    flex-basis: 340px;
+    aspect-ratio: 4 / 5;
+    height: auto;
+    flex-basis: auto;
   }
 }

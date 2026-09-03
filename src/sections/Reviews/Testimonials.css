@@ -277,6 +277,19 @@
     margin: 24px 0 0;
     padding-bottom: 0;
   }
+
+  .testimonials__additional-reviews-container {
+    width: 100%;
+  }
+
+  .testimonials__additional-reviews-header-container {
+    width: min(100%, 320px);
+  }
+
+  .testimonials__additional-reviews-header {
+    line-height: 1.5;
+    text-align: center;
+  }
 }
 
 /* ---------------------------------------------------------------------------------------- */
@@ -312,8 +325,8 @@
   }
 
   .testimonials__message p {
-    font-size: 14px;
-    line-height: 2;
+    font-size: 16px;
+    line-height: 1.8;
   }
 }
 

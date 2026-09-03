@@ -18,6 +18,7 @@ function Header({ showBookingButton = true }: HeaderProps) {
   const languageMenuRef = useRef<HTMLDivElement>(null);
   const languageTriggerRef = useRef<HTMLButtonElement>(null);
   const activeLanguage = i18n.resolvedLanguage === "es" ? "es" : "en";
+  const [menuOpen, setMenuOpen] = useState(false);
 
   useEffect(() => {
     if (!isLanguageMenuOpen) return;
@@ -58,7 +59,12 @@ function Header({ showBookingButton = true }: HeaderProps) {
 
         {/* navigation bar & links */}
         <div className="navbar__list-container">
-          <ul className="navbar__list">
+          <ul
+            id="mobile-navigation"
+            className={`navbar__list ${
+              menuOpen ? "navbar__list--open" : ""
+            }`}
+          >
             <li>
               <Link to="/" className="navbar__links">
                 {t("nav.home")}
@@ -174,6 +180,21 @@ function Header({ showBookingButton = true }: HeaderProps) {
               </li>
             )}
           </ul>
+
+          {/* start of hamburger button */}
+          <button
+            className="navbar__hamburger"
+            type="button"
+            aria-label={t("nav.menu")}
+            aria-expanded={menuOpen}
+            aria-controls="mobile-navigation"
+            onClick={() => setMenuOpen((isOpen) => !isOpen)}
+          >
+            <span className="navbar__bar"></span>
+            <span className="navbar__bar"></span>
+            <span className="navbar__bar"></span>
+          </button>
+          {/* end of hamburger button */}
         </div>
       </nav>
     </header>

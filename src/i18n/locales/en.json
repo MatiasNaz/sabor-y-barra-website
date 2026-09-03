@@ -20,6 +20,7 @@
   },
   "nav": {
     "label": "Primary navigation",
+    "menu": "Toggle navigation menu",
     "home": "Home",
     "services": "Services",
     "signatureMenu": "Signature Menu",
@@ -95,8 +96,10 @@
     "story": {
       "eyebrow": "Our Story",
       "title": "The story behind Sabor Y Barra.",
-      "intro": "This space is reserved for the confirmed people, inspiration, and purpose behind Sabor Y Barra.",
-      "placeholderCopy": "Founder story placeholder: Add the confirmed story of how Sabor Y Barra began, the people who shaped it, and the personal inspiration behind the brand.",
+      "intro": "The inspiration behind Sabor Y Barra is deeply rooted in the values of family and home that my parents instilled in me.",
+      "placeholderCopy": "My father, with his charismatic spirit and gift for creating unforgettable experiences, taught me the art of hospitality. My mother, through her infectious laughter and genuine joy, showed me the beauty of sharing happiness with others. Through Sabor Y Barra, I have the privilege of carrying their love and example forward—serving others during their most cherished celebrations and helping create memories that last a lifetime.",
+      "founderName": "Lou Mergler",
+      "founderRole": "Founder & CEO",
       "imageAlt": "Sabor Y Barra founder preparing a cocktail",
       "imagePlaceholder": "Authentic founder or team photograph to be added"
     },
@@ -219,20 +222,26 @@
       "pm": "{{time}} PM"
     },
     "fields": {
-      "eventDate": "1. Event date?",
-      "eventLocation": "2. Event location?",
+      "fullName": "1. Full Name",
+      "fullNamePlaceholder": "Enter your full name",
+      "phoneNumber": "2. Phone Number",
+      "phoneNumberPlaceholder": "Enter your phone number",
+      "email": "3. Email",
+      "emailPlaceholder": "Enter your email address",
+      "eventDate": "4. Event date?",
+      "eventLocation": "5. Event location?",
       "eventLocationPlaceholder": "Street address, city, state, zip code",
-      "eventTime": "3. Event time?",
+      "eventTime": "6. Event time?",
       "eventTimePlaceholder": "Select bar service start time",
       "setupNote": "Setup begins at least 90 minutes prior.",
-      "guestCount": "4. Anticipated headcount?",
+      "guestCount": "7. Anticipated headcount?",
       "guestCountPlaceholder": "Enter approx. number of guests (1–400)",
-      "dressCode": "5. Dress Code",
-      "drinkPreferences": "6. Drink Preferences",
+      "dressCode": "8. Dress Code",
+      "drinkPreferences": "9. Drink Preferences",
       "drinkPreferencesPlaceholder": "Share any preferences, spirits, or must-haves...",
-      "menuDesign": "7. Menu Design",
+      "menuDesign": "10. Menu Design",
       "menuDesignPlaceholder": "Share your theme, colors, or design ideas...",
-      "packageSelection": "8. Package Selection"
+      "packageSelection": "11. Package Selection"
     },
     "dressCode": {
       "placeholder": "Select dress code",
@@ -245,7 +254,10 @@
     },
     "packages": {
       "placeholder": "Select a package",
-      "bartending": "Bartending Service",
+      "elBasico": "El Básico",
+      "elClasico": "El Clásico",
+      "signatureSabor": "Signature Sabor",
+      "bartendingContent": "Bartending + Photography / Content Team",
       "bartendingCatering": "Bartending + Catering",
       "bartendingDj": "Bartending + DJ",
       "bartendingDjContent": "Bartending + DJ + Photography / Content Team",

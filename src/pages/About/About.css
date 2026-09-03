@@ -99,6 +99,27 @@
   font-style: italic;
 }
 
+.about__founder {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin-top: 28px;
+  color: var(--color-espresso);
+}
+
+.about__founder-name {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.about__founder-role {
+  color: var(--color-brown);
+  font-size: 0.9rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
 .about__story-image {
   position: relative;
   aspect-ratio: 4 / 5;
