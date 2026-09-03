@@ -1,75 +1,59 @@
-# React + TypeScript + Vite
+# Sabor y Barra
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A production website for Sabor y Barra, a Puerto Rico-based mobile bartending and event-services business. I designed and developed the site in collaboration with the client to present its services, signature cocktails, brand story, and booking experience in both English and Spanish.
 
-Currently, two official plugins are available:
+## Highlights
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- Responsive, mobile-first interface across the home, signature menu, about, and booking pages
+- English/Spanish localization with a persistent language preference
+- Accessible navigation, keyboard states, semantic labels, and responsive hamburger menu
+- Multi-step booking experience with Web3Forms submission and Calendly scheduling
+- Testimonial carousel and structured service/menu content
+- Reusable React components and organized page/section architecture
+- Client-driven iteration from concept through production launch
 
-## React Compiler
+## Tech stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- React 19
+- TypeScript
+- Vite
+- React Router
+- i18next / react-i18next
+- Web3Forms
+- React Calendly
+- CSS3
+- ESLint
 
-## Expanding the ESLint configuration
+## Run locally
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
-
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-
+```bash
+git clone https://github.com/MatiasNaz/sabor-y-barra-website.git
+cd sabor-y-barra-website
+npm install
+cp .env.example .env
+npm run dev
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+Add your own Web3Forms access key to `.env`:
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-
+```env
+VITE_WEB3FORMS_ACCESS_KEY=your_web3forms_access_key
 ```
+
+## Available scripts
+
+```bash
+npm run dev
+npm run build
+npm run lint
+npm run preview
+```
+
+## Project context
+
+This is a real client project, not a template exercise. The repository is shared publicly with the client's permission as part of my software-development portfolio. Brand assets, photography, copy, and other Sabor y Barra materials remain the property of their respective owners and are not licensed for reuse.
+
+## Developer
+
+**Matias Nazabal**  
+[GitHub](https://github.com/MatiasNaz) · [LinkedIn](https://www.linkedin.com/in/matias-nazabal/)
