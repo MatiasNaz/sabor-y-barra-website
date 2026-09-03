@@ -350,6 +350,16 @@
     grid-template-columns: minmax(0, 1fr);
     padding: 0 20px 80px;
   }
+
+  /* Keep the same image-first card flow throughout the mobile menu. */
+  .menu__card-img-left {
+    order: -1;
+    border-radius: 10px 10px 0 0;
+  }
+
+  .menu__card-desc-left {
+    border-radius: 0 0 10px 10px;
+  }
 }
 
 @media (max-width: 480px) {
