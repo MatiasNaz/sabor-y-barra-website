@@ -288,7 +288,8 @@
 
 /* ---------------------------------------------------------------------- */
 
-@media (max-width: 768px) {
+/* Use the existing mobile navigation through tablet widths. */
+@media (max-width: 1050px) {
   .announcement-bar__container {
     height: 48px;
   }

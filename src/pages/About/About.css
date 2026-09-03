@@ -230,9 +230,15 @@ END OUR PHILOSOPHY CARD */
   END OUR PHILOSOPHY RESPONSIVE STYLES */
 }
 
-@media (max-width: 700px) {
+@media (max-width: 768px) {
   .about__container {
     width: min(100% - 40px, 1200px);
+  }
+
+  /* Lead with the founder image before the story copy on mobile. */
+  .about__story-image {
+    order: -1;
+    justify-self: center;
   }
 
   /* OUR PHILOSOPHY RESPONSIVE STYLES — TEMPORARILY DISABLED
