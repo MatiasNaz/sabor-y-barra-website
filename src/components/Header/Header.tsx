@@ -18,6 +18,8 @@ function Header({ showBookingButton = true }: HeaderProps) {
   const languageMenuRef = useRef<HTMLDivElement>(null);
   const languageTriggerRef = useRef<HTMLButtonElement>(null);
   const activeLanguage = i18n.resolvedLanguage === "es" ? "es" : "en";
+
+  // hamburger button state
   const [menuOpen, setMenuOpen] = useState(false);
 
   useEffect(() => {
@@ -61,9 +63,9 @@ function Header({ showBookingButton = true }: HeaderProps) {
         <div className="navbar__list-container">
           <ul
             id="mobile-navigation"
-            className={`navbar__list ${
-              menuOpen ? "navbar__list--open" : ""
-            }`}
+            /* on mobile version, if menuOpen is true, add the navbar__list--open class, 
+            otherwise, do nothing -- condition ? valueIfTrue : valueIfFalse */
+            className={`navbar__list ${menuOpen ? "navbar__list--open" : ""}`}
           >
             <li>
               <Link to="/" className="navbar__links">
@@ -183,7 +185,10 @@ function Header({ showBookingButton = true }: HeaderProps) {
 
           {/* start of hamburger button */}
           <button
-            className="navbar__hamburger"
+            /* if hamburger button is open, add the hamburger class to transform into an X, 
+          otherwise, do nothing
+          */
+            className={`navbar__hamburger ${menuOpen ? "navbar__hamburger--open" : ""}`}
             type="button"
             aria-label={t("nav.menu")}
             aria-expanded={menuOpen}
