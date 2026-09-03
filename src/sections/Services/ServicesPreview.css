@@ -211,7 +211,11 @@
 
 /* ------------------------------------------------------------------------------------------ */
 
-/* RESPONSIVE SERVICES */
+/* RESPONSIVE MEDIA QUERIES */
+
+/* ------------------------------------------------------------------------------------------ */
+
+/* TABLETS */
 
 @media (max-width: 1050px) {
   .services-preview__services-intro-card {
@@ -244,7 +248,11 @@
   }
 }
 
-@media (max-width: 760px) {
+/* ------------------------------------------------------------------------------------------ */
+
+/* MOBILE */
+
+@media (max-width: 768px) {
   .services-preview__services-intro-heading {
     height: auto;
     min-height: 40px;
@@ -270,6 +278,18 @@
   .services-preview__card-img-container {
     width: 100%;
     height: clamp(240px, 65vw, 360px);
+  }
+
+  .bartender-serving {
+    object-position: 50% 16%;
+  }
+
+  .bartender-corporate {
+    object-position: 50% 60%;
+  }
+
+  .green-cocktails {
+    object-position: 50% 65%;
   }
 
   .services-preview__card-description-container {
@@ -299,6 +319,10 @@
     display: inline;
   }
 }
+
+/* ------------------------------------------------------------------------------------------ */
+
+/* SMALL PHONES */
 
 @media (max-width: 480px) {
   .services-preview__services-intro-text {

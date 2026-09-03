@@ -21,7 +21,7 @@ function ServicesPreview() {
           <div className="services-preview__services-card-container">
             <div className="services-preview__card-img-container">
               <img
-                className="services-preview__card-img"
+                className="services-preview__card-img bartender-serving"
                 src={bartenderServingImg}
                 alt={t("services.private.imageAlt")}
               />
@@ -82,7 +82,7 @@ function ServicesPreview() {
             </div>
             <div className="services-preview__card-img-container">
               <img
-                className="services-preview__card-img"
+                className="services-preview__card-img bartender-corporate"
                 src={bartenderCorporateImg}
                 alt={t("services.corporate.imageAlt")}
               />
@@ -96,7 +96,7 @@ function ServicesPreview() {
           <div className="services-preview__services-card-container">
             <div className="services-preview__card-img-container">
               <img
-                className="services-preview__card-img"
+                className="services-preview__card-img green-cocktails"
                 src={cocktailOmakaseIntroImg}
                 alt={t("services.omakase.imageAlt")}
               />
