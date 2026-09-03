@@ -1,6 +1,6 @@
 # Sabor y Barra
 
-A production website for Sabor y Barra, a Puerto Rico-based mobile bartending and event-services business. I designed and developed the site in collaboration with the client to present its services, signature cocktails, brand story, and booking experience in both English and Spanish.
+A production website for Sabor y Barra, a mobile bartending and event-services business based out of New York City and Puerto Rico. I designed and developed the site in collaboration with the client to present its services, signature cocktails, brand story, and booking experience in both English and Spanish.
 
 ## Highlights
 
