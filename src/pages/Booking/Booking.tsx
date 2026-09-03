@@ -258,7 +258,7 @@ function Booking() {
                       name="guestCount"
                       type="number"
                       min="0"
-                      max="400"
+                      max="5000"
                       step="1"
                       required
                       placeholder={t("booking.fields.guestCountPlaceholder")}
