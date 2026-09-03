@@ -138,10 +138,11 @@
   }
 }
 
-@media (max-width: 760px) {
+@media (max-width: 768px) {
   .hero__section {
     min-height: 460px;
     padding: 64px 20px;
+    margin-bottom: 40px;
   }
 
   .hero__welcome-container {
