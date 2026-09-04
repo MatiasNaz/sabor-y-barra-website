@@ -2,6 +2,7 @@ import "./ServicesPreview.css";
 import bartenderServingImg from "../../assets/images/bartender-serving-drink.jpg";
 import bartenderCorporateImg from "../../assets/images/bartender-social-event.jpg";
 import cocktailOmakaseIntroImg from "../../assets/images/green-drinks.jpg";
+import packagesFaqsPdf from "../../assets/syb-packages-faqs.pdf";
 import { useTranslation } from "react-i18next";
 
 function ServicesPreview() {
@@ -39,7 +40,7 @@ function ServicesPreview() {
                   {t("services.private.description")}
                 </p>
                 <a
-                  href="https://www.canva.com/design/DAG2FH0FYRo/B-YpeGK0dSOlFRMO3k2K9A/edit"
+                  href={packagesFaqsPdf}
                   className="services-preview__booking-cta"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -71,7 +72,7 @@ function ServicesPreview() {
                   {t("services.corporate.description")}
                 </p>
                 <a
-                  href="https://www.canva.com/design/DAG2FH0FYRo/B-YpeGK0dSOlFRMO3k2K9A/edit"
+                  href={packagesFaqsPdf}
                   className="services-preview__booking-cta"
                   target="_blank"
                   rel="noopener noreferrer"
