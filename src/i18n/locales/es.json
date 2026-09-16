@@ -35,6 +35,7 @@
   },
   "services": {
     "title": "nuestros servicios",
+    "exploreServices": "Explorar Servicios",
     "private": {
       "title": "eventos privados",
       "subtitle": "Cócteles de alto nivel creados para tu ocasión. Encuentros inolvidables.",
@@ -50,10 +51,228 @@
     },
     "omakase": {
       "title": "omakase de cócteles",
+      "moreInfo": "Más Información",
       "subtitle": "Tu gusto. Nuestra creatividad. Una experiencia de cócteles como ninguna otra.",
       "description": "Una experiencia guiada de cócteles inspirada en tus preferencias, donde cada bebida se crea cuidadosamente para sorprender, deleitar y contar una historia.",
       "comingSoon": "Próximamente.",
       "imageAlt": "Bartender sirviendo un cóctel"
+    }
+  },
+  "servicesPage": {
+    "intro": {
+      "eyebrow": "Servicios",
+      "title": "Experiencias de barra seleccionadas cuidadosamente para tu ocasión.",
+      "description": "Sabor Y Barra lleva una hospitalidad cálida e intencional a eventos privados, encuentros corporativos y futuras experiencias especializadas mediante un servicio de barra diseñado en torno a cada celebración.",
+      "cta": "Explorar Paquetes y Servicios"
+    },
+    "packages": {
+      "eyebrow": "La Experiencia",
+      "title": "Paquetes para Eventos Privados",
+      "corporateTitle": "Paquetes para Eventos Corporativos",
+      "getQuote": "Solicitar Cotización",
+      "mostRequested": "Más Solicitado",
+      "included": "Incluido",
+      "extensionPrice": "+ $100/hora",
+      "staffPrice": "+ $75/hora",
+      "customMenu": "Curaduría y enmarcado de menú personalizado",
+      "customMenuDetail": "(listo para exhibirse y adaptado a tu estilo y al tema de tu evento)",
+      "portableBar": "Barra portátil",
+      "iceGarnishes": "Hielo y guarniciones",
+      "extension": "Extensión del servicio de barra",
+      "corporate": {
+        "licensedInsured": "Con licencia y seguro",
+        "viewDetails": "Ver detalles del paquete",
+        "extensionLabel": "Tarifa de extensión",
+        "extensionPerStaffLabel": "Tarifa de extensión — (por miembro del personal)",
+        "staffLabel": "Personal adicional — (por bartender o mesero)",
+        "boardroom": {
+          "name": "Boardroom",
+          "summary": "Nuestro servicio esencial de barra corporativa, diseñado para reuniones, celebraciones de oficina, eventos de networking y encuentros empresariales.",
+          "guests": "Para eventos de menos de 50 invitados.",
+          "attire": "1 bartender con atuendo formal y camisa de vestir negra o blanca",
+          "setupEquipment": "Montaje, desmontaje y equipo completo de barra incluidos (herramientas y neveras)",
+          "serviceItems": "Servicio de cerveza y vino, preparación de cócteles clásicos, vasos de plástico y servilletas de cóctel",
+          "menuLabel": "Menú personalizado",
+          "iceLabel": "Hielo y guarniciones",
+          "service": "Servicio corporativo esencial de barra, diseñado para reuniones, celebraciones de oficina, eventos de networking y encuentros corporativos con menos de 50 personas",
+          "consultation": "Consulta previa al evento",
+          "hours": "Hasta 3 horas de servicio de barra",
+          "bartender": "1 bartender vestido profesionalmente",
+          "shirt": "Camisa de botones blanca o negra",
+          "tie": "Corbata negra",
+          "slacks": "Pantalón de vestir negro",
+          "shoes": "Zapatos de vestir negros",
+          "apron": "Delantal de barra",
+          "setup": "Montaje y desmontaje incluidos",
+          "equipment": "Equipo completo de barra incluido",
+          "tools": "Herramientas de barra",
+          "coolers": "Neveras",
+          "beerWine": "Servicio de cerveza y vino",
+          "cocktails": "Preparación de cócteles clásicos",
+          "plasticware": "Vasos de plástico y servilletas de cóctel",
+          "menu": "Menú seleccionado — $50",
+          "ice": "Hielo y guarniciones — $50",
+          "portableBar": "Barra portátil — $100",
+          "extension": "Tarifa de extensión — $100/hora",
+          "staff": "Personal adicional — $75/hora por bartender o servidor"
+        },
+        "executive": {
+          "name": "Executive",
+          "summary": "Una experiencia mejorada para los invitados, con más opciones de personalización.",
+          "guests": "Para eventos de menos de 100 invitados.",
+          "boardroomFeatures": "Todas las características de Boardroom",
+          "includedItems": "Menú personalizado, hielo, guarniciones y barra portátil incluidos",
+          "service": "Todas las características de BOARDROOM, elevadas con personalización y una experiencia mejorada para los invitados; ideal para eventos de menos de 100 personas",
+          "hours": "Hasta 4 horas de servicio",
+          "bartenders": "Hasta 2 bartenders incluidos",
+          "cocktails": "Preparación de cócteles clásicos y de autor",
+          "menu": "Menú seleccionado incluido",
+          "ice": "Hielo y guarniciones incluidos",
+          "portableBar": "Barra portátil incluida",
+          "extension": "Tarifa de extensión — $100/hora por miembro del personal",
+          "staff": "Personal adicional — $75/hora por bartender o servidor"
+        },
+        "cSuite": {
+          "name": "C-Suite",
+          "summary": "La experiencia Signature Sabor de atención impecable, diseñada para activaciones de marca y cócteles inspirados en la cultura, los colores y la campaña de tu empresa.",
+          "guests": "Para eventos de menos de 250 invitados.",
+          "executiveFeatures": "Todas las características de Executive",
+          "service": "La experiencia Signature Sabor de atención impecable, diseñada para activaciones de marca y una selección de cócteles inspirada en la cultura, los colores y la campaña de tu empresa; ideal para hasta 250 personas",
+          "executive": "Todas las características de EXECUTIVE",
+          "hours": "Hasta 5 horas de servicio de barra",
+          "staffing": "Hasta 3 bartenders y 1 servidor incluidos",
+          "premium": "Siropes y guarniciones prémium",
+          "cocktails": "Cócteles personalizados, seleccionados para tu marca o campaña",
+          "extension": "Tarifa de extensión — $100/hora por miembro del personal",
+          "staff": "Personal adicional — $75/hora por bartender o servidor"
+        }
+      },
+      "basico": {
+        "name": "El Básico",
+        "price": "$400",
+        "hours": "Hasta 3 horas de servicio de barra"
+      },
+      "clasico": {
+        "name": "El Clásico",
+        "price": "$550",
+        "hours": "Hasta 4 horas de servicio de barra",
+        "essentials": "Vasos de plástico, servilletas de cóctel, hielo y guarniciones"
+      },
+      "signature": {
+        "name": "Signature Sabor",
+        "price": "$700",
+        "hours": "Hasta 5 horas de servicio de barra",
+        "essentials": "Vasos de plástico, servilletas de cóctel y hielo",
+        "premium": "Guarniciones prémium y siropes personalizados"
+      },
+      "privateDetails": {
+        "equipment": "Montaje, desmontaje y equipo completo de barra incluidos",
+        "equipmentDetail": "(herramientas y neveras)",
+        "consultation": "Consulta de cócteles previa al evento"
+      }
+    },
+    "chapter": {
+      "lineOne": "Más sabor para celebrar.",
+      "lineTwo": "Más maneras de dar vida a tu celebración.",
+      "cta": "Servicios Adicionales"
+    }
+  },
+  "additionalServices": {
+    "navigation": {
+      "events": "Eventos",
+      "additional": "Servicios Adicionales"
+    },
+    "intro": {
+      "eyebrow": "Servicios Adicionales",
+      "title": "Más formas de dar vida a tu celebración.",
+      "description": "Descubre nuevas experiencias y colaboraciones pensadas para complementar tu celebración. Pronto compartiremos más detalles."
+    },
+    "omakase": {
+      "eyebrow": "Omakase de Cócteles",
+      "title": "Este otoño, al ritmo de las estaciones...",
+      "leadTitle": "Una ciudad, tres tiempos, una historia",
+      "leadDescription": "Sabor Y Barra presenta una experiencia íntima de degustación donde la cultura, el sabor y la música se unen a través de los cócteles.",
+      "tastingTitle": "Degustación de cócteles en 3 tiempos",
+      "tastingDescription": "Tres cócteles originales creados en torno a un tema, una cultura y un destino distintivos.",
+      "localTitle": "Inspiración local",
+      "localDescription": "Ingredientes de temporada y de origen local dan vida a cada ciudad y a cada historia.",
+      "merryTitle": "Bebe, come y celebra",
+      "merryDescription": "Cada degustación estará acompañada de bocados seleccionados; los invitados también podrán traer su propia comida.",
+      "sonicTitle": "Sonic Sabor",
+      "sonicDescription": "Algunas experiencias contarán con DJ y/o músicos en vivo para completar la velada.",
+      "timeline": "El Cocktail Omakase inaugural está actualmente en desarrollo. Se anticipa que las reservaciones abran el 1 de octubre, y la primera experiencia está prevista para principios de noviembre.",
+      "comingSoon": "La lista de prerreservas abre el viernes - 18/9/26",
+      "cta": "Únete a la Lista"
+    },
+    "chapter": {
+      "title": "Un poco más de sabor para cada celebración."
+    },
+    "bundles": {
+      "eyebrow": "Juntos, con intención",
+      "title": "Experiencias Combinadas",
+      "description": "Tres maneras de unir servicios creativos que se complementan.",
+      "note": "Los servicios combinados aplican tanto a paquetes privados como corporativos",
+      "vision": {
+        "name": "Sabor y Visión",
+        "price": "+ $1,500",
+        "selection": "Selección de paquete SYB",
+        "hours": "Hasta 4 horas de servicio de fotografía",
+        "photos": "300 fotografías sin editar",
+        "edits": "10 ediciones según lo solicite el cliente",
+        "recap": "Video resumen del evento de 30 segundos",
+        "recapPrice": "+ $200",
+        "video": "Cobertura de video de formato largo",
+        "videoPrice": "+ $50"
+      },
+      "flow": {
+        "name": "Sabor y Flow",
+        "price": "+ $1,250",
+        "selection": "Selección de paquete SYB",
+        "hours": "Hasta 4 horas de servicio de DJ",
+        "deck": "Consola de DJ",
+        "music": "Selección musical personalizable, diseñada según el tema del evento",
+        "decoration": "Decoración e iluminación de la cabina de DJ",
+        "decorationPrice": "+ $250",
+        "lighting": "Equipo de iluminación profesional",
+        "lightingPrice": "Precio variable"
+      },
+      "puro": {
+        "name": "Puro Sabor",
+        "price": "+ $2,500",
+        "selection": "Selección de paquete SYB",
+        "vision": "Características de Sabor y Visión",
+        "flow": "Características de Sabor y Flow",
+        "grading": "Corrección de color de video",
+        "gradingPrice": "+ $50",
+        "revisions": "Revisiones de video",
+        "revisionsPrice": "+ $75 por edición",
+        "photos": "+200 fotografías sin editar",
+        "photosPrice": "+ $75",
+        "recap": "Edición o extensión del video resumen",
+        "recapPrice": "+ $100"
+      }
+    },
+    "collaborators": {
+      "eyebrow": "Servicios Individuales",
+      "title": "Conoce a nuestros colaboradores.",
+      "description": "Descubre los servicios individuales de nuestros colaboradores de confianza. Pronto añadiremos sus nombres y detalles.",
+      "imagePlaceholder": "Fotografía del colaborador próximamente",
+      "inquire": "Consulta Sobre Este Servicio",
+      "first": {
+        "name": "Colaborador Uno",
+        "category": "Servicio por anunciar",
+        "description": "Pronto presentaremos los servicios y el enfoque de este colaborador."
+      },
+      "second": {
+        "name": "Colaborador Dos",
+        "category": "Servicio por anunciar",
+        "description": "Pronto presentaremos los servicios y el enfoque de este colaborador."
+      },
+      "third": {
+        "name": "Colaborador Tres",
+        "category": "Servicio por anunciar",
+        "description": "Pronto presentaremos los servicios y el enfoque de este colaborador."
+      }
     }
   },
   "craft": {

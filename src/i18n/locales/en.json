@@ -35,6 +35,7 @@
   },
   "services": {
     "title": "our services",
+    "exploreServices": "Explore Services",
     "private": {
       "title": "private events",
       "subtitle": "Elevated cocktails crafted for your occasion. Unforgettable gatherings.",
@@ -50,10 +51,228 @@
     },
     "omakase": {
       "title": "cocktail omakase",
+      "moreInfo": "More Info",
       "subtitle": "Your taste. Our creativity. A cocktail experience unlike any other.",
       "description": "A guided cocktail experience shaped around your preferences, where each pour is thoughtfully crafted to surprise, delight, and tell a story.",
       "comingSoon": "Coming soon.",
       "imageAlt": "Bartender serving a cocktail"
+    }
+  },
+  "servicesPage": {
+    "intro": {
+      "eyebrow": "Services",
+      "title": "Curated bar experiences, thoughtfully made for your occasion.",
+      "description": "Sabor Y Barra brings warm, intentional hospitality to private events, corporate gatherings, and future specialty experiences through bar service shaped around every celebration.",
+      "cta": "Explore Packages & Services"
+    },
+    "packages": {
+      "eyebrow": "The Experience",
+      "title": "Private Event Packages",
+      "corporateTitle": "Corporate Event Packages",
+      "getQuote": "Get Quote",
+      "mostRequested": "Most Requested",
+      "included": "Included",
+      "extensionPrice": "+ $100/hr",
+      "staffPrice": "+ $75/hr",
+      "customMenu": "Custom menu curation and framing",
+      "customMenuDetail": "(display-ready and tailored to your style and event theme)",
+      "portableBar": "Portable bar",
+      "iceGarnishes": "Ice & garnishes",
+      "extension": "Bar service extension",
+      "corporate": {
+        "licensedInsured": "Licensed & insured",
+        "viewDetails": "View Package Details",
+        "extensionLabel": "Extension rate",
+        "extensionPerStaffLabel": "Extension rate — (per staff)",
+        "staffLabel": "Additional staff — (per bartender/server)",
+        "boardroom": {
+          "name": "Boardroom",
+          "summary": "Our essential corporate bar service, designed for meetings, office celebrations, networking events, and corporate gatherings.",
+          "guests": "For events with fewer than 50 guests.",
+          "attire": "1 bartender in formal attire with a black or white dress shirt",
+          "setupEquipment": "Setup, breakdown, and full bar equipment included (tools and coolers)",
+          "serviceItems": "Beer & wine service, classic cocktail prep, plasticware, and cocktail napkins",
+          "menuLabel": "Curated menu",
+          "iceLabel": "Ice & garnishes",
+          "service": "Essential Corporate Bar Service, geared for meetings, office celebrations, networking events and corporate gatherings with < 50 people",
+          "consultation": "Pre-event consultation",
+          "hours": "Up to 3 hrs of bar service",
+          "bartender": "1 professionally-dressed bartender",
+          "shirt": "Either white or black button down",
+          "tie": "Black tie",
+          "slacks": "Black slacks",
+          "shoes": "Black dress shoes",
+          "apron": "Bar apron",
+          "setup": "Setup & breakdown included",
+          "equipment": "Full bar equipment included",
+          "tools": "Bar tools",
+          "coolers": "Coolers",
+          "beerWine": "Beer & wine service",
+          "cocktails": "Classic cocktail prep",
+          "plasticware": "Plasticware, cocktail napkins",
+          "menu": "Curated menu — $50",
+          "ice": "Ice & garnishes — $50",
+          "portableBar": "Portable bar — $100",
+          "extension": "Extension rate — $100/hr",
+          "staff": "Additional staff — $75/hr per bartender/server"
+        },
+        "executive": {
+          "name": "Executive",
+          "summary": "Elevated with customization and an enhanced guest experience.",
+          "guests": "For events with fewer than 100 guests.",
+          "boardroomFeatures": "Every Boardroom feature",
+          "includedItems": "Curated menu, ice & garnishes, and portable bar included",
+          "service": "Every BOARDROOM feature, elevated with customization and an enhanced guest experience, best suited for events < 100 people",
+          "hours": "Up to 4 hrs of bar service",
+          "bartenders": "Up to 2 bartenders included",
+          "cocktails": "Classic & Signature cocktail prep",
+          "menu": "Curated menu included",
+          "ice": "Ice & garnishes included",
+          "portableBar": "Portable bar included",
+          "extension": "Extension rate — $100/hr per staff",
+          "staff": "Additional staff — $75/hr per bartender/server"
+        },
+        "cSuite": {
+          "name": "C-Suite",
+          "summary": "The white glove Signature Sabor experience, geared to brand activation and cocktail curation inspired by your company culture, colors, and campaign.",
+          "guests": "For events with fewer than 250 guests.",
+          "executiveFeatures": "Every Executive feature",
+          "service": "The white glove Signature Sabor experience, geared to brand activation and cocktail curation inspired by your company culture, colors, and campaign, best suited for up to 250 people",
+          "executive": "Every EXECUTIVE feature",
+          "hours": "Up to 5 hrs of bar service",
+          "staffing": "Up to 3 bartenders and 1 server included",
+          "premium": "Premium syrups and garnishes",
+          "cocktails": "Custom cocktails, curated to your brand or campaign",
+          "extension": "Extension rate — $100/hr per staff",
+          "staff": "Additional staff — $75/hr per bartender/server"
+        }
+      },
+      "basico": {
+        "name": "El Básico",
+        "price": "$400",
+        "hours": "Up to 3 hours of bar service"
+      },
+      "clasico": {
+        "name": "El Clásico",
+        "price": "$550",
+        "hours": "Up to 4 hours of bar service",
+        "essentials": "Plasticware, cocktail napkins, ice, and garnishes"
+      },
+      "signature": {
+        "name": "Signature Sabor",
+        "price": "$700",
+        "hours": "Up to 5 hours of bar service",
+        "essentials": "Plasticware, cocktail napkins, and ice",
+        "premium": "Premium garnishes and custom syrups"
+      },
+      "privateDetails": {
+        "equipment": "Setup, breakdown, and full bar equipment included",
+        "equipmentDetail": "(tools and coolers)",
+        "consultation": "Pre-event cocktail consultation"
+      }
+    },
+    "chapter": {
+      "lineOne": "Bring in more Sabor.",
+      "lineTwo": "More ways to bring your celebration to life.",
+      "cta": "Additional Services"
+    }
+  },
+  "additionalServices": {
+    "navigation": {
+      "events": "Events",
+      "additional": "Additional Services"
+    },
+    "intro": {
+      "eyebrow": "Additional Services",
+      "title": "More ways to bring your gathering to life.",
+      "description": "Explore new experiences and thoughtful collaborations designed to complement your celebration. Details are coming soon."
+    },
+    "omakase": {
+      "eyebrow": "Cocktail Omakase",
+      "title": "Coming this Autumn, synced with the seasons...",
+      "leadTitle": "One city, three courses, one story",
+      "leadDescription": "Sabor Y Barra introduces an intimate tasting experience where culture, flavor, and music come together through cocktails.",
+      "tastingTitle": "3-course cocktail tasting",
+      "tastingDescription": "Three original cocktails curated around a distinct theme, culture, and destination.",
+      "localTitle": "Locally inspired",
+      "localDescription": "Seasonal and locally sourced ingredients bring each city and story to life.",
+      "merryTitle": "Drink, eat, be merry",
+      "merryDescription": "Curated bites will accompany each tasting; guests are welcome to BYO food as well.",
+      "sonicTitle": "Sonic Sabor",
+      "sonicDescription": "Select experiences will feature a DJ and/or live musicians to complete the experience.",
+      "timeline": "The inaugural Cocktail Omakase is currently in the works. Reservations are anticipated to open October 1st, with the first experience planned for early November.",
+      "comingSoon": "Pre-reservation list open Friday - 9/18/26",
+      "cta": "Join the List"
+    },
+    "chapter": {
+      "title": "A little more Sabor for every celebration."
+    },
+    "bundles": {
+      "eyebrow": "Together, Thoughtfully",
+      "title": "Bundled Experiences",
+      "description": "Three ways to bring complementary creative services together.",
+      "note": "Bundled services applicable to both private and corporate packages",
+      "vision": {
+        "name": "Sabor y Visión",
+        "price": "+ $1,500",
+        "selection": "SYB Package Selection",
+        "hours": "Up to 4 hrs of photo service",
+        "photos": "300 unedited photos",
+        "edits": "10 edits as requested by client",
+        "recap": "30-second event recap video",
+        "recapPrice": "+ $200",
+        "video": "Long form video coverage",
+        "videoPrice": "+ $50"
+      },
+      "flow": {
+        "name": "Sabor y Flow",
+        "price": "+ $1,250",
+        "selection": "SYB Package Selection",
+        "hours": "Up to 4 hrs of DJ service",
+        "deck": "DJ Deck",
+        "music": "Customizable music selection, curated to event theme",
+        "decoration": "DJ booth decoration & lighting",
+        "decorationPrice": "+ $250",
+        "lighting": "Professional lighting equipment",
+        "lightingPrice": "$ varies"
+      },
+      "puro": {
+        "name": "Puro Sabor",
+        "price": "+ $2,500",
+        "selection": "SYB Package Selection",
+        "vision": "Sabor y Visión features",
+        "flow": "Sabor y Flow features",
+        "grading": "Video color grading",
+        "gradingPrice": "+ $50",
+        "revisions": "Video revisions",
+        "revisionsPrice": "+ $75/edit",
+        "photos": "+200 unedited photos",
+        "photosPrice": "+ $75",
+        "recap": "Recap video edit/extension",
+        "recapPrice": "+ $100"
+      }
+    },
+    "collaborators": {
+      "eyebrow": "Individual Services",
+      "title": "Meet our collaborators.",
+      "description": "Explore individual services from our trusted collaborators. Names and service details will be added soon.",
+      "imagePlaceholder": "Collaborator photograph coming soon",
+      "inquire": "Ask About This Service",
+      "first": {
+        "name": "Collaborator One",
+        "category": "Service to be announced",
+        "description": "This collaborator's services and approach will be introduced here soon."
+      },
+      "second": {
+        "name": "Collaborator Two",
+        "category": "Service to be announced",
+        "description": "This collaborator's services and approach will be introduced here soon."
+      },
+      "third": {
+        "name": "Collaborator Three",
+        "category": "Service to be announced",
+        "description": "This collaborator's services and approach will be introduced here soon."
+      }
     }
   },
   "craft": {

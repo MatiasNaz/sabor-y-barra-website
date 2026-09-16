@@ -34,6 +34,8 @@
   display: block;
   width: 100%;
   aspect-ratio: 4 / 5;
+  object-fit: cover;
+  object-position: center;
 }
 
 /* PHOTO FRAME LABEL */
@@ -60,6 +62,10 @@
   z-index: 1;
 }
 
+.photo-frame--left img {
+  object-position: center 45%;
+}
+
 /* CENTER PHOTOGRAPH */
 .photo-frame--center {
   transform: scale(1.06);
@@ -67,8 +73,7 @@
 }
 
 .photo-frame--center img {
-  object-position: 0px -80px;
-  object-fit: cover;
+  object-position: center 60%;
 }
 
 /* RIGHT PHOTOGRAPH */
@@ -76,6 +81,10 @@
   margin-left: -45px;
   transform: rotate(3deg) translateX(50px) translateY(18px);
   z-index: 1;
+}
+
+.photo-frame--right img {
+  object-position: center 52%;
 }
 
 /* CRAFT DESCRIPTION */

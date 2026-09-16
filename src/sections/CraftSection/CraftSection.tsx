@@ -1,7 +1,7 @@
 import "./CraftSection.css";
-import citrusCordialImage from "../../assets/images/citrus-cordial-pic.png";
-import drinkPrepImage from "../../assets/images/yellow-drink-prep.jpg";
-import mixingGlassImage from "../../assets/images/mixing-glass-pour.png";
+import servingDrinkImg from "../../assets/images/bartender-serving-drink.jpg";
+import pinkShirtImg from "../../assets/images/lou-pink-shirt.jpg";
+import rougeSoleilBarImg from "../../assets/images/drinks/rouge-soleil-bar-img.jpg";
 import { useTranslation } from "react-i18next";
 
 function CraftSection() {
@@ -16,7 +16,7 @@ function CraftSection() {
           <figure className="photo-frame photo-frame--left">
             <img
               className="photo-left"
-              src={citrusCordialImage}
+              src={servingDrinkImg}
               alt={t("craft.leftImageAlt")}
             />
             <div className="photo-label-container">
@@ -29,7 +29,7 @@ function CraftSection() {
           <figure className="photo-frame photo-frame--center">
             <img
               className="photo-center"
-              src={drinkPrepImage}
+              src={rougeSoleilBarImg}
               alt={t("craft.centerImageAlt")}
             />
             <div className="photo-label-container">
@@ -45,7 +45,7 @@ function CraftSection() {
           <figure className="photo-frame photo-frame--right">
             <img
               className="photo-right"
-              src={mixingGlassImage}
+              src={pinkShirtImg}
               alt={t("craft.rightImageAlt")}
             />
             <div className="photo-label-container">

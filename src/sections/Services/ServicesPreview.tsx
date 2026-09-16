@@ -1,8 +1,8 @@
 import "./ServicesPreview.css";
-import bartenderServingImg from "../../assets/images/bartender-serving-drink.jpg";
+import grayApronImg from "../../assets/images/lou-private-serving-img.jpg";
 import bartenderCorporateImg from "../../assets/images/bartender-social-event.jpg";
 import cocktailOmakaseIntroImg from "../../assets/images/green-drinks.jpg";
-import packagesFaqsPdf from "../../assets/syb-packages-faqs.pdf";
+import { Link } from "react-router";
 import { useTranslation } from "react-i18next";
 
 function ServicesPreview() {
@@ -20,10 +20,10 @@ function ServicesPreview() {
         {/* start of services intro card 1 */}
         <div className="services-preview__services-intro-card">
           <div className="services-preview__services-card-container">
-            <div className="services-preview__card-img-container">
+            <div className="services-preview__card-img-container services-preview__card-img-container--private">
               <img
                 className="services-preview__card-img bartender-serving"
-                src={bartenderServingImg}
+                src={grayApronImg}
                 alt={t("services.private.imageAlt")}
               />
             </div>
@@ -39,14 +39,9 @@ function ServicesPreview() {
                 <p className="services-preview__card-description-body-text">
                   {t("services.private.description")}
                 </p>
-                <a
-                  href={packagesFaqsPdf}
-                  className="services-preview__booking-cta"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  {t("common.bookNow")}
-                </a>
+                <Link to="/services" className="services-preview__booking-cta">
+                  {t("services.exploreServices")}
+                </Link>
               </div>
             </div>
           </div>
@@ -71,14 +66,9 @@ function ServicesPreview() {
                 <p className="services-preview__card-description-body-text">
                   {t("services.corporate.description")}
                 </p>
-                <a
-                  href={packagesFaqsPdf}
-                  className="services-preview__booking-cta"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  {t("common.bookNow")}
-                </a>
+                <Link to="/services" className="services-preview__booking-cta">
+                  {t("services.exploreServices")}
+                </Link>
               </div>
             </div>
             <div className="services-preview__card-img-container">
@@ -116,15 +106,9 @@ function ServicesPreview() {
                   <strong>{t("services.omakase.comingSoon")}</strong>
                 </p>
 
-                {/* temporarily remove link to button for omakase */}
-                {/* <a
-                  href="https://www.canva.com/design/DAG2FH0FYRo/B-YpeGK0dSOlFRMO3k2K9A/edit"
-                  className="services-preview__booking-cta"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  {t("common.bookNow")}
-                </a> */}
+                <Link to="/additional-services" className="services-preview__booking-cta">
+                  {t("services.omakase.moreInfo")}
+                </Link>
               </div>
             </div>
           </div>

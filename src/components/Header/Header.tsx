@@ -14,13 +14,18 @@ type HeaderProps = {
 
 function Header({ showBookingButton = true }: HeaderProps) {
   const { t, i18n } = useTranslation();
-  const [isLanguageMenuOpen, setIsLanguageMenuOpen] = useState(false);
   const languageMenuRef = useRef<HTMLDivElement>(null);
   const languageTriggerRef = useRef<HTMLButtonElement>(null);
   const activeLanguage = i18n.resolvedLanguage === "es" ? "es" : "en";
 
+  // language menu state
+  const [isLanguageMenuOpen, setIsLanguageMenuOpen] = useState(false);
+
   // hamburger button state
   const [menuOpen, setMenuOpen] = useState(false);
+
+  // services drop-down menu state
+  const [servicesOpen, setServicesOpen] = useState(false);
 
   useEffect(() => {
     if (!isLanguageMenuOpen) return;
@@ -72,10 +77,33 @@ function Header({ showBookingButton = true }: HeaderProps) {
                 {t("nav.home")}
               </Link>
             </li>
-            <li>
-              <a className="navbar__links" href="/#services-intro">
+            <li
+              className="navbar__services"
+              onMouseEnter={() => setServicesOpen(true)}
+              onMouseLeave={() => setServicesOpen(false)}
+            >
+              <button
+                className="navbar__services-btn"
+                type="button"
+                aria-expanded={servicesOpen}
+                aria-controls="services-menu"
+                onClick={() => setServicesOpen((isOpen) => !isOpen)}
+              >
                 {t("nav.services")}
-              </a>
+              </button>
+              <div
+                id="services-menu"
+                // check if services menu is open
+                className={`navbar__services-menu
+                  ${servicesOpen ? "navbar__services-menu--open" : ""}`}
+              >
+                <Link to="/services">
+                  {t("additionalServices.navigation.events")}
+                </Link>
+                <Link to="/additional-services">
+                  {t("additionalServices.navigation.additional")}
+                </Link>
+              </div>
             </li>
             <li>
               <a className="navbar__links" href="/signature-menu">

@@ -62,12 +62,25 @@
   justify-content: flex-start;
 }
 
+/* Match the Private Events image panel to its portrait aspect ratio. */
+.services-preview__card-img-container--private {
+  width: auto;
+  aspect-ratio: 1206 / 1568;
+  flex: 0 0 auto;
+}
+
 /* HERO CARD IMAGE EDIT */
 .services-preview__card-img {
   object-fit: cover;
   object-position: 50% 40%;
   width: 100%;
   height: 100%;
+}
+
+/* Show the complete portrait in the Private Events card without cropping. */
+.bartender-serving {
+  object-fit: contain;
+  object-position: center;
 }
 
 /* SERVICES DESCRIPTION BACKGROUND CONTAINER */
@@ -157,6 +170,8 @@
 
 /* OUR SERVICES INTRO CARD 1 */
 .card-1-container {
+  flex: 1;
+  width: auto;
   /* set min and max margins while taking 10% of viewport width */
   margin-right: clamp(50px, 10vw, 150px);
   /* border-top-right-radius: 100px; */
@@ -277,11 +292,27 @@
 
   .services-preview__card-img-container {
     width: 100%;
-    height: clamp(240px, 65vw, 360px);
+    height: auto;
+    aspect-ratio: 4 / 3;
+    overflow: hidden;
+  }
+
+  .services-preview__card-img-container--private {
+    width: 100%;
+    max-width: 480px;
+    margin-inline: auto;
+    aspect-ratio: 1206 / 1568;
+  }
+
+  .services-preview__card-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
   }
 
   .bartender-serving {
-    object-position: 50% 16%;
+    object-fit: contain;
+    object-position: center;
   }
 
   .bartender-corporate {
