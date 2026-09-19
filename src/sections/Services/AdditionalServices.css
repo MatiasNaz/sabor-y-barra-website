@@ -169,6 +169,7 @@
 }
 
 .additional-services__omakase-cta {
+
   min-height: 44px;
   display: inline-flex;
   align-items: center;
@@ -201,6 +202,158 @@
   outline: 3px solid var(--color-espresso);
   outline-offset: 3px;
 }
+
+/* ----------------------------------------------------------------------------------------- */
+
+/* OMAKASE INTEREST FORM */
+
+.additional-services__interest-form {
+  width: min(750px, 100%);
+  margin: 24px auto 0;
+  padding: 24px 0 0;
+  text-align: left;
+  animation: additionalServicesReveal 0.5s ease-out forwards;
+}
+
+.additional-services__interest-form-eyebrow {
+  margin: 0 0 35px;
+  color: var(--color-muted-gold);
+  font-size: 0.9rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+  line-height: 1.5;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.additional-services__omakase-form-container {
+  display: grid;
+  gap: 14px;
+}
+
+.additional-services__omakase-form-input label {
+  display: grid;
+  grid-template-columns: auto 145px minmax(0, 1fr);
+  align-items: center;
+  gap: 16px;
+  color: var(--color-espresso);
+  font-size: 16px;
+}
+
+.additional-services__omakase-form-input label > span {
+  font-size: 17px;
+  line-height: 1.4;
+}
+
+.additional-services__omakase-form-input input {
+  width: 100%;
+  min-width: 0;
+  min-height: 52px;
+  padding: 0 16px;
+  border: 1px solid rgb(74 31 15 / 18%);
+  border-radius: 6px;
+  background-color: var(--color-cream);
+  color: var(--color-text-area-gray);
+  font: inherit;
+  outline: none;
+}
+
+.additional-services__omakase-form-input input:focus {
+  border-color: var(--color-espresso);
+}
+
+.additional-services__omakase-form--submit-btn {
+  padding-top: 10px;
+}
+
+.additional-services__omakase-form--submit-btn button {
+  width: 50%;
+  min-width: 170px;
+  max-width: 100%;
+  min-height: 58px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 28px;
+  margin: 10px auto 0;
+  border: 0;
+  border-radius: 4px;
+  background-color: var(--color-olive);
+  color: var(--color-cream);
+  font: inherit;
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition:
+    background-color 0.25s ease,
+    transform 0.25s ease;
+}
+
+.additional-services__omakase-form--submit-btn button:hover {
+  background-color: var(--color-espresso);
+  transform: translateY(-2px);
+}
+
+.additional-services__omakase-form--submit-btn button:disabled {
+  cursor: wait;
+  opacity: 0.7;
+  transform: none;
+}
+
+.additional-services__omakase-form--submit-btn button span {
+  font-size: 22px;
+}
+
+.additional-services__omakase-form-error {
+  margin: 2px 0 0;
+  color: var(--color-boricua-red);
+  font-size: 0.9rem;
+  line-height: 1.5;
+  text-align: center;
+}
+
+.additional-services__omakase-success {
+  max-width: 650px;
+  margin: 30px auto 0;
+  padding-top: 28px;
+  border-top: 1px solid rgb(72 36 16 / 16%);
+  text-align: center;
+  animation: additionalServicesReveal 0.5s ease-out forwards;
+}
+
+.additional-services__omakase-success h3 {
+  margin: 0;
+  color: var(--color-muted-gold);
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+  line-height: 1.5;
+  text-transform: uppercase;
+}
+
+.additional-services__omakase-success p {
+  margin: 14px 0 0;
+  color: var(--color-brown);
+  font-size: 1.05rem;
+  line-height: 1.7;
+}
+
+@media (max-width: 600px) {
+  .additional-services__omakase-form-input label {
+    grid-template-columns: auto minmax(0, 1fr);
+    gap: 8px 12px;
+  }
+
+  .additional-services__omakase-form-input input {
+    grid-column: 1 / -1;
+  }
+}
+
+/* ----------------------------------------------------------------------------------------- */
+
+/* CHAPTER BREAK SECTION */
 
 /* Full-width illustration chapter */
 .additional-services__chapter {
@@ -564,7 +717,9 @@
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .additional-services__intro {
+  .additional-services__intro,
+  .additional-services__interest-form,
+  .additional-services__omakase-success {
     animation: none;
   }
 

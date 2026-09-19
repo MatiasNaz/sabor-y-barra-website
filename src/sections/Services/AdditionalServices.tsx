@@ -1,16 +1,55 @@
-import "./AdditionalServices.css";
+﻿import "./AdditionalServices.css";
 import Header from "../../components/Header/Header";
 import Footer from "../../components/Footer/Footer";
 import leftArtwork from "../../assets/images/additional-services-left-image.png";
 import rightArtwork from "../../assets/images/additional-services-right-image.png";
 import { useTranslation } from "react-i18next";
-// import { useState, type SubmitEvent } from react;
+import { Mail, Phone, UserRound } from "lucide-react";
+import { useState, type SubmitEvent } from "react";
 
 function AdditionalServices() {
   const { t } = useTranslation();
 
+  const accessKey = import.meta.env.VITE_WEB3FORMS_ACCESS_KEY;
+
   // form state open/close
-  // const []
+  const [formIsVisible, setFormIsVisible] = useState(false);
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitted, setSubmitted] = useState(false);
+  const [submissionError, setSubmissionError] = useState(false);
+
+  // Submit Cocktail Omakase interest details to Web3Forms.
+  const handleSubmit = async (event: SubmitEvent<HTMLFormElement>) => {
+    event.preventDefault();
+    if (isSubmitting) return;
+
+    const form = event.currentTarget;
+    const formData = new FormData(form);
+    formData.append("access_key", accessKey);
+    formData.append("submission_type", "Cocktail Omakase Interest List");
+
+    setIsSubmitting(true);
+    setSubmissionError(false);
+
+    try {
+      const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        body: formData,
+      });
+      const result = await response.json();
+
+      if (response.ok && result.success) {
+        form.reset();
+        setSubmitted(true);
+      } else {
+        setSubmissionError(true);
+      }
+    } catch {
+      setSubmissionError(true);
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
 
   return (
     <>
@@ -48,70 +87,141 @@ function AdditionalServices() {
               <ul className="additional-services__omakase-list">
                 <li>
                   <em>{t("additionalServices.omakase.tastingTitle")}</em>
-                  {" — "}
+                  {" \u2014 "}
                   {t("additionalServices.omakase.tastingDescription")}
                 </li>
                 <li>
                   <em>{t("additionalServices.omakase.localTitle")}</em>
-                  {" — "}
+                  {" \u2014 "}
                   {t("additionalServices.omakase.localDescription")}
                 </li>
                 <li>
                   <em>{t("additionalServices.omakase.merryTitle")}</em>
-                  {" — "}
+                  {" \u2014 "}
                   {t("additionalServices.omakase.merryDescription")}
                 </li>
                 <li>
                   <em>{t("additionalServices.omakase.sonicTitle")}</em>
-                  {" — "}
+                  {" \u2014 "}
                   {t("additionalServices.omakase.sonicDescription")}
                 </li>
               </ul>
               <p className="additional-services__omakase-timeline">
                 {t("additionalServices.omakase.timeline")}
               </p>
-              <p className="additional-services__coming-soon">
+
+              {/* <p className="additional-services__coming-soon">
                 {t("additionalServices.omakase.comingSoon")}
-              </p>
+              </p> */}
 
-              {/* omakase button */}
-              {/* <button
-                className="additional-services__omakase-cta"
-                type="button"
-              >
-                {t("additionalServices.omakase.cta")}
-              </button> */}
+              {/* Show the CTA until the interest form is opened. */}
+              {!formIsVisible ? (
+                <button
+                  className="additional-services__omakase-cta"
+                  type="button"
+                  onClick={() => setFormIsVisible(true)}
+                >
+                  {t("additionalServices.omakase.cta")}
+                </button>
+              ) : submitted ? (
+                <div
+                  className="additional-services__omakase-success"
+                  role="status"
+                  aria-live="polite"
+                >
+                  <h3>{t("additionalServices.omakase.form.successTitle")}</h3>
+                  <p>{t("additionalServices.omakase.form.successMessage")}</p>
+                </div>
+              ) : (
+                <form
+                  className="additional-services__interest-form"
+                  onSubmit={handleSubmit}
+                >
+                  <h3 className="additional-services__interest-form-eyebrow">
+                    {t("additionalServices.omakase.form.eyebrow")}
+                  </h3>
+                  <div className="additional-services__omakase-form-container">
+                    <div className="additional-services__omakase-form-input">
+                      <label htmlFor="omakase-name">
+                        <UserRound size={21} strokeWidth={1.7} />
+                        <span>{t("additionalServices.omakase.form.name")}</span>
+                        <input
+                          id="omakase-name"
+                          name="name"
+                          type="text"
+                          autoComplete="name"
+                          required
+                          placeholder={t(
+                            "additionalServices.omakase.form.namePlaceholder",
+                          )}
+                        />
+                      </label>
+                    </div>
 
-              {/* cocktail omakase interest form */}
-              {/* <form className="additional-services__interest-form">
-                <label htmlFor="omakase-full-name">Name</label>
-                <input
-                  id="omakase-full-name"
-                  name="fullName"
-                  type="text"
-                  autoComplete="name"
-                  required
-                />
+                    <div className="additional-services__omakase-form-input">
+                      <label htmlFor="omakase-email">
+                        <Mail size={21} strokeWidth={1.7} />
+                        <span>
+                          {t("additionalServices.omakase.form.email")}
+                        </span>
+                        <input
+                          id="omakase-email"
+                          name="email"
+                          type="email"
+                          autoComplete="email"
+                          required
+                          placeholder={t("booking.fields.emailPlaceholder")}
+                        />
+                      </label>
+                    </div>
 
-                <label htmlFor="omakase-full-name">Email</label>
-                <input
-                  id="omakase-full-name"
-                  name="fullName"
-                  type="text"
-                  autoComplete="name"
-                  required
-                />
+                    <div className="additional-services__omakase-form-input">
+                      <label htmlFor="omakase-phone">
+                        <Phone size={21} strokeWidth={1.7} />
+                        <span>
+                          {t("additionalServices.omakase.form.phone")}
+                        </span>
+                        <input
+                          id="omakase-phone"
+                          name="phoneNumber"
+                          type="tel"
+                          autoComplete="tel"
+                          required
+                          placeholder={t(
+                            "booking.fields.phoneNumberPlaceholder",
+                          )}
+                        />
+                      </label>
+                    </div>
 
-                <label htmlFor="omakase-phone">Phone number</label>
-                <input
-                  id="omakase-phone"
-                  name="phoneNumber"
-                  type="tel"
-                  autoComplete="tel"
-                  required
-                />
-                <button type="submit">Submit</button>
-              </form> */}
+                    <div className="additional-services__omakase-form--submit-btn">
+                      <button
+                        type="submit"
+                        disabled={isSubmitting}
+                        aria-describedby={
+                          submissionError
+                            ? "omakase-submission-error"
+                            : undefined
+                        }
+                      >
+                        {isSubmitting
+                          ? t("additionalServices.omakase.form.submitting")
+                          : t("additionalServices.omakase.form.submit")}
+                        <span aria-hidden="true">&#8594;</span>
+                      </button>
+                    </div>
+                    {submissionError && (
+                      <p
+                        id="omakase-submission-error"
+                        className="additional-services__omakase-form-error"
+                        role="alert"
+                      >
+                        {t("additionalServices.omakase.form.error")}
+                      </p>
+                    )}
+                  </div>
+                </form>
+              )}
             </div>
           </section>
         </div>
@@ -159,53 +269,111 @@ function AdditionalServices() {
                 <header className="additional-services__bundle-header">
                   <h3>{t("additionalServices.bundles.vision.name")}</h3>
                   <div className="additional-services__bundle-price-group">
-                    <span className="additional-services__bundle-price-label">{t("additionalServices.bundles.vision.selection")}</span>
-                    <p className="additional-services__bundle-price">{t("additionalServices.bundles.vision.price")}</p>
+                    <span className="additional-services__bundle-price-label">
+                      {t("additionalServices.bundles.vision.selection")}
+                    </span>
+                    <p className="additional-services__bundle-price">
+                      {t("additionalServices.bundles.vision.price")}
+                    </p>
                   </div>
                 </header>
                 <ul className="additional-services__bundle-list">
                   <li>{t("additionalServices.bundles.vision.hours")}</li>
                   <li>{t("additionalServices.bundles.vision.photos")}</li>
                   <li>{t("additionalServices.bundles.vision.edits")}</li>
-                  <li className="additional-services__bundle-row"><span>{t("additionalServices.bundles.vision.recap")}</span><strong>{t("additionalServices.bundles.vision.recapPrice")}</strong></li>
-                  <li className="additional-services__bundle-row"><span>{t("additionalServices.bundles.vision.video")}</span><strong>{t("additionalServices.bundles.vision.videoPrice")}</strong></li>
+                  <li className="additional-services__bundle-row">
+                    <span>{t("additionalServices.bundles.vision.recap")}</span>
+                    <strong>
+                      {t("additionalServices.bundles.vision.recapPrice")}
+                    </strong>
+                  </li>
+                  <li className="additional-services__bundle-row">
+                    <span>{t("additionalServices.bundles.vision.video")}</span>
+                    <strong>
+                      {t("additionalServices.bundles.vision.videoPrice")}
+                    </strong>
+                  </li>
                 </ul>
               </article>
               <article className="additional-services__bundle-card">
                 <header className="additional-services__bundle-header">
                   <h3>{t("additionalServices.bundles.flow.name")}</h3>
                   <div className="additional-services__bundle-price-group">
-                    <span className="additional-services__bundle-price-label">{t("additionalServices.bundles.flow.selection")}</span>
-                    <p className="additional-services__bundle-price">{t("additionalServices.bundles.flow.price")}</p>
+                    <span className="additional-services__bundle-price-label">
+                      {t("additionalServices.bundles.flow.selection")}
+                    </span>
+                    <p className="additional-services__bundle-price">
+                      {t("additionalServices.bundles.flow.price")}
+                    </p>
                   </div>
                 </header>
                 <ul className="additional-services__bundle-list">
                   <li>{t("additionalServices.bundles.flow.hours")}</li>
                   <li>{t("additionalServices.bundles.flow.deck")}</li>
                   <li>{t("additionalServices.bundles.flow.music")}</li>
-                  <li className="additional-services__bundle-row"><span>{t("additionalServices.bundles.flow.decoration")}</span><strong>{t("additionalServices.bundles.flow.decorationPrice")}</strong></li>
-                  <li className="additional-services__bundle-row"><span>{t("additionalServices.bundles.flow.lighting")}</span><strong>{t("additionalServices.bundles.flow.lightingPrice")}</strong></li>
+                  <li className="additional-services__bundle-row">
+                    <span>
+                      {t("additionalServices.bundles.flow.decoration")}
+                    </span>
+                    <strong>
+                      {t("additionalServices.bundles.flow.decorationPrice")}
+                    </strong>
+                  </li>
+                  <li className="additional-services__bundle-row">
+                    <span>{t("additionalServices.bundles.flow.lighting")}</span>
+                    <strong>
+                      {t("additionalServices.bundles.flow.lightingPrice")}
+                    </strong>
+                  </li>
                 </ul>
               </article>
               <article className="additional-services__bundle-card">
                 <header className="additional-services__bundle-header">
                   <h3>{t("additionalServices.bundles.puro.name")}</h3>
                   <div className="additional-services__bundle-price-group">
-                    <span className="additional-services__bundle-price-label">{t("additionalServices.bundles.puro.selection")}</span>
-                    <p className="additional-services__bundle-price">{t("additionalServices.bundles.puro.price")}</p>
+                    <span className="additional-services__bundle-price-label">
+                      {t("additionalServices.bundles.puro.selection")}
+                    </span>
+                    <p className="additional-services__bundle-price">
+                      {t("additionalServices.bundles.puro.price")}
+                    </p>
                   </div>
                 </header>
                 <ul className="additional-services__bundle-list">
                   <li>{t("additionalServices.bundles.puro.vision")}</li>
                   <li>{t("additionalServices.bundles.puro.flow")}</li>
-                  <li className="additional-services__bundle-row"><span>{t("additionalServices.bundles.puro.grading")}</span><strong>{t("additionalServices.bundles.puro.gradingPrice")}</strong></li>
-                  <li className="additional-services__bundle-row"><span>{t("additionalServices.bundles.puro.revisions")}</span><strong>{t("additionalServices.bundles.puro.revisionsPrice")}</strong></li>
-                  <li className="additional-services__bundle-row"><span>{t("additionalServices.bundles.puro.photos")}</span><strong>{t("additionalServices.bundles.puro.photosPrice")}</strong></li>
-                  <li className="additional-services__bundle-row"><span>{t("additionalServices.bundles.puro.recap")}</span><strong>{t("additionalServices.bundles.puro.recapPrice")}</strong></li>
+                  <li className="additional-services__bundle-row">
+                    <span>{t("additionalServices.bundles.puro.grading")}</span>
+                    <strong>
+                      {t("additionalServices.bundles.puro.gradingPrice")}
+                    </strong>
+                  </li>
+                  <li className="additional-services__bundle-row">
+                    <span>
+                      {t("additionalServices.bundles.puro.revisions")}
+                    </span>
+                    <strong>
+                      {t("additionalServices.bundles.puro.revisionsPrice")}
+                    </strong>
+                  </li>
+                  <li className="additional-services__bundle-row">
+                    <span>{t("additionalServices.bundles.puro.photos")}</span>
+                    <strong>
+                      {t("additionalServices.bundles.puro.photosPrice")}
+                    </strong>
+                  </li>
+                  <li className="additional-services__bundle-row">
+                    <span>{t("additionalServices.bundles.puro.recap")}</span>
+                    <strong>
+                      {t("additionalServices.bundles.puro.recapPrice")}
+                    </strong>
+                  </li>
                 </ul>
               </article>
             </div>
           </section>
+
+          {/* Collaborators Section */}
 
           {/* <section className="additional-services__collaborators" aria-labelledby="collaborators-title">
             <header className="additional-services__section-heading">

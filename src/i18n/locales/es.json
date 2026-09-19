@@ -202,7 +202,19 @@
       "sonicDescription": "Algunas experiencias contarán con DJ y/o músicos en vivo para completar la velada.",
       "timeline": "El Cocktail Omakase inaugural está actualmente en desarrollo. Se anticipa que las reservaciones abran el 1 de octubre, y la primera experiencia está prevista para principios de noviembre.",
       "comingSoon": "La lista de prerreservas abre el viernes - 18/9/26",
-      "cta": "Únete a la Lista"
+      "cta": "Únete a la Lista",
+      "form": {
+        "eyebrow": "Enter your details to join the list",
+        "name": "Nombre",
+        "namePlaceholder": "Ingresa tu nombre",
+        "email": "Correo electrónico",
+        "phone": "Número de teléfono",
+        "submit": "Enviar",
+        "submitting": "Enviando...",
+        "successTitle": "Estás en la lista",
+        "successMessage": "Te avisaremos cuando las reservaciones estén disponibles.",
+        "error": "No pudimos añadirte a la lista. Inténtalo de nuevo."
+      }
     },
     "chapter": {
       "title": "Un poco más de sabor para cada celebración."

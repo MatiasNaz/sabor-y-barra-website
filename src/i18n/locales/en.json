@@ -202,7 +202,19 @@
       "sonicDescription": "Select experiences will feature a DJ and/or live musicians to complete the experience.",
       "timeline": "The inaugural Cocktail Omakase is currently in the works. Reservations are anticipated to open October 1st, with the first experience planned for early November.",
       "comingSoon": "Pre-reservation list open Friday - 9/18/26",
-      "cta": "Join the List"
+      "cta": "Join the List",
+      "form": {
+        "eyebrow": "Enter your details to join the list",
+        "name": "Name",
+        "namePlaceholder": "Enter your name",
+        "email": "Email",
+        "phone": "Phone number",
+        "submit": "Submit",
+        "submitting": "Submitting...",
+        "successTitle": "You're on the list",
+        "successMessage": "We'll let you know when reservations become available.",
+        "error": "We couldn't add you to the list. Please try again."
+      }
     },
     "chapter": {
       "title": "A little more Sabor for every celebration."
