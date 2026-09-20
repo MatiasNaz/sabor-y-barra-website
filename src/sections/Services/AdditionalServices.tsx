@@ -3,10 +3,12 @@ import Header from "../../components/Header/Header";
 import Footer from "../../components/Footer/Footer";
 import leftArtwork from "../../assets/images/additional-services-left-image.png";
 import rightArtwork from "../../assets/images/additional-services-right-image.png";
+import sidneyImage from "../../assets/images/collaborator-photographer-image.jpeg";
+import fionaImage from "../../assets/images/collaborator-dj-image.jpeg";
 import { useTranslation } from "react-i18next";
 import { Mail, Phone, UserRound } from "lucide-react";
 import { useState, type SubmitEvent } from "react";
-import { Link } from "react-router" ;
+import { Link } from "react-router";
 
 function AdditionalServices() {
   const { t } = useTranslation();
@@ -376,48 +378,83 @@ function AdditionalServices() {
 
           {/* Collaborators Section */}
 
-          <section className="additional-services__collaborators" aria-labelledby="collaborators-title">
+          {/* <section
+            className="additional-services__collaborators"
+            aria-labelledby="collaborators-title"
+          >
             <header className="additional-services__section-heading">
-              <p className="additional-services__eyebrow">{t("additionalServices.collaborators.eyebrow")}</p>
-              <h2 id="collaborators-title">{t("additionalServices.collaborators.title")}</h2>
-              <p>{t("additionalServices.collaborators.description")}</p>
+              <p className="additional-services__eyebrow">
+                Individual Services
+              </p>
+              <h2 id="collaborators-title">Meet our collaborators.</h2>
+              <p>Explore individual services from our trusted collaborators.</p>
             </header>
+
             <div className="additional-services__card-grid">
               <article className="additional-services__collaborator-card">
-                <div className="additional-services__collaborator-image" aria-label={t("additionalServices.collaborators.imagePlaceholder")} role="img">
-                  <span>{t("additionalServices.collaborators.imagePlaceholder")}</span>
+                <div className="additional-services__collaborator-image additional-services__collaborator-image--photo">
+                  <img
+                    className="additional-services__collaborator-photo additional-services__collaborator-photo--sidney"
+                    src={sidneyImage}
+                    alt="Sidney, photography collaborator"
+                  />
                 </div>
                 <div className="additional-services__collaborator-copy">
-                  <h3>{t("additionalServices.collaborators.first.name")}</h3>
-                  <p className="additional-services__collaborator-category">{t("additionalServices.collaborators.first.category")}</p>
-                  <p>{t("additionalServices.collaborators.first.description")}</p>
-                  <Link to="/booking">{t("additionalServices.collaborators.inquire")}</Link>
+                  <h3>Sidney</h3>
+                  <p className="additional-services__collaborator-category">
+                    Service to be announced
+                  </p>
+                  <p>
+                    This collaborator&apos;s services and approach will be
+                    introduced here soon.
+                  </p>
+                  <Link to="/booking">Ask About This Service</Link>
                 </div>
               </article>
+
               <article className="additional-services__collaborator-card">
-                <div className="additional-services__collaborator-image" aria-label={t("additionalServices.collaborators.imagePlaceholder")} role="img">
-                  <span>{t("additionalServices.collaborators.imagePlaceholder")}</span>
+                <div className="additional-services__collaborator-image additional-services__collaborator-image--photo">
+                  <img
+                    className="additional-services__collaborator-photo additional-services__collaborator-photo--fiona"
+                    src={fionaImage}
+                    alt="Fiona, DJ collaborator"
+                  />
                 </div>
                 <div className="additional-services__collaborator-copy">
-                  <h3>{t("additionalServices.collaborators.second.name")}</h3>
-                  <p className="additional-services__collaborator-category">{t("additionalServices.collaborators.second.category")}</p>
-                  <p>{t("additionalServices.collaborators.second.description")}</p>
-                  <Link to="/booking">{t("additionalServices.collaborators.inquire")}</Link>
+                  <h3>Fiona</h3>
+                  <p className="additional-services__collaborator-category">
+                    Service to be announced
+                  </p>
+                  <p>
+                    This collaborator&apos;s services and approach will be
+                    introduced here soon.
+                  </p>
+                  <Link to="/booking">Ask About This Service</Link>
                 </div>
               </article>
+
               <article className="additional-services__collaborator-card">
-                <div className="additional-services__collaborator-image" aria-label={t("additionalServices.collaborators.imagePlaceholder")} role="img">
-                  <span>{t("additionalServices.collaborators.imagePlaceholder")}</span>
+                <div
+                  className="additional-services__collaborator-image"
+                  aria-label="Collaborator photograph coming soon"
+                  role="img"
+                >
+                  <span>Collaborator photograph coming soon</span>
                 </div>
                 <div className="additional-services__collaborator-copy">
-                  <h3>{t("additionalServices.collaborators.third.name")}</h3>
-                  <p className="additional-services__collaborator-category">{t("additionalServices.collaborators.third.category")}</p>
-                  <p>{t("additionalServices.collaborators.third.description")}</p>
-                  <Link to="/booking">{t("additionalServices.collaborators.inquire")}</Link>
+                  <h3>Matias</h3>
+                  <p className="additional-services__collaborator-category">
+                    Service to be announced
+                  </p>
+                  <p>
+                    This collaborator&apos;s services and approach will be
+                    introduced here soon.
+                  </p>
+                  <Link to="/booking">Ask About This Service</Link>
                 </div>
               </article>
             </div>
-          </section>
+          </section> */}
         </div>
       </main>
       <Footer />
