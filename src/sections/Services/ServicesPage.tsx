@@ -260,7 +260,13 @@ function Services() {
                     </button>
                   </li>
 
-                  <li className="services__package-details-item">
+                  <li
+                    className={`services__package-details-item ${
+                      packageOpen === "boardroom"
+                        ? "services__package-details-item--open"
+                        : ""
+                    }`}
+                  >
                     <ul
                       id="boardroom-package-details"
                       className={`services__package-details ${
@@ -350,7 +356,13 @@ function Services() {
                     </button>
                   </li>
 
-                  <li className="services__package-details-item">
+                  <li
+                    className={`services__package-details-item ${
+                      packageOpen === "executive"
+                        ? "services__package-details-item--open"
+                        : ""
+                    }`}
+                  >
                     <ul
                       id="executive-package-details"
                       className={`services__package-details ${
@@ -425,7 +437,13 @@ function Services() {
                     </button>
                   </li>
 
-                  <li className="services__package-details-item">
+                  <li
+                    className={`services__package-details-item ${
+                      packageOpen === "c-suite"
+                        ? "services__package-details-item--open"
+                        : ""
+                    }`}
+                  >
                     <ul
                       id="c-suite-package-details"
                       className={`services__package-details ${

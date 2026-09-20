@@ -6,6 +6,7 @@ import rightArtwork from "../../assets/images/additional-services-right-image.pn
 import { useTranslation } from "react-i18next";
 import { Mail, Phone, UserRound } from "lucide-react";
 import { useState, type SubmitEvent } from "react";
+import { Link } from "react-router" ;
 
 function AdditionalServices() {
   const { t } = useTranslation();
@@ -375,7 +376,7 @@ function AdditionalServices() {
 
           {/* Collaborators Section */}
 
-          {/* <section className="additional-services__collaborators" aria-labelledby="collaborators-title">
+          <section className="additional-services__collaborators" aria-labelledby="collaborators-title">
             <header className="additional-services__section-heading">
               <p className="additional-services__eyebrow">{t("additionalServices.collaborators.eyebrow")}</p>
               <h2 id="collaborators-title">{t("additionalServices.collaborators.title")}</h2>
@@ -416,7 +417,7 @@ function AdditionalServices() {
                 </div>
               </article>
             </div>
-          </section> */}
+          </section>
         </div>
       </main>
       <Footer />
