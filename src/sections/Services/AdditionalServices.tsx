@@ -4,7 +4,10 @@ import Footer from "../../components/Footer/Footer";
 import leftArtwork from "../../assets/images/additional-services-left-image.png";
 import rightArtwork from "../../assets/images/additional-services-right-image.png";
 import sidneyImage from "../../assets/images/collaborator-photographer-image.jpeg";
-import fionaImage from "../../assets/images/collaborator-dj-image.jpeg";
+import fionnaImage from "../../assets/images/fionna-collaborator-image.png";
+import matiasImage from "../../assets/images/collaborator-dev-image.jpeg";
+import sybGroupedPackagesPdf from "../../assets/images/SYB-GROUPED-PACKAGES.pdf";
+import djPackagesPdf from "../../assets/images/DJ-PACAKGES.pdf";
 import { useTranslation } from "react-i18next";
 import { Mail, Phone, UserRound } from "lucide-react";
 import { useState, type SubmitEvent } from "react";
@@ -378,7 +381,7 @@ function AdditionalServices() {
 
           {/* Collaborators Section */}
 
-          {/* <section
+          <section
             className="additional-services__collaborators"
             aria-labelledby="collaborators-title"
           >
@@ -400,61 +403,76 @@ function AdditionalServices() {
                   />
                 </div>
                 <div className="additional-services__collaborator-copy">
-                  <h3>Sidney</h3>
+                  <h3>Sydney</h3>
                   <p className="additional-services__collaborator-category">
-                    Service to be announced
+                    PHOTOGRAPHY
                   </p>
                   <p>
-                    This collaborator&apos;s services and approach will be
-                    introduced here soon.
+                    Capturing authentic moments through thoughtful photography,
+                    creating timeless images that preserve the energy, details,
+                    and memories behind every celebration.
                   </p>
-                  <Link to="/booking">Ask About This Service</Link>
+                  <a
+                    href={sybGroupedPackagesPdf}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Explore Sydney&apos;s Services
+                  </a>
+                </div>
+              </article>
+
+              <article className="additional-services__collaborator-card">
+                <div className="additional-services__collaborator-image additional-services__collaborator-image--photo additional-services__collaborator-image--fiona">
+                  <img
+                    className="additional-services__collaborator-photo additional-services__collaborator-photo--fiona"
+                    src={fionnaImage}
+                    alt="Fiona, DJ collaborator"
+                  />
+                </div>
+                <div className="additional-services__collaborator-copy">
+                  <h3>Fionna</h3>
+                  <p className="additional-services__collaborator-category">
+                    DJ SERVICES
+                  </p>
+                  <p>
+                    Creating vibrant music experiences through curated
+                    selections and seamless mixes, bringing together sound,
+                    energy, and atmosphere for every occasion.
+                  </p>
+                  <a
+                    href={djPackagesPdf}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Explore Fionna&apos;s Services
+                  </a>
                 </div>
               </article>
 
               <article className="additional-services__collaborator-card">
                 <div className="additional-services__collaborator-image additional-services__collaborator-image--photo">
                   <img
-                    className="additional-services__collaborator-photo additional-services__collaborator-photo--fiona"
-                    src={fionaImage}
-                    alt="Fiona, DJ collaborator"
+                    className="additional-services__collaborator-photo additional-services__collaborator-photo--matias"
+                    src={matiasImage}
+                    alt="Matias, web development collaborator"
                   />
-                </div>
-                <div className="additional-services__collaborator-copy">
-                  <h3>Fiona</h3>
-                  <p className="additional-services__collaborator-category">
-                    Service to be announced
-                  </p>
-                  <p>
-                    This collaborator&apos;s services and approach will be
-                    introduced here soon.
-                  </p>
-                  <Link to="/booking">Ask About This Service</Link>
-                </div>
-              </article>
-
-              <article className="additional-services__collaborator-card">
-                <div
-                  className="additional-services__collaborator-image"
-                  aria-label="Collaborator photograph coming soon"
-                  role="img"
-                >
-                  <span>Collaborator photograph coming soon</span>
                 </div>
                 <div className="additional-services__collaborator-copy">
                   <h3>Matias</h3>
                   <p className="additional-services__collaborator-category">
-                    Service to be announced
+                    SOFTWARE DEVELOPMENT
                   </p>
                   <p>
-                    This collaborator&apos;s services and approach will be
-                    introduced here soon.
+                    Meet the developer behind Sabor Y Barra. Focused on building
+                    modern, intuitive software and digital experiences that help
+                    businesses bring their ideas to life.
                   </p>
-                  <Link to="/booking">Ask About This Service</Link>
+                  {/* <Link to="/booking">Explore Matias's Services</Link> */}
                 </div>
               </article>
             </div>
-          </section> */}
+          </section>
         </div>
       </main>
       <Footer />

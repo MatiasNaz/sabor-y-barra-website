@@ -562,7 +562,13 @@
 
 .additional-services__collaborator-image--photo {
   overflow: hidden;
+  height: auto;
+  aspect-ratio: 1179 / 838;
   padding: 0;
+}
+
+.additional-services__collaborator-image--fiona {
+  background: linear-gradient(90deg, #71180d 0%, #43090a 48%, #250708 100%);
 }
 
 .additional-services__collaborator-photo {
@@ -573,11 +579,17 @@
 }
 
 .additional-services__collaborator-photo--sidney {
-  object-position: 40% center;
+  transform: scale(1.1);
+  transform-origin: 0% 100%;
 }
 
 .additional-services__collaborator-photo--fiona {
-  object-position: center 38%;
+  object-fit: cover;
+  object-position: 100% 50%;
+}
+
+.additional-services__collaborator-photo--matias {
+  object-position: center 27%;
 }
 
 .additional-services__collaborator-copy {
@@ -726,7 +738,9 @@
     height: clamp(90px, 24vw, 110px);
   }
 
-  .additional-services__collaborator-image {
+  .additional-services__collaborator-image:not(
+    .additional-services__collaborator-image--photo
+  ) {
     height: clamp(220px, 65vw, 290px);
   }
 
