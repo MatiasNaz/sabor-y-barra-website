@@ -401,9 +401,7 @@ function AdditionalServices() {
                   <img
                     className="additional-services__collaborator-photo additional-services__collaborator-photo--sidney"
                     src={sidneyImage}
-                    alt={t(
-                      "additionalServices.collaborators.first.imageAlt",
-                    )}
+                    alt={t("additionalServices.collaborators.first.imageAlt")}
                   />
                 </div>
                 <div className="additional-services__collaborator-copy">
@@ -411,7 +409,9 @@ function AdditionalServices() {
                   <p className="additional-services__collaborator-category">
                     {t("additionalServices.collaborators.first.category")}
                   </p>
-                  <p>{t("additionalServices.collaborators.first.description")}</p>
+                  <p>
+                    {t("additionalServices.collaborators.first.description")}
+                  </p>
                   <a
                     href={sybGroupedPackagesPdf}
                     target="_blank"
@@ -427,9 +427,7 @@ function AdditionalServices() {
                   <img
                     className="additional-services__collaborator-photo additional-services__collaborator-photo--fiona"
                     src={fionnaImage}
-                    alt={t(
-                      "additionalServices.collaborators.second.imageAlt",
-                    )}
+                    alt={t("additionalServices.collaborators.second.imageAlt")}
                   />
                 </div>
                 <div className="additional-services__collaborator-copy">
@@ -437,7 +435,9 @@ function AdditionalServices() {
                   <p className="additional-services__collaborator-category">
                     {t("additionalServices.collaborators.second.category")}
                   </p>
-                  <p>{t("additionalServices.collaborators.second.description")}</p>
+                  <p>
+                    {t("additionalServices.collaborators.second.description")}
+                  </p>
                   <a
                     href={djPackagesPdf}
                     target="_blank"
@@ -453,9 +453,7 @@ function AdditionalServices() {
                   <img
                     className="additional-services__collaborator-photo additional-services__collaborator-photo--matias"
                     src={matiasImage}
-                    alt={t(
-                      "additionalServices.collaborators.third.imageAlt",
-                    )}
+                    alt={t("additionalServices.collaborators.third.imageAlt")}
                   />
                 </div>
                 <div className="additional-services__collaborator-copy">
@@ -463,7 +461,9 @@ function AdditionalServices() {
                   <p className="additional-services__collaborator-category">
                     {t("additionalServices.collaborators.third.category")}
                   </p>
-                  <p>{t("additionalServices.collaborators.third.description")}</p>
+                  <p>
+                    {t("additionalServices.collaborators.third.description")}
+                  </p>
                   {/* <Link to="/booking">Explore Matias's Services</Link> */}
                 </div>
               </article>

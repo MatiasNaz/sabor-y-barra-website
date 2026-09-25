@@ -275,17 +275,41 @@ function Services() {
                           : ""
                       }`}
                     >
-                      <li>{t("servicesPage.packages.corporate.boardroom.consultation")}</li>
-                      <li>{t("servicesPage.packages.corporate.boardroom.hours")}</li>
-                      <li>{t("servicesPage.packages.corporate.boardroom.attire")}</li>
-                      <li>{t("servicesPage.packages.corporate.boardroom.setupEquipment")}</li>
-                      <li>{t("servicesPage.packages.corporate.boardroom.serviceItems")}</li>
+                      <li>
+                        {t(
+                          "servicesPage.packages.corporate.boardroom.consultation",
+                        )}
+                      </li>
+                      <li>
+                        {t("servicesPage.packages.corporate.boardroom.hours")}
+                      </li>
+                      <li>
+                        {t("servicesPage.packages.corporate.boardroom.attire")}
+                      </li>
+                      <li>
+                        {t(
+                          "servicesPage.packages.corporate.boardroom.setupEquipment",
+                        )}
+                      </li>
+                      <li>
+                        {t(
+                          "servicesPage.packages.corporate.boardroom.serviceItems",
+                        )}
+                      </li>
                       <li className="services__package-row">
-                        <span>{t("servicesPage.packages.corporate.boardroom.menuLabel")}</span>
+                        <span>
+                          {t(
+                            "servicesPage.packages.corporate.boardroom.menuLabel",
+                          )}
+                        </span>
                         <strong>+ $50</strong>
                       </li>
                       <li className="services__package-row">
-                        <span>{t("servicesPage.packages.corporate.boardroom.iceLabel")}</span>
+                        <span>
+                          {t(
+                            "servicesPage.packages.corporate.boardroom.iceLabel",
+                          )}
+                        </span>
                         <strong>+ $50</strong>
                       </li>
                       <li className="services__package-row">
@@ -293,11 +317,17 @@ function Services() {
                         <strong>+ $100</strong>
                       </li>
                       <li className="services__package-row">
-                        <span>{t("servicesPage.packages.corporate.extensionLabel")}</span>
-                        <strong>{t("servicesPage.packages.extensionPrice")}</strong>
+                        <span>
+                          {t("servicesPage.packages.corporate.extensionLabel")}
+                        </span>
+                        <strong>
+                          {t("servicesPage.packages.extensionPrice")}
+                        </strong>
                       </li>
                       <li className="services__package-row">
-                        <span>{t("servicesPage.packages.corporate.staffLabel")}</span>
+                        <span>
+                          {t("servicesPage.packages.corporate.staffLabel")}
+                        </span>
                         <strong>{t("servicesPage.packages.staffPrice")}</strong>
                       </li>
                     </ul>
@@ -371,17 +401,43 @@ function Services() {
                           : ""
                       }`}
                     >
-                      <li>{t("servicesPage.packages.corporate.executive.boardroomFeatures")}</li>
-                      <li>{t("servicesPage.packages.corporate.executive.hours")}</li>
-                      <li>{t("servicesPage.packages.corporate.executive.bartenders")}</li>
-                      <li>{t("servicesPage.packages.corporate.executive.cocktails")}</li>
-                      <li>{t("servicesPage.packages.corporate.executive.includedItems")}</li>
-                      <li className="services__package-row">
-                        <span>{t("servicesPage.packages.corporate.extensionPerStaffLabel")}</span>
-                        <strong>{t("servicesPage.packages.extensionPrice")}</strong>
+                      <li>
+                        {t(
+                          "servicesPage.packages.corporate.executive.boardroomFeatures",
+                        )}
+                      </li>
+                      <li>
+                        {t("servicesPage.packages.corporate.executive.hours")}
+                      </li>
+                      <li>
+                        {t(
+                          "servicesPage.packages.corporate.executive.bartenders",
+                        )}
+                      </li>
+                      <li>
+                        {t(
+                          "servicesPage.packages.corporate.executive.cocktails",
+                        )}
+                      </li>
+                      <li>
+                        {t(
+                          "servicesPage.packages.corporate.executive.includedItems",
+                        )}
                       </li>
                       <li className="services__package-row">
-                        <span>{t("servicesPage.packages.corporate.staffLabel")}</span>
+                        <span>
+                          {t(
+                            "servicesPage.packages.corporate.extensionPerStaffLabel",
+                          )}
+                        </span>
+                        <strong>
+                          {t("servicesPage.packages.extensionPrice")}
+                        </strong>
+                      </li>
+                      <li className="services__package-row">
+                        <span>
+                          {t("servicesPage.packages.corporate.staffLabel")}
+                        </span>
                         <strong>{t("servicesPage.packages.staffPrice")}</strong>
                       </li>
                     </ul>
@@ -452,17 +508,37 @@ function Services() {
                           : ""
                       }`}
                     >
-                      <li>{t("servicesPage.packages.corporate.cSuite.executiveFeatures")}</li>
-                      <li>{t("servicesPage.packages.corporate.cSuite.hours")}</li>
-                      <li>{t("servicesPage.packages.corporate.cSuite.staffing")}</li>
-                      <li>{t("servicesPage.packages.corporate.cSuite.premium")}</li>
-                      <li>{t("servicesPage.packages.corporate.cSuite.cocktails")}</li>
-                      <li className="services__package-row">
-                        <span>{t("servicesPage.packages.corporate.extensionPerStaffLabel")}</span>
-                        <strong>{t("servicesPage.packages.extensionPrice")}</strong>
+                      <li>
+                        {t(
+                          "servicesPage.packages.corporate.cSuite.executiveFeatures",
+                        )}
+                      </li>
+                      <li>
+                        {t("servicesPage.packages.corporate.cSuite.hours")}
+                      </li>
+                      <li>
+                        {t("servicesPage.packages.corporate.cSuite.staffing")}
+                      </li>
+                      <li>
+                        {t("servicesPage.packages.corporate.cSuite.premium")}
+                      </li>
+                      <li>
+                        {t("servicesPage.packages.corporate.cSuite.cocktails")}
                       </li>
                       <li className="services__package-row">
-                        <span>{t("servicesPage.packages.corporate.staffLabel")}</span>
+                        <span>
+                          {t(
+                            "servicesPage.packages.corporate.extensionPerStaffLabel",
+                          )}
+                        </span>
+                        <strong>
+                          {t("servicesPage.packages.extensionPrice")}
+                        </strong>
+                      </li>
+                      <li className="services__package-row">
+                        <span>
+                          {t("servicesPage.packages.corporate.staffLabel")}
+                        </span>
                         <strong>{t("servicesPage.packages.staffPrice")}</strong>
                       </li>
                     </ul>
@@ -489,6 +565,7 @@ function Services() {
                 {t("servicesPage.chapter.lineOne")} <br />
                 {t("servicesPage.chapter.lineTwo")}
               </h3>
+
               <a className="chapter-break__button" href="/additional-services">
                 {t("servicesPage.chapter.cta")}
               </a>

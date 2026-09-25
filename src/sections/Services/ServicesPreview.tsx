@@ -106,7 +106,10 @@ function ServicesPreview() {
                   <strong>{t("services.omakase.comingSoon")}</strong>
                 </p>
 
-                <Link to="/additional-services" className="services-preview__booking-cta">
+                <Link
+                  to="/additional-services"
+                  className="services-preview__booking-cta"
+                >
                   {t("services.omakase.moreInfo")}
                 </Link>
               </div>
