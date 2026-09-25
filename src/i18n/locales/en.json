@@ -267,23 +267,26 @@
     "collaborators": {
       "eyebrow": "Individual Services",
       "title": "Meet our collaborators.",
-      "description": "Explore individual services from our trusted collaborators. Names and service details will be added soon.",
-      "imagePlaceholder": "Collaborator photograph coming soon",
-      "inquire": "Ask About This Service",
+      "description": "Explore individual services from our trusted collaborators.",
       "first": {
-        "name": "Collaborator One",
-        "category": "Service to be announced",
-        "description": "This collaborator's services and approach will be introduced here soon."
+        "name": "Sydney",
+        "category": "Photography",
+        "description": "Capturing authentic moments through thoughtful photography, creating timeless images that preserve the energy, details, and memories behind every celebration.",
+        "imageAlt": "Sydney, photography collaborator",
+        "link": "Explore Sydney's Services"
       },
       "second": {
-        "name": "Collaborator Two",
-        "category": "Service to be announced",
-        "description": "This collaborator's services and approach will be introduced here soon."
+        "name": "Fionna",
+        "category": "DJ Services",
+        "description": "Creating vibrant music experiences through curated selections and seamless mixes, bringing together sound, energy, and atmosphere for every occasion.",
+        "imageAlt": "Fionna, DJ collaborator",
+        "link": "Explore Fionna's Services"
       },
       "third": {
-        "name": "Collaborator Three",
-        "category": "Service to be announced",
-        "description": "This collaborator's services and approach will be introduced here soon."
+        "name": "Matias",
+        "category": "Software Development",
+        "description": "Meet the developer behind Sabor Y Barra. Focused on building modern, intuitive software and digital experiences that help businesses bring their ideas to life.",
+        "imageAlt": "Matias, web development collaborator"
       }
     }
   },

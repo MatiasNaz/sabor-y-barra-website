@@ -698,6 +698,12 @@
     gap: 14px;
   }
 
+  .additional-services__bundle-price-group {
+    position: static;
+    width: 100%;
+    text-align: left;
+  }
+
   .additional-services__bundle-card h3 {
     font-size: 1.7rem;
   }

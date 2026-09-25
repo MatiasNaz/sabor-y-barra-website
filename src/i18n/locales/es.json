@@ -204,7 +204,7 @@
       "comingSoon": "La lista de prerreservas abre el viernes - 18/9/26",
       "cta": "Únete a la Lista",
       "form": {
-        "eyebrow": "Enter your details to join the list",
+        "eyebrow": "Ingresa tus datos para unirte a la lista",
         "name": "Nombre",
         "namePlaceholder": "Ingresa tu nombre",
         "email": "Correo electrónico",
@@ -267,23 +267,26 @@
     "collaborators": {
       "eyebrow": "Servicios Individuales",
       "title": "Conoce a nuestros colaboradores.",
-      "description": "Descubre los servicios individuales de nuestros colaboradores de confianza. Pronto añadiremos sus nombres y detalles.",
-      "imagePlaceholder": "Fotografía del colaborador próximamente",
-      "inquire": "Consulta Sobre Este Servicio",
+      "description": "Descubre los servicios individuales de nuestros colaboradores de confianza.",
       "first": {
-        "name": "Colaborador Uno",
-        "category": "Servicio por anunciar",
-        "description": "Pronto presentaremos los servicios y el enfoque de este colaborador."
+        "name": "Sydney",
+        "category": "Fotografía",
+        "description": "Captura momentos auténticos mediante una fotografía cuidadosa, creando imágenes atemporales que preservan la energía, los detalles y los recuerdos de cada celebración.",
+        "imageAlt": "Sydney, colaboradora de fotografía",
+        "link": "Explorar los servicios de Sydney"
       },
       "second": {
-        "name": "Colaborador Dos",
-        "category": "Servicio por anunciar",
-        "description": "Pronto presentaremos los servicios y el enfoque de este colaborador."
+        "name": "Fionna",
+        "category": "Servicios de DJ",
+        "description": "Crea experiencias musicales vibrantes mediante selecciones cuidadosamente elegidas y mezclas fluidas, uniendo sonido, energía y ambiente para cada ocasión.",
+        "imageAlt": "Fionna, colaboradora de servicios de DJ",
+        "link": "Explorar los servicios de Fionna"
       },
       "third": {
-        "name": "Colaborador Tres",
-        "category": "Servicio por anunciar",
-        "description": "Pronto presentaremos los servicios y el enfoque de este colaborador."
+        "name": "Matias",
+        "category": "Desarrollo de Software",
+        "description": "Conoce al desarrollador detrás de Sabor Y Barra. Se especializa en crear software moderno e intuitivo y experiencias digitales que ayudan a las empresas a dar vida a sus ideas.",
+        "imageAlt": "Matias, colaborador de desarrollo web"
       }
     }
   },

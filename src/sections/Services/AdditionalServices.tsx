@@ -387,10 +387,12 @@ function AdditionalServices() {
           >
             <header className="additional-services__section-heading">
               <p className="additional-services__eyebrow">
-                Individual Services
+                {t("additionalServices.collaborators.eyebrow")}
               </p>
-              <h2 id="collaborators-title">Meet our collaborators.</h2>
-              <p>Explore individual services from our trusted collaborators.</p>
+              <h2 id="collaborators-title">
+                {t("additionalServices.collaborators.title")}
+              </h2>
+              <p>{t("additionalServices.collaborators.description")}</p>
             </header>
 
             <div className="additional-services__card-grid">
@@ -399,25 +401,23 @@ function AdditionalServices() {
                   <img
                     className="additional-services__collaborator-photo additional-services__collaborator-photo--sidney"
                     src={sidneyImage}
-                    alt="Sidney, photography collaborator"
+                    alt={t(
+                      "additionalServices.collaborators.first.imageAlt",
+                    )}
                   />
                 </div>
                 <div className="additional-services__collaborator-copy">
-                  <h3>Sydney</h3>
+                  <h3>{t("additionalServices.collaborators.first.name")}</h3>
                   <p className="additional-services__collaborator-category">
-                    PHOTOGRAPHY
+                    {t("additionalServices.collaborators.first.category")}
                   </p>
-                  <p>
-                    Capturing authentic moments through thoughtful photography,
-                    creating timeless images that preserve the energy, details,
-                    and memories behind every celebration.
-                  </p>
+                  <p>{t("additionalServices.collaborators.first.description")}</p>
                   <a
                     href={sybGroupedPackagesPdf}
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    Explore Sydney&apos;s Services
+                    {t("additionalServices.collaborators.first.link")}
                   </a>
                 </div>
               </article>
@@ -427,25 +427,23 @@ function AdditionalServices() {
                   <img
                     className="additional-services__collaborator-photo additional-services__collaborator-photo--fiona"
                     src={fionnaImage}
-                    alt="Fiona, DJ collaborator"
+                    alt={t(
+                      "additionalServices.collaborators.second.imageAlt",
+                    )}
                   />
                 </div>
                 <div className="additional-services__collaborator-copy">
-                  <h3>Fionna</h3>
+                  <h3>{t("additionalServices.collaborators.second.name")}</h3>
                   <p className="additional-services__collaborator-category">
-                    DJ SERVICES
+                    {t("additionalServices.collaborators.second.category")}
                   </p>
-                  <p>
-                    Creating vibrant music experiences through curated
-                    selections and seamless mixes, bringing together sound,
-                    energy, and atmosphere for every occasion.
-                  </p>
+                  <p>{t("additionalServices.collaborators.second.description")}</p>
                   <a
                     href={djPackagesPdf}
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    Explore Fionna&apos;s Services
+                    {t("additionalServices.collaborators.second.link")}
                   </a>
                 </div>
               </article>
@@ -455,19 +453,17 @@ function AdditionalServices() {
                   <img
                     className="additional-services__collaborator-photo additional-services__collaborator-photo--matias"
                     src={matiasImage}
-                    alt="Matias, web development collaborator"
+                    alt={t(
+                      "additionalServices.collaborators.third.imageAlt",
+                    )}
                   />
                 </div>
                 <div className="additional-services__collaborator-copy">
-                  <h3>Matias</h3>
+                  <h3>{t("additionalServices.collaborators.third.name")}</h3>
                   <p className="additional-services__collaborator-category">
-                    SOFTWARE DEVELOPMENT
+                    {t("additionalServices.collaborators.third.category")}
                   </p>
-                  <p>
-                    Meet the developer behind Sabor Y Barra. Focused on building
-                    modern, intuitive software and digital experiences that help
-                    businesses bring their ideas to life.
-                  </p>
+                  <p>{t("additionalServices.collaborators.third.description")}</p>
                   {/* <Link to="/booking">Explore Matias's Services</Link> */}
                 </div>
               </article>
