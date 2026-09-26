@@ -106,9 +106,9 @@ function Header({ showBookingButton = true }: HeaderProps) {
               </div>
             </li>
             <li>
-              <a className="navbar__links" href="/signature-menu">
+              <Link className="navbar__links" to="/signature-menu">
                 {t("nav.signatureMenu")}
-              </a>
+              </Link>
             </li>
             <li>
               <Link className="navbar__links" to="/about">
@@ -116,14 +116,14 @@ function Header({ showBookingButton = true }: HeaderProps) {
               </Link>
             </li>
             <li>
-              <a className="navbar__links" href="/#reviews">
+              <Link className="navbar__links" to="/#reviews">
                 {t("nav.reviews")}
-              </a>
+              </Link>
             </li>
             <li>
-              <a className="navbar__links" href="#contact">
+              <Link className="navbar__links" to="/#contact">
                 {t("nav.contact")}
-              </a>
+              </Link>
             </li>
             <li>
               <div

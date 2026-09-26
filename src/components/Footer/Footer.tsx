@@ -3,6 +3,7 @@ import logoImage from "../../assets/images/sabor-y-barra-logo-transparent-bg.png
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faInstagram, faFacebook } from "@fortawesome/free-brands-svg-icons";
 import { useTranslation } from "react-i18next";
+import { Link } from "react-router";
 
 function Footer() {
   const { t } = useTranslation();
@@ -12,17 +13,18 @@ function Footer() {
       <div className="footer__container">
         <div className="footer__content">
           <div className="footer__brand">
-            <a
+            <Link
               className="footer__logo-link"
-              href="/"
+              to="/"
               aria-label={t("footer.homeLabel")}
+              onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
             >
               <img
                 className="footer__logo"
                 src={logoImage}
                 alt={t("common.brandLogoAlt")}
               />
-            </a>
+            </Link>
           </div>
 
           <nav
@@ -32,22 +34,29 @@ function Footer() {
             <h2 className="footer__heading">{t("footer.explore")}</h2>
             <ul className="footer__link-list">
               <li>
-                <a href="#home">{t("nav.home")}</a>
+                <Link
+                  to="/"
+                  onClick={() =>
+                    window.scrollTo({ top: 0, behavior: "smooth" })
+                  }
+                >
+                  {t("nav.home")}
+                </Link>
               </li>
               <li>
-                <a href="#services-intro">{t("nav.services")}</a>
+                <Link to="/services">{t("nav.services")}</Link>
               </li>
               <li>
-                <a href="/signature-menu">{t("nav.signatureMenu")}</a>
+                <Link to="/signature-menu">{t("nav.signatureMenu")}</Link>
               </li>
               <li>
-                <a href="/about">{t("nav.about")}</a>
+                <Link to="/about">{t("nav.about")}</Link>
               </li>
               <li>
-                <a href="#reviews">{t("nav.reviews")}</a>
+                <Link to="/#reviews">{t("nav.reviews")}</Link>
               </li>
               <li>
-                <a href="#contact">{t("nav.contact")}</a>
+                <Link to="/#contact">{t("nav.contact")}</Link>
               </li>
             </ul>
           </nav>
@@ -81,13 +90,6 @@ function Footer() {
                   icon={faFacebook}
                 />
               </a>
-              {/* <a href="https://www.bark.com/en/us/b/sabor-y-barra/ldBbL9/">
-                <img
-                  className="footer__socials-icon--bark"
-                  src="https://d18jakcjgoan9.cloudfront.net/s/img/images/barklogo-dark.png!d=KY4fXZ"
-                  alt="Bark Logo"
-                />
-              </a> */}
             </div>
           </div>
         </div>
