@@ -323,37 +323,50 @@ function Booking() {
                         {t("booking.packages.placeholder")}
                       </option>
 
-                      <option value="el-basico">
-                        {t("booking.packages.elBasico")}
-                      </option>
+                      <optgroup label={t("booking.packages.privateGroup")}>
+                        <option value="el-basico">
+                          {t("booking.packages.elBasico")}
+                        </option>
+                        <option value="el-clasico">
+                          {t("booking.packages.elClasico")}
+                        </option>
+                        <option value="signature-sabor">
+                          {t("booking.packages.signatureSabor")}
+                        </option>
+                      </optgroup>
 
-                      <option value="el-clasico">
-                        {t("booking.packages.elClasico")}
-                      </option>
+                      {/* Corporate Package Selection */}
+                      <optgroup label={t("booking.packages.corporateGroup")}>
+                        <option value="boardroom">
+                          {t("booking.packages.boardroom")}
+                        </option>
+                        <option value="executive">
+                          {t("booking.packages.executive")}
+                        </option>
+                        <option value="c-suite">
+                          {t("booking.packages.cSuite")}
+                        </option>
+                      </optgroup>
 
-                      <option value="signature-sabor">
-                        {t("booking.packages.signatureSabor")}
-                      </option>
+                      {/* Bundled Packages - Additional Services Selection */}
+                      <optgroup label={t("booking.packages.bundledGroup")}>
+                        <option value="sabor-y-flow">
+                          {t("booking.packages.saborYFlow")}
+                        </option>
+                        <option value="sabor-y-vision">
+                          {t("booking.packages.saborYVision")}
+                        </option>
+                        <option value="puro-sabor">
+                          {t("booking.packages.puroSabor")}
+                        </option>
+                      </optgroup>
 
-                      <option value="bartending-dj">
-                        {t("booking.packages.bartendingDj")}
-                      </option>
-
-                      <option value="bartending-content">
-                        {t("booking.packages.bartendingContent")}
-                      </option>
-
-                      {/* <option value="bartending-catering">
-                        {t("booking.packages.bartendingCatering")}
-                      </option>
-
-                      <option value="bartending-dj-content">
-                        {t("booking.packages.bartendingDjContent")}
-                      </option> */}
-
-                      <option value="complete">
-                        {t("booking.packages.complete")}
-                      </option>
+                      {/* Cocktail Omakase Selection */}
+                      <optgroup label={t("booking.packages.specialtyGroup")}>
+                        <option value="cocktail-omakase">
+                          {t("booking.packages.cocktailOmakase")}
+                        </option>
+                      </optgroup>
                     </select>
                   </label>
 
