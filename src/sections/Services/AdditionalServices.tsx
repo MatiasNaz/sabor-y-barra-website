@@ -86,10 +86,6 @@ function AdditionalServices() {
               <h2 id="omakase-title">
                 {t("additionalServices.omakase.title")}
               </h2>
-              <p className="additional-services__omakase-lead">
-                <span>{t("additionalServices.omakase.leadTitle")}</span>
-                <span>{t("additionalServices.omakase.leadDescription")}</span>
-              </p>
               <ul className="additional-services__omakase-list">
                 <li>
                   <em>{t("additionalServices.omakase.tastingTitle")}</em>
@@ -112,9 +108,36 @@ function AdditionalServices() {
                   {t("additionalServices.omakase.sonicDescription")}
                 </li>
               </ul>
-              <p className="additional-services__omakase-timeline">
-                {t("additionalServices.omakase.timeline")}
-              </p>
+              <div className="additional-services__omakase-event-details">
+                <dl className="additional-services__omakase-logistics">
+                  <div className="additional-services__omakase-detail">
+                    <dt>{t("additionalServices.omakase.locationLabel")}</dt>
+                    <dd>
+                      <span>{t("additionalServices.omakase.locationPrimary")}</span>
+                      <span>
+                        {t("additionalServices.omakase.locationSecondary")}
+                      </span>
+                    </dd>
+                  </div>
+
+                  <div className="additional-services__omakase-detail">
+                    <dt>{t("additionalServices.omakase.timeLabel")}</dt>
+                    <dd>
+                      <span>{t("additionalServices.omakase.timePrimary")}</span>
+                      <span>{t("additionalServices.omakase.timeSecondary")}</span>
+                    </dd>
+                  </div>
+                </dl>
+
+                <div className="additional-services__omakase-reservations">
+                  <p className="additional-services__omakase-detail-label">
+                    {t("additionalServices.omakase.reservationLabel")}
+                  </p>
+                  <p className="additional-services__omakase-reservation-price">
+                    {t("additionalServices.omakase.reservationPrice")}
+                  </p>
+                </div>
+              </div>
 
               {/* <p className="additional-services__coming-soon">
                 {t("additionalServices.omakase.comingSoon")}

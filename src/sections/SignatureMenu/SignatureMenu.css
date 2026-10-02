@@ -92,12 +92,18 @@
 .menu__card-container {
   width: 100%;
   max-width: 1400px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin: 56px auto 0;
+  padding: 0 32px 120px;
+}
+
+.menu__card-group {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   column-gap: 50px;
   row-gap: 30px;
-  margin: 56px auto 0;
-  padding: 0 32px 120px;
 }
 
 /* ----------------------------------------------------------------------------------------- */
@@ -347,8 +353,11 @@
     font-size: 26px;
   }
 
-  .menu__card-container {
+  .menu__card-group {
     grid-template-columns: minmax(0, 1fr);
+  }
+
+  .menu__card-container {
     padding: 0 20px 80px;
   }
 
