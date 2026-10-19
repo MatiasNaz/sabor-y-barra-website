@@ -79,8 +79,8 @@
   visibility: hidden;
   pointer-events: none;
   transition:
-    opacity 600ms ease-in-out,
-    visibility 600ms;
+    opacity 700ms ease-in-out,
+    visibility 700ms;
 }
 
 .testimonials__message--active {

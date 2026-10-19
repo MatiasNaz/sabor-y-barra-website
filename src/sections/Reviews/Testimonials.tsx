@@ -44,7 +44,7 @@ function Testimonials() {
         }
         return prev + 1;
       });
-    }, 6000);
+    }, 7000);
     return () => clearInterval(interval);
   }, []);
 
