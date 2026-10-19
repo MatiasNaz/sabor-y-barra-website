@@ -19,7 +19,7 @@ import sombraArdienteImage from "../../assets/images/drinks/sombra-ardiente.jpg"
 import elGauchoRiquenoImage from "../../assets/images/drinks/El Gaucho Riqueño.jpg";
 
 import { useTranslation } from "react-i18next";
-import { useRef } from "react";
+import { useRef, useEffect } from "react";
 
 function SignatureMenu() {
   // store i18n language translation
@@ -27,6 +27,8 @@ function SignatureMenu() {
 
   // initialize group reference for IntersectionObserver - use array to store groups
   const groupsRef = useRef<HTMLDivElement[]>([]);
+
+  const intersectionObserver = useEffect<HTMLDivElement[]>();
 
   return (
     <>
@@ -52,14 +54,11 @@ function SignatureMenu() {
                   className="menu__card-group"
                   data-group="1"
                   ref={(element) => {
+                    // check if the menu card group exists in array
                     if (element) {
-                      // check if the menu card group exists in array
-                      groupsRef.current.includes(element);
-                      {
-                        // if group does not exist in array, add it
-                        if (!element) {
-                          groupsRef.current.push(element);
-                        }
+                      // if element (card group) does not exist in array, add it
+                      if (!groupsRef.current.includes(element)) {
+                        groupsRef.current.push(element);
                       }
                     }
                   }}
@@ -99,7 +98,19 @@ function SignatureMenu() {
                   </div>
                 </div>
 
-                <div className="menu__card-group" data-group="2">
+                <div
+                  className="menu__card-group"
+                  data-group="2"
+                  ref={(element) => {
+                    // check if the menu card group exists in array
+                    if (element) {
+                      // if element (card group) does not exist in array, add it
+                      if (!groupsRef.current.includes(element)) {
+                        groupsRef.current.push(element);
+                      }
+                    }
+                  }}
+                >
                   {/* 3: SUSURRO */}
                   <div className="menu__card menu__card-content-left-card">
                     <div className="menu__card-desc-left">
@@ -135,7 +146,19 @@ function SignatureMenu() {
                   </div>
                 </div>
 
-                <div className="menu__card-group" data-group="3">
+                <div
+                  className="menu__card-group"
+                  data-group="3"
+                  ref={(element) => {
+                    // check if the menu card group exists in array
+                    if (element) {
+                      // if element (card group) does not exist in array, add it
+                      if (!groupsRef.current.includes(element)) {
+                        groupsRef.current.push(element);
+                      }
+                    }
+                  }}
+                >
                   {/* 5: MONIE DE PLATA */}
                   <div className="menu__card menu__card-content-left-card">
                     <div className="menu__card-desc-left">
@@ -173,7 +196,19 @@ function SignatureMenu() {
                   </div>
                 </div>
 
-                <div className="menu__card-group" data-group="4">
+                <div
+                  className="menu__card-group"
+                  data-group="4"
+                  ref={(element) => {
+                    // check if the menu card group exists in array
+                    if (element) {
+                      // if element (card group) does not exist in array, add it
+                      if (!groupsRef.current.includes(element)) {
+                        groupsRef.current.push(element);
+                      }
+                    }
+                  }}
+                >
                   {/* 7: LA PERLE BLANCHE */}
                   <div className="menu__card menu__card-content-left-card">
                     <div className="menu__card-desc-left">
@@ -211,7 +246,19 @@ function SignatureMenu() {
                   </div>
                 </div>
 
-                <div className="menu__card-group" data-group="5">
+                <div
+                  className="menu__card-group"
+                  data-group="5"
+                  ref={(element) => {
+                    // check if the menu card group exists in array
+                    if (element) {
+                      // if element (card group) does not exist in array, add it
+                      if (!groupsRef.current.includes(element)) {
+                        groupsRef.current.push(element);
+                      }
+                    }
+                  }}
+                >
                   {/* 9: MULA DORADA */}
                   <div className="menu__card menu__card-content-left-card">
                     <div className="menu__card-desc-left">
@@ -249,7 +296,19 @@ function SignatureMenu() {
                   </div>
                 </div>
 
-                <div className="menu__card-group" data-group="6">
+                <div
+                  className="menu__card-group"
+                  data-group="6"
+                  ref={(element) => {
+                    // check if the menu card group exists in array
+                    if (element) {
+                      // if element (card group) does not exist in array, add it
+                      if (!groupsRef.current.includes(element)) {
+                        groupsRef.current.push(element);
+                      }
+                    }
+                  }}
+                >
                   {/* 11: SOL DE UVA */}
                   <div className="menu__card menu__card-content-left-card">
                     <div className="menu__card-desc-left">
@@ -287,7 +346,19 @@ function SignatureMenu() {
                   </div>
                 </div>
 
-                <div className="menu__card-group" data-group="7">
+                <div
+                  className="menu__card-group"
+                  data-group="7"
+                  ref={(element) => {
+                    // check if the menu card group exists in array
+                    if (element) {
+                      // if element (card group) does not exist in array, add it
+                      if (!groupsRef.current.includes(element)) {
+                        groupsRef.current.push(element);
+                      }
+                    }
+                  }}
+                >
                   {/* 13: MEDIANOCHE */}
                   <div className="menu__card-content-left-card">
                     <div className="menu__card-desc-left">
@@ -323,7 +394,19 @@ function SignatureMenu() {
                   </div>
                 </div>
 
-                <div className="menu__card-group" data-group="8">
+                <div
+                  className="menu__card-group"
+                  data-group="8"
+                  ref={(element) => {
+                    // check if the menu card group exists in array
+                    if (element) {
+                      // if element (card group) does not exist in array, add it
+                      if (!groupsRef.current.includes(element)) {
+                        groupsRef.current.push(element);
+                      }
+                    }
+                  }}
+                >
                   {/* 15: SOMBRA ARDIENTE */}
                   <div className="menu__card-content-left-card">
                     <div className="menu__card-desc-left">

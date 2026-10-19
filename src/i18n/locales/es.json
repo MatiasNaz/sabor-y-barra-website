@@ -62,7 +62,8 @@
     "intro": {
       "eyebrow": "Servicios",
       "title": "Experiencias de barra seleccionadas cuidadosamente para tu ocasión.",
-      "description": "Sabor Y Barra lleva una hospitalidad cálida e intencional a eventos privados, encuentros corporativos y futuras experiencias especializadas mediante un servicio de barra diseñado en torno a cada celebración.",
+      "descriptionLead": "Sabor Y Barra lleva una hospitalidad cálida e intencional a eventos privados, encuentros corporativos y futuras experiencias especializadas mediante un servicio de barra",
+      "descriptionEnd": "diseñado en torno a cada celebración.",
       "cta": "Explorar Paquetes y Servicios"
     },
     "packages": {
@@ -185,7 +186,8 @@
     "intro": {
       "eyebrow": "Servicios Adicionales",
       "title": "Más formas de dar vida a tu celebración.",
-      "description": "Descubre nuevas experiencias y colaboraciones pensadas para complementar tu celebración. Pronto compartiremos más detalles."
+      "descriptionLead": "Descubre nuevas experiencias y colaboraciones",
+      "descriptionEnd": "pensadas para complementar tu celebración."
     },
     "omakase": {
       "eyebrow": "Omakase de Cócteles",

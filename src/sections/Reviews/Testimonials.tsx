@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import "./Testimonials.css";
 import { faGoogle } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -30,20 +30,23 @@ const testimonials = [
 
 function Testimonials() {
   const { t } = useTranslation();
-  // initialize useState index counter at 0
+
+  // initialize useState
   const [currentIndex, setCurrentIndex] = useState(0);
 
-  // manually update index handling for automatic sequencing
-  // function handleNext() {
-  //   // if the current position is last, reset to index 0, the first item in the list
-  //   if (currentIndex === testimonials.length - 1) {
-  //     setCurrentIndex(0);
-  //   }
-  //   // otherwise, move from the current index to the following one
-  //   else {
-  //     setCurrentIndex(currentIndex + 1);
-  //   }
-  // }
+  // use useEffect and set timer interval
+  useEffect(() => {
+    // store and set interval to repeat every 10 secs
+    const interval = setInterval(() => {
+      setCurrentIndex((prev) => {
+        if (prev === 4) {
+          return 0;
+        }
+        return prev + 1;
+      });
+    }, 6000);
+    return () => clearInterval(interval);
+  }, []);
 
   /*
   

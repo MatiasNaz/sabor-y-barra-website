@@ -65,6 +65,10 @@
   line-height: 1.7;
 }
 
+.additional-services__intro-break {
+  display: block;
+}
+
 .additional-services__section-heading .additional-services__bundles-note {
   width: fit-content;
   margin-top: 18px;
@@ -690,6 +694,10 @@
 
 /* Tablet portrait and mobile */
 @media (max-width: 768px) {
+  .additional-services__intro-break {
+    display: none;
+  }
+
   .additional-services__container {
     padding-inline: 20px;
   }

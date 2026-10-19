@@ -33,7 +33,9 @@ function Services() {
               {t("servicesPage.intro.title")}
             </h1>
             <p className="services__intro-description">
-              {t("servicesPage.intro.description")}
+              {t("servicesPage.intro.descriptionLead")}
+              <br className="services__intro-description-break" />{" "}
+              {t("servicesPage.intro.descriptionEnd")}
             </p>
 
             <div className="services__intro-cta-container">

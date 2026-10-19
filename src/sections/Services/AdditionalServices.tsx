@@ -72,7 +72,11 @@ function AdditionalServices() {
             <h1 id="additional-services-title">
               {t("additionalServices.intro.title")}
             </h1>
-            <p>{t("additionalServices.intro.description")}</p>
+            <p>
+              {t("additionalServices.intro.descriptionLead")}
+              <br className="additional-services__intro-break" />{" "}
+              {t("additionalServices.intro.descriptionEnd")}
+            </p>
           </section>
 
           <section
@@ -113,7 +117,9 @@ function AdditionalServices() {
                   <div className="additional-services__omakase-detail">
                     <dt>{t("additionalServices.omakase.locationLabel")}</dt>
                     <dd>
-                      <span>{t("additionalServices.omakase.locationPrimary")}</span>
+                      <span>
+                        {t("additionalServices.omakase.locationPrimary")}
+                      </span>
                       <span>
                         {t("additionalServices.omakase.locationSecondary")}
                       </span>
@@ -124,7 +130,9 @@ function AdditionalServices() {
                     <dt>{t("additionalServices.omakase.timeLabel")}</dt>
                     <dd>
                       <span>{t("additionalServices.omakase.timePrimary")}</span>
-                      <span>{t("additionalServices.omakase.timeSecondary")}</span>
+                      <span>
+                        {t("additionalServices.omakase.timeSecondary")}
+                      </span>
                     </dd>
                   </div>
                 </dl>

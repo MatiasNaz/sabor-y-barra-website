@@ -78,6 +78,10 @@
   line-height: 1.75;
 }
 
+.services__intro-description-break {
+  display: block;
+}
+
 .services__intro-cta-container {
   min-height: 44px;
   display: flex;
@@ -637,6 +641,10 @@
 /* TABLET / MOBILE (768PX AND BELOW) */
 
 @media (max-width: 768px) {
+  .services__intro-description-break {
+    display: none;
+  }
+
   .services__bg-container {
     padding: 0 20px 88px;
   }

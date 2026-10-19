@@ -62,7 +62,8 @@
     "intro": {
       "eyebrow": "Services",
       "title": "Curated bar experiences, thoughtfully made for your occasion.",
-      "description": "Sabor Y Barra brings warm, intentional hospitality to private events, corporate gatherings, and future specialty experiences through bar service shaped around every celebration.",
+      "descriptionLead": "Sabor Y Barra brings warm, intentional hospitality to private events, corporate gatherings, and future specialty experiences through bar service",
+      "descriptionEnd": "shaped around every celebration.",
       "cta": "Explore Packages & Services"
     },
     "packages": {
@@ -185,11 +186,12 @@
     "intro": {
       "eyebrow": "Additional Services",
       "title": "More ways to bring your gathering to life.",
-      "description": "Explore new experiences and thoughtful collaborations designed to complement your celebration. Details are coming soon."
+      "descriptionLead": "Explore new experiences and thoughtful collaborations",
+      "descriptionEnd": "designed to complement your celebration."
     },
     "omakase": {
       "eyebrow": "Cocktail Omakase",
-      "title": "Coming this Autumn, synced with the seasons... Inaugural Omakase: November 7th",
+      "title": "This Autumn, synced with the seasons... Inaugural Omakase: November 7th",
       "tastingTitle": "3-course cocktail tasting",
       "tastingDescription": "Three original cocktails curated around a distinct theme, culture, and destination.",
       "localTitle": "Locally inspired",
