@@ -28,7 +28,34 @@ function SignatureMenu() {
   // initialize group reference for IntersectionObserver - use array to store groups
   const groupsRef = useRef<HTMLDivElement[]>([]);
 
-  const intersectionObserver = useEffect<HTMLDivElement[]>();
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          // if entry intersects, add class styling
+          if (entry.isIntersecting) {
+            entry.target.classList.add("menu__card-group--visible");
+          }
+          // if entry doesn't intersect, remove the class styling
+          else {
+            entry.target.classList.remove("menu__card-group--visible");
+          }
+        });
+      },
+      {
+        rootMargin: "-40% 0px -40% 0px",
+        threshold: 0,
+      },
+    );
+
+    // observe each element in the group
+    groupsRef.current.forEach((element) => {
+      observer.observe(element);
+    });
+
+    // stop observing all registered elements
+    return () => observer.disconnect();
+  }, []);
 
   return (
     <>

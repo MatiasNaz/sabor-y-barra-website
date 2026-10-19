@@ -104,6 +104,13 @@
   grid-template-columns: repeat(2, minmax(0, 1fr));
   column-gap: 50px;
   row-gap: 30px;
+  opacity: 0.5;
+  transition: opacity 1.2s ease-in-out;
+  will-change: opacity;
+}
+
+.menu__card-group--visible {
+  opacity: 1;
 }
 
 /* ----------------------------------------------------------------------------------------- */
