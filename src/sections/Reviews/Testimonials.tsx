@@ -31,22 +31,25 @@ const testimonials = [
 function Testimonials() {
   const { t } = useTranslation();
 
-  // initialize useState
+  // initialize useState for currentIndex
   const [currentIndex, setCurrentIndex] = useState(0);
+
+  // initialize useState resetCount
+  const [resetCount, setResetCount] = useState(0);
 
   // use useEffect and set timer interval
   useEffect(() => {
     // store and set interval to repeat every 10 secs
     const interval = setInterval(() => {
       setCurrentIndex((prev) => {
-        if (prev === 4) {
+        if (prev === testimonials.length - 1) {
           return 0;
         }
         return prev + 1;
       });
-    }, 7000);
+    }, 10000);
     return () => clearInterval(interval);
-  }, []);
+  }, [resetCount]);
 
   /*
   
@@ -62,6 +65,9 @@ function Testimonials() {
   function dotHandler(indexSelected: number) {
     // set the current index to the one selected by user
     setCurrentIndex(indexSelected);
+
+    // restart carousel when user manually clicks button
+    setResetCount((prev) => prev + 1);
   }
 
   return (
