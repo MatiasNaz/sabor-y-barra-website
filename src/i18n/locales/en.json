@@ -293,7 +293,8 @@
         "name": "Matias",
         "category": "Software Development",
         "description": "Meet the developer behind Sabor Y Barra. Focused on building modern, intuitive software and digital experiences that help businesses bring their ideas to life.",
-        "imageAlt": "Matias, web development collaborator"
+        "imageAlt": "Matias, web development collaborator",
+        "link": "Explore Matias's Services"
       }
     }
   },

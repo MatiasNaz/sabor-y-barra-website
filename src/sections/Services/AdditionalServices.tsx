@@ -495,7 +495,13 @@ function AdditionalServices() {
                   <p>
                     {t("additionalServices.collaborators.third.description")}
                   </p>
-                  {/* <Link to="/booking">Explore Matias's Services</Link> */}
+                  <a
+                    href="https://matiasnazabal.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    {t("additionalServices.collaborators.third.link")}
+                  </a>
                 </div>
               </article>
             </div>

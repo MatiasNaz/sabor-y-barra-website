@@ -293,7 +293,8 @@
         "name": "Matias",
         "category": "Desarrollo de Software",
         "description": "Conoce al desarrollador detrás de Sabor Y Barra. Se especializa en crear software moderno e intuitivo y experiencias digitales que ayudan a las empresas a dar vida a sus ideas.",
-        "imageAlt": "Matias, colaborador de desarrollo web"
+        "imageAlt": "Matias, colaborador de desarrollo web",
+        "link": "Explorar los servicios de Matias"
       }
     }
   },
