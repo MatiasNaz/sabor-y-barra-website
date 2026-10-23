@@ -110,7 +110,7 @@
 }
 
 .additional-services__omakase h2 {
-  font-size: clamp(1.8rem, 3vw, 2.8rem);
+  font-size: clamp(1.65rem, 2.4vw, 2.1rem);
   padding-bottom: 24px;
   border-bottom: 1px solid rgb(72 36 16 / 16%);
 }
@@ -139,6 +139,27 @@
   font-weight: 600;
 }
 
+.event-intro-info {
+  max-width: 720px;
+  margin: 0 auto 0;
+  padding-top: 28px;
+  border-top: 1px solid rgb(72 36 16 / 16%);
+  color: var(--color-brown);
+  font-size: 1rem;
+  line-height: 1.6;
+  text-align: center;
+}
+
+.event-intro-info p {
+  margin: 0;
+  font: inherit;
+}
+
+.event-intro-info span {
+  display: block;
+  padding-top: 20px;
+}
+
 .additional-services__omakase-event-details {
   width: min(720px, 100%);
   max-width: 720px;
@@ -148,10 +169,23 @@
   color: var(--color-brown);
 }
 
+.closing-statement {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.event-daytime {
+  text-align: start;
+}
+
+.event-evening {
+  text-align: start;
+}
+
 .additional-services__omakase-logistics {
   width: min(520px, 100%);
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 24px;
   margin: 0 auto;
   text-align: center;

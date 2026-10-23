@@ -13,6 +13,18 @@ import { Mail, Phone, UserRound } from "lucide-react";
 import { useState, type SubmitEvent } from "react";
 // import { Link } from "react-router";
 
+const omakaseEventDetails = {
+  date: "11/7/26",
+  location: "The Cozy Cottage",
+  address: "3 Rothwell Rd, Bearsville, NY 12409",
+  price: 150,
+
+  sessions: [
+    { id: "day", time: "12:30 PM" },
+    { id: "evening", time: "5:00 PM" },
+  ],
+};
+
 function AdditionalServices() {
   const { t } = useTranslation();
 
@@ -62,6 +74,7 @@ function AdditionalServices() {
       <Header />
       <main className="additional-services">
         <div className="additional-services__container">
+          {/* Start: Additional Services intro */}
           <section
             className="additional-services__intro"
             aria-labelledby="additional-services-title"
@@ -78,7 +91,9 @@ function AdditionalServices() {
               {t("additionalServices.intro.descriptionEnd")}
             </p>
           </section>
+          {/* End: Additional Services intro */}
 
+          {/* Start: Cocktail Omakase */}
           <section
             className="additional-services__omakase"
             aria-labelledby="omakase-title"
@@ -90,53 +105,90 @@ function AdditionalServices() {
               <h2 id="omakase-title">
                 {t("additionalServices.omakase.title")}
               </h2>
+              <h3>{t("additionalServices.omakase.upcoming")}</h3>
+
               <ul className="additional-services__omakase-list">
                 <li>
                   <em>{t("additionalServices.omakase.tastingTitle")}</em>
                   {" \u2014 "}
                   {t("additionalServices.omakase.tastingDescription")}
-                </li>
-                <li>
-                  <em>{t("additionalServices.omakase.localTitle")}</em>
-                  {" \u2014 "}
-                  {t("additionalServices.omakase.localDescription")}
-                </li>
-                <li>
-                  <em>{t("additionalServices.omakase.merryTitle")}</em>
-                  {" \u2014 "}
-                  {t("additionalServices.omakase.merryDescription")}
-                </li>
-                <li>
-                  <em>{t("additionalServices.omakase.sonicTitle")}</em>
-                  {" \u2014 "}
-                  {t("additionalServices.omakase.sonicDescription")}
+                  <ul>
+                    <li>
+                      <em>{t("additionalServices.omakase.localTitle")}</em>
+                      {" \u2014 "}
+                      {t("additionalServices.omakase.localDescription")}
+                    </li>
+                    <li>
+                      <em>{t("additionalServices.omakase.merryTitle")}</em>
+                      {" \u2014 "}
+                      {t("additionalServices.omakase.merryDescription")}
+                    </li>
+                    <li>
+                      <em>{t("additionalServices.omakase.sonicTitle")}</em>
+                      {" \u2014 "}
+                      {t("additionalServices.omakase.sonicDescription")}
+                    </li>
+                  </ul>
                 </li>
               </ul>
+
+              <div className="event-intro-info">
+                <p>
+                  <span>
+                    {t("additionalServices.omakase.eventIntroOpening")}{" "}
+                    <i>{t("additionalServices.omakase.eventIntroBrand")}</i>{" "}
+                    {t("additionalServices.omakase.eventIntroJourney")}
+                  </span>
+
+                  <span>
+                    {t("additionalServices.omakase.eventIntroPairing")}{" "}
+                    <strong>
+                      {t("additionalServices.omakase.eventIntroPuroSabor")}
+                    </strong>
+                  </span>
+                </p>
+
+                <span className="closing-statement">
+                  {t("additionalServices.omakase.eventIntroClosing")}
+                </span>
+              </div>
+
+              {/* start event details */}
               <div className="additional-services__omakase-event-details">
+                {/* event list */}
                 <dl className="additional-services__omakase-logistics">
                   <div className="additional-services__omakase-detail">
                     <dt>{t("additionalServices.omakase.locationLabel")}</dt>
                     <dd>
-                      <span>
-                        {t("additionalServices.omakase.locationPrimary")}
-                      </span>
-                      <span>
-                        {t("additionalServices.omakase.locationSecondary")}
-                      </span>
+                      <span>{omakaseEventDetails.location}</span>
+                      <span>{omakaseEventDetails.address}</span>
+                    </dd>
+                  </div>
+
+                  <div className="additional-services__omakase-detail">
+                    <dt>{t("additionalServices.omakase.dateLabel")}</dt>
+                    <dd>
+                      <span>{omakaseEventDetails.date}</span>
                     </dd>
                   </div>
 
                   <div className="additional-services__omakase-detail">
                     <dt>{t("additionalServices.omakase.timeLabel")}</dt>
                     <dd>
-                      <span>{t("additionalServices.omakase.timePrimary")}</span>
-                      <span>
-                        {t("additionalServices.omakase.timeSecondary")}
+                      <span className="event-daytime">
+                        {t("additionalServices.omakase.daytimeLabel")} —{" "}
+                        {omakaseEventDetails.sessions[0].time}
+                      </span>
+
+                      <span className="event-evening">
+                        {t("additionalServices.omakase.eveningLabel")} —{" "}
+                        {omakaseEventDetails.sessions[1].time}
                       </span>
                     </dd>
                   </div>
                 </dl>
 
+                {/* reservations */}
                 <div className="additional-services__omakase-reservations">
                   <p className="additional-services__omakase-detail-label">
                     {t("additionalServices.omakase.reservationLabel")}
@@ -146,6 +198,7 @@ function AdditionalServices() {
                   </p>
                 </div>
               </div>
+              {/* end of event details */}
 
               {/* <p className="additional-services__coming-soon">
                 {t("additionalServices.omakase.comingSoon")}
@@ -261,8 +314,10 @@ function AdditionalServices() {
               )}
             </div>
           </section>
+          {/* End: Cocktail Omakase */}
         </div>
 
+        {/* Start: Chapter break */}
         <section
           className="additional-services__chapter"
           aria-labelledby="additional-services-chapter-title"
@@ -283,8 +338,10 @@ function AdditionalServices() {
             />
           </div>
         </section>
+        {/* End: Chapter break */}
 
         <div className="additional-services__container additional-services__container--lower">
+          {/* Start: Bundled experiences */}
           <section
             className="additional-services__bundles"
             aria-labelledby="bundles-title"
@@ -409,9 +466,9 @@ function AdditionalServices() {
               </article>
             </div>
           </section>
+          {/* End: Bundled experiences */}
 
-          {/* Collaborators Section */}
-
+          {/* Start: Collaborators */}
           <section
             className="additional-services__collaborators"
             aria-labelledby="collaborators-title"
@@ -506,6 +563,7 @@ function AdditionalServices() {
               </article>
             </div>
           </section>
+          {/* End: Collaborators */}
         </div>
       </main>
       <Footer />
