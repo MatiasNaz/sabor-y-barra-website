@@ -553,7 +553,7 @@ function AdditionalServices() {
                     {t("additionalServices.collaborators.third.description")}
                   </p>
                   <a
-                    href="https://matiasnazabal.com/"
+                    href="https://matiasnazabal.com/services"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
