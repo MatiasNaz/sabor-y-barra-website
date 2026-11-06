@@ -58,7 +58,7 @@ function VideoModal({ showVideoModal, onCloseModal }: VideoModalProps) {
             <div className="additional-services__omakase-cta-container">
               <a
                 className="additional-services__omakase-cta"
-                href="/additional-services#omakase-title"
+                href="/additional-services"
               >
                 Learn More
               </a>

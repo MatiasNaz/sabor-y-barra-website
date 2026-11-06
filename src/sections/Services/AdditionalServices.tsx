@@ -20,8 +20,7 @@ const omakaseEventDetails = {
   price: 150,
 
   sessions: [
-    { id: "day", time: "12:30 PM" },
-    { id: "evening", time: "5:00 PM" },
+    { id: "day", time: "3:00 PM" },
   ],
 };
 
@@ -178,11 +177,6 @@ function AdditionalServices() {
                       <span className="event-daytime">
                         {t("additionalServices.omakase.daytimeLabel")} —{" "}
                         {omakaseEventDetails.sessions[0].time}
-                      </span>
-
-                      <span className="event-evening">
-                        {t("additionalServices.omakase.eveningLabel")} —{" "}
-                        {omakaseEventDetails.sessions[1].time}
                       </span>
                     </dd>
                   </div>

@@ -751,6 +751,10 @@
     gap: 24px;
   }
 
+  .event-daytime {
+    text-align: center;
+  }
+
   .additional-services__omakase-event-details {
     padding-block: 24px;
   }
