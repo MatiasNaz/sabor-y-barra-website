@@ -19,9 +19,7 @@ const omakaseEventDetails = {
   address: "3 Rothwell Rd, Bearsville, NY 12409",
   price: 150,
 
-  sessions: [
-    { id: "day", time: "3:00 PM" },
-  ],
+  sessions: [{ id: "day", time: "3:00 PM" }],
 };
 
 function AdditionalServices() {
